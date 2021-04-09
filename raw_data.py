@@ -7,7 +7,7 @@ import nltk
 
 # import en_core_web_sm
 # en_nlp = en_core_web_sm.load()
-from HAABSA.data_book_hotel import read_data_2016
+from HAABSA.data_book_hotel import read_book_hotel
 from config import *
 
 
@@ -23,8 +23,8 @@ def main(_):
     with open(hotel_out, "w") as out:
         out.write("")
 
-    read_data_2016(book_in, [], {}, [], {}, book_out)
-    read_data_2016(hotel_in, [], {}, [], {}, hotel_out)
+    read_book_hotel(book_in, [], {}, [], {}, book_out)
+    read_book_hotel(hotel_in, [], {}, [], {}, hotel_out)
 
 
 def window(iterable, size):  # stack overflow solution for sliding window

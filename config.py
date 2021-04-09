@@ -6,10 +6,11 @@ import sys
 import tensorflow as tf
 
 FLAGS = tf.app.flags.FLAGS
-# general variables
+
+# General variables.
 tf.app.flags.DEFINE_string("source_domain", "laptop", "source domain (training set)")
 tf.app.flags.DEFINE_string("target_domain", "laptop", "target domain (test set)")
-tf.app.flags.DEFINE_integer("year", 2014, "year data set [2014]")
+tf.app.flags.DEFINE_integer("year", 2014, "year data set")
 tf.app.flags.DEFINE_string("embedding_type", "BERT", "type of embedding used (BERT or glove)")
 tf.app.flags.DEFINE_integer('embedding_dim', 768, 'dimension of word embedding')
 tf.app.flags.DEFINE_integer('batch_size', 20, 'number of example per batch')
@@ -35,7 +36,7 @@ tf.app.flags.DEFINE_integer('pos', 0, 'mapping for positive sentiment')
 tf.app.flags.DEFINE_integer('neu', 1, 'mapping for neutral sentiment')
 tf.app.flags.DEFINE_integer('neg', 2, 'mapping for negative sentiment')
 
-# traindata, testdata and embeddings
+# Traindata, testdata and single-domain embeddings.
 tf.app.flags.DEFINE_string("train_path", "data/programGeneratedData/" + str(
     FLAGS.embedding_dim) + FLAGS.source_domain + "_train_" + str(FLAGS.year) + ".txt", "train data path")
 tf.app.flags.DEFINE_string("test_path", "data/programGeneratedData/" + str(
@@ -47,7 +48,7 @@ tf.app.flags.DEFINE_string("remaining_test_path",
                            "data/programGeneratedData/" + str(FLAGS.embedding_dim) + 'remainingtestdata' + str(
                                FLAGS.year) + ".txt", "formatted remaining test data path after ontology")
 
-# Source and target embedding
+# Cross-domain source and target embedding
 tf.app.flags.DEFINE_string("train_embedding",
                            "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.source_domain + "_" + str(
                                FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt",
@@ -57,7 +58,8 @@ tf.app.flags.DEFINE_string("test_embedding",
                                FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt",
                            "source domain pre-trained BERT embeddings")
 
-# svm traindata, svm testdata
+# SVM train and test data.
+# NOTE. Not tested, kept from original code.
 tf.app.flags.DEFINE_string("train_svm_path",
                            "data/programGeneratedData/" + str(FLAGS.embedding_dim) + 'trainsvmdata' + str(
                                FLAGS.year) + ".txt", "train data path")
@@ -68,7 +70,7 @@ tf.app.flags.DEFINE_string("remaining_svm_test_path",
                            "data/programGeneratedData/" + str(FLAGS.embedding_dim) + 'remainingsvmtestdata' + str(
                                FLAGS.year) + ".txt", "formatted remaining test data path after ontology")
 
-# hyper traindata, hyper testdata
+# Hyperparameter tuning train and test data.
 tf.app.flags.DEFINE_string("hyper_train_path",
                            "data/programGeneratedData/" + str(FLAGS.embedding_dim) + 'hypertraindata' + str(
                                FLAGS.year) + ".txt", "hyper train data path")
@@ -83,7 +85,7 @@ tf.app.flags.DEFINE_string("hyper_svm_eval_path",
                            "data/programGeneratedData/" + str(FLAGS.embedding_dim) + 'hyperevalsvmdata' + str(
                                FLAGS.year) + ".txt", "hyper eval svm data path")
 
-# external data sources
+# External data sources.
 tf.app.flags.DEFINE_string("pretrain_file", "data/externalData/glove.42B." + str(FLAGS.embedding_dim) + "d.txt",
                            "pre-trained glove vectors file path")
 tf.app.flags.DEFINE_string("train_data",
@@ -106,7 +108,6 @@ tf.app.flags.DEFINE_integer("savable", 0, "one if savable")
 
 
 def print_config():
-    # FLAGS._parse_flags()
     FLAGS(sys.argv)
     print('\nParameters:')
     for k, v in sorted(tf.app.flags.FLAGS.flag_values_dict().items()):
@@ -144,8 +145,8 @@ def summary_func(loss, acc, test_loss, test_acc, _dir, title, sess):
     train_summary_writer = tf.summary.FileWriter(_dir + '/train', sess.graph)
     test_summary_writer = tf.summary.FileWriter(_dir + '/test')
     validate_summary_writer = tf.summary.FileWriter(_dir + '/validate')
-    return train_summary_op, test_summary_op, validate_summary_op, \
-           train_summary_writer, test_summary_writer, validate_summary_writer
+    return train_summary_op, test_summary_op, validate_summary_op, train_summary_writer, test_summary_writer, \
+           validate_summary_writer
 
 
 def saver_func(_dir):

@@ -3,7 +3,7 @@ import random
 import numpy as np
 from sklearn.model_selection import StratifiedKFold
 
-from data_rest_lapt import read_data_2014
+from data_rest_lapt import read_rest_lapt
 
 
 def loadDataAndEmbeddings(config, loadData):
@@ -14,10 +14,10 @@ def loadDataAndEmbeddings(config, loadData):
         source_word2idx, target_phrase2idx = {}, {}
 
         print('reading training data...')
-        train_data = read_data_2014(FLAGS.train_data, source_count, source_word2idx, target_count, target_phrase2idx,
+        train_data = read_rest_lapt(FLAGS.train_data, source_count, source_word2idx, target_count, target_phrase2idx,
                                     FLAGS.train_path)
         print('reading test data...')
-        test_data = read_data_2014(FLAGS.test_data, source_count, source_word2idx, target_count, target_phrase2idx,
+        test_data = read_rest_lapt(FLAGS.test_data, source_count, source_word2idx, target_count, target_phrase2idx,
                                    FLAGS.test_path)
 
         wt = np.random.normal(0, 0.05, [len(source_word2idx), 300])

@@ -1,12 +1,9 @@
 import os
+import re
 import xml.etree.ElementTree as ET
 from collections import Counter
 
-import en_core_web_sm
-
-en_nlp = en_core_web_sm.load()
 import nltk
-import re
 
 
 def window(iterable, size):  # stack overflow solution for sliding window
@@ -20,19 +17,18 @@ def window(iterable, size):  # stack overflow solution for sliding window
         yield win
 
 
-def _get_data_tuple(sptoks, asp_termIn, label):
-    # Find the ids of aspect term
+def _get_data_tuple(sptoks, asp_term_in, label):
+    # Find the ids of aspect term.
     aspect_is = []
-    asp_term = ' '.join(sp for sp in asp_termIn).lower()
-    for _i, group in enumerate(window(sptoks, len(asp_termIn))):
+    asp_term = ' '.join(sp for sp in asp_term_in).lower()
+    for _i, group in enumerate(window(sptoks, len(asp_term_in))):
         if asp_term == ' '.join([g.lower() for g in group]):
-            aspect_is = list(range(_i, _i + len(asp_termIn)))
+            aspect_is = list(range(_i, _i + len(asp_term_in)))
             break
         elif asp_term in ' '.join([g.lower() for g in group]):
-            aspect_is = list(range(_i, _i + len(asp_termIn)))
+            aspect_is = list(range(_i, _i + len(asp_term_in)))
             break
 
-    # print(aspect_is)
     pos_info = []
     for _i, sptok in enumerate(sptoks):
         pos_info.append(min([abs(_i - i) for i in aspect_is]))
@@ -50,48 +46,46 @@ def _get_data_tuple(sptoks, asp_termIn, label):
     return pos_info, lab
 
 
-"""
-This function reads data from the xml file
+def read_book_hotel(in_file, source_count, source_word2idx, target_count, target_phrase2idx, out_file):
+    """
+    Reads data for the 2019 book and 2015 hotel dataset.
 
-Iput arguments:
-@fname: file location
-@source_count: list that contains list [<pad>, 0] at the first position [empty input]
-and all the unique words with number of occurences as tuples [empty input]
-@source_word2idx: dictionary with unique words and unique index [empty input]
-.. same for target
+    :param in_file: xml data file location
+    :param source_count: list that contains list [<pad>, 0] at the first position [empty input] and all the unique words with number of occurences as tuples [empty input]
+    :param source_word2idx: dictionary with unique words and unique index [empty input]
+    :param target_count: list that contains list [<pad>, 0] at the first position [empty input] and all the unique words with number of occurences as tuples [empty input]
+    :param target_phrase2idx: dictionary with unique words and unique index [empty input]
+    :param out_file: file path for output
+    :return: tuple specified in function
+    """
+    # Returns:
+    # source_data: list with lists which contain the sentences corresponding to the aspects saved by word indices
+    # target_data: list which contains the indices of the target phrases: THIS DOES NOT CORRESPOND TO THE INDICES OF source_data
+    # source_loc_data: list with lists which contains the distance from the aspect for every word in the sentence corresponding to the aspect
+    # target_label: contains the polarity of the aspect (0=negative, 1=neutral, 2=positive)
+    # max_sen_len: maximum sentence length
+    # max_target_len: maximum target length
 
-Return:
-@source_data: list with lists which contain the sentences corresponding to the aspects saved by word indices 
-@target_data: list which contains the indices of the target phrases: THIS DOES NOT CORRESPOND TO THE INDICES OF source_data 
-@source_loc_data: list with lists which contains the distance from the aspect for every word in the sentence corresponding to the aspect
-@target_label: contains the polarity of the aspect (0=negative, 1=neutral, 2=positive)
-@max_sen_len: maximum sentence length
-@max_target_len: maximum target length
+    if not os.path.isfile(in_file):
+        raise ("[!] Data %s not found" % in_file)
 
-"""
-
-
-def read_data_2016(fname, source_count, source_word2idx, target_count, target_phrase2idx, file_name):
-    if os.path.isfile(fname) == False:
-        raise ("[!] Data %s not found" % fname)
-
-    # parse xml file to tree
-    tree = ET.parse(fname)
+    # Parse xml file to tree.
+    tree = ET.parse(in_file)
     root = tree.getroot()
 
-    outF = open(file_name, "w", encoding="utf-8")
+    out_f = open(out_file, "w", encoding="utf-8")
 
-    # save all words in source_words (includes duplicates)
-    # save all aspects in target_words (includes duplicates)
-    # finds max sentence length and max targets length
+    # Save all words in source_words (includes duplicates).
+    # Save all aspects in target_words (includes duplicates).
+    # Finds max sentence length and max targets length.
     source_words, target_words, max_sent_len, max_target_len = [], [], 0, 0
     target_phrases = []
 
-    countConfl = 0
+    count_confl = 0
     for sentence in root.iter('sentence'):
         sent = sentence.find('text').text
-        sentenceNew = re.sub(' +', ' ', sent)
-        sptoks = nltk.word_tokenize(sentenceNew)
+        sentence_new = re.sub(' +', ' ', sent)
+        sptoks = nltk.word_tokenize(sentence_new)
         for sp in sptoks:
             source_words.extend([''.join(sp).lower()])
         if len(sptoks) > max_sent_len:
@@ -99,12 +93,12 @@ def read_data_2016(fname, source_count, source_word2idx, target_count, target_ph
         for opinions in sentence.iter('Opinions'):
             for opinion in opinions.findall('Opinion'):
                 if opinion.get("polarity") == "conflict":
-                    countConfl += 1
+                    count_confl += 1
                     continue
                 asp = opinion.get('target')
                 if asp != 'NULL' and asp is not None:
-                    aspNew = re.sub(' +', ' ', asp)
-                    t_sptoks = nltk.word_tokenize(aspNew)
+                    asp_new = re.sub(' +', ' ', asp)
+                    t_sptoks = nltk.word_tokenize(asp_new)
                     for sp in t_sptoks:
                         target_words.extend([''.join(sp).lower()])
                     target_phrases.append(' '.join(sp for sp in t_sptoks).lower())
@@ -125,11 +119,11 @@ def read_data_2016(fname, source_count, source_word2idx, target_count, target_ph
 
     source_data, source_loc_data, target_data, target_label = list(), list(), list(), list()
 
-    # collect output data (match with source_word2idx) and write to .txt file
+    # Collect output data (match with source_word2idx) and write to .txt file.
     for sentence in root.iter('sentence'):
         sent = sentence.find('text').text
-        sentenceNew = re.sub(' +', ' ', sent)
-        sptoks = nltk.word_tokenize(sentenceNew)
+        sentence_new = re.sub(' +', ' ', sent)
+        sptoks = nltk.word_tokenize(sentence_new)
         if len(sptoks) != 0:
             idx = []
             for sptok in sptoks:
@@ -138,27 +132,27 @@ def read_data_2016(fname, source_count, source_word2idx, target_count, target_ph
                 for opinion in opinions.findall('Opinion'):
                     if opinion.get("polarity") == "conflict": continue
                     asp = opinion.get('target')
-                    if asp != 'NULL' and asp is not None:  # removes implicit targets
-                        aspNew = re.sub(' +', ' ', asp)
-                        t_sptoks = nltk.word_tokenize(aspNew)
+                    if asp != 'NULL' and asp is not None:  # Removes implicit targets.
+                        asp_new = re.sub(' +', ' ', asp)
+                        t_sptoks = nltk.word_tokenize(asp_new)
                         source_data.append(idx)
                         outputtext = ' '.join(sp for sp in sptoks).lower()
                         outputtarget = ' '.join(sp for sp in t_sptoks).lower()
                         outputtext = outputtext.replace(outputtarget, '$T$')
-                        outF.write(outputtext)
-                        outF.write("\n")
-                        outF.write(outputtarget)
-                        outF.write("\n")
+                        out_f.write(outputtext)
+                        out_f.write("\n")
+                        out_f.write(outputtarget)
+                        out_f.write("\n")
                         pos_info, lab = _get_data_tuple(sptoks, t_sptoks, opinion.get('polarity'))
                         pos_info = [(1 - (i / len(idx))) for i in pos_info]
                         source_loc_data.append(pos_info)
                         targetdata = ' '.join(sp for sp in t_sptoks).lower()
                         target_data.append(target_phrase2idx[targetdata])
                         target_label.append(lab)
-                        outF.write(str(lab))
-                        outF.write("\n")
+                        out_f.write(str(lab))
+                        out_f.write("\n")
 
-    outF.close()
-    print("Read %s aspects from %s" % (len(source_data), fname))
-    print(countConfl)
+    out_f.close()
+    print("Read %s aspects from %s" % (len(source_data), in_file))
+    print("Conflicts: " + str(count_confl))
     return source_data, source_loc_data, target_data, target_label, max_sent_len, source_loc_data, max_target_len

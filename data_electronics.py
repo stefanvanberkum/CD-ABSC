@@ -4,6 +4,9 @@ nltk.download('punkt')
 
 
 def main():
+    """
+    Reads data for the 2004 electronics datasets.
+    """
     merge = False
 
     in_path = "data/externalData/electronics_reviews_2004/"
