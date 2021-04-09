@@ -1,0 +1,150 @@
+restaurant to Nokia with Nokia fine-tuning using 22 aspects
+---
+Train data. Positive: 16, Neutral: 0, Negative: 6, Total: 22
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.772727, Test accuracy: 0.781250, Combined accuracy: 0.781250
+Maximum. Test accuracy: 0.875000, Combined accuracy: 0.875000
+---
+Test results.
+Positive. Correct: 48, Incorrect: 4, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 2, Incorrect: 10, Total: 12
+---
+Runtime: 579.8493392467499 seconds.
+
+restaurant to Nokia with Nokia fine-tuning using 44 aspects
+---
+Train data. Positive: 26, Neutral: 0, Negative: 18, Total: 44
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.909091, Test accuracy: 0.828125, Combined accuracy: 0.828125
+Maximum. Test accuracy: 0.921875, Combined accuracy: 0.921875
+---
+Test results.
+Positive. Correct: 47, Incorrect: 5, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 6, Incorrect: 6, Total: 12
+---
+Runtime: 765.9588115215302 seconds.
+
+restaurant to Nokia with Nokia fine-tuning using 66 aspects
+---
+Train data. Positive: 40, Neutral: 0, Negative: 26, Total: 66
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.863636, Test accuracy: 0.781250, Combined accuracy: 0.781250
+Maximum. Test accuracy: 0.937500, Combined accuracy: 0.937500
+---
+Test results.
+Positive. Correct: 39, Incorrect: 13, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 11, Incorrect: 1, Total: 12
+---
+Runtime: 938.1278879642487 seconds.
+
+restaurant to Nokia with Nokia fine-tuning using 88 aspects
+---
+Train data. Positive: 59, Neutral: 0, Negative: 29, Total: 88
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.897727, Test accuracy: 0.828125, Combined accuracy: 0.828125
+Maximum. Test accuracy: 0.921875, Combined accuracy: 0.921875
+---
+Test results.
+Positive. Correct: 46, Incorrect: 6, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 7, Incorrect: 5, Total: 12
+---
+Runtime: 1099.1728870868683 seconds.
+
+restaurant to Nokia with Nokia fine-tuning using 110 aspects
+---
+Train data. Positive: 71, Neutral: 0, Negative: 39, Total: 110
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.881818, Test accuracy: 0.796875, Combined accuracy: 0.796875
+Maximum. Test accuracy: 0.921875, Combined accuracy: 0.921875
+---
+Test results.
+Positive. Correct: 50, Incorrect: 2, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 1, Incorrect: 11, Total: 12
+---
+Runtime: 1256.2832157611847 seconds.
+
+restaurant to Nokia with Nokia fine-tuning using 132 aspects
+---
+Train data. Positive: 89, Neutral: 0, Negative: 43, Total: 132
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.924242, Test accuracy: 0.875000, Combined accuracy: 0.875000
+Maximum. Test accuracy: 0.906250, Combined accuracy: 0.906250
+---
+Test results.
+Positive. Correct: 51, Incorrect: 1, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 5, Incorrect: 7, Total: 12
+---
+Runtime: 1417.5588266849518 seconds.
+
+restaurant to Nokia with Nokia fine-tuning using 154 aspects
+---
+Train data. Positive: 105, Neutral: 0, Negative: 49, Total: 154
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.896104, Test accuracy: 0.890625, Combined accuracy: 0.890625
+Maximum. Test accuracy: 0.937500, Combined accuracy: 0.937500
+---
+Test results.
+Positive. Correct: 51, Incorrect: 1, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 6, Incorrect: 6, Total: 12
+---
+Runtime: 1566.8317713737488 seconds.
+
+restaurant to Nokia with Nokia fine-tuning using 176 aspects
+---
+Train data. Positive: 126, Neutral: 0, Negative: 50, Total: 176
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.926136, Test accuracy: 0.906250, Combined accuracy: 0.906250
+Maximum. Test accuracy: 0.937500, Combined accuracy: 0.937500
+---
+Test results.
+Positive. Correct: 49, Incorrect: 3, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 9, Incorrect: 3, Total: 12
+---
+Runtime: 1730.4346771240234 seconds.
+
+restaurant to Nokia with Nokia fine-tuning using 198 aspects
+---
+Train data. Positive: 146, Neutral: 0, Negative: 52, Total: 198
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.873737, Test accuracy: 0.859375, Combined accuracy: 0.859375
+Maximum. Test accuracy: 0.937500, Combined accuracy: 0.937500
+---
+Test results.
+Positive. Correct: 51, Incorrect: 1, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 4, Incorrect: 8, Total: 12
+---
+Runtime: 1885.9974904060364 seconds.
+
+restaurant to Nokia with Nokia fine-tuning using 220 aspects
+---
+Train data. Positive: 162, Neutral: 0, Negative: 58, Total: 220
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.895455, Test accuracy: 0.843750, Combined accuracy: 0.843750
+Maximum. Test accuracy: 0.921875, Combined accuracy: 0.921875
+---
+Test results.
+Positive. Correct: 51, Incorrect: 1, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 3, Incorrect: 9, Total: 12
+---
+Runtime: 2035.128455877304 seconds.
+

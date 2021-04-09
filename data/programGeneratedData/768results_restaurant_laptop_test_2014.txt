@@ -1,0 +1,13 @@
+restaurant to laptop
+---
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Test accuracy: 0.395150, Combined accuracy: 0.395150
+---
+Test results.
+Positive. Correct: 205, Incorrect: 162, Total: 367
+Neutral. Correct: 34, Incorrect: 150, Total: 184
+Negative. Correct: 38, Incorrect: 112, Total: 150
+---
+Runtime: 142.38856291770935 seconds.
+

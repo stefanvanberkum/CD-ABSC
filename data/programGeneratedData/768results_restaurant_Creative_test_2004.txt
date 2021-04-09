@@ -1,0 +1,13 @@
+restaurant to Creative
+---
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Test accuracy: 0.455882, Combined accuracy: 0.455882
+---
+Test results.
+Positive. Correct: 53, Incorrect: 23, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 9, Incorrect: 51, Total: 60
+---
+Runtime: 74.93866038322449 seconds.
+

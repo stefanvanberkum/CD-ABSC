@@ -1,0 +1,104 @@
+restaurant to laptop with laptop fine-tuning using 250 aspects
+---
+Train data. Positive: 108, Neutral: 45, Negative: 97, Total: 250
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Train accuracy: 0.964000, Test accuracy: 0.699001, Combined accuracy: 0.699001
+Maximum. Test accuracy: 0.710414, Combined accuracy: 0.710414
+
+Test results.
+Positive. Correct: 330, Incorrect: 37, Total: 367
+Neutral. Correct: 42, Incorrect: 142, Total: 184
+Negative. Correct: 118, Incorrect: 32, Total: 150
+
+restaurant to laptop with laptop fine-tuning using 500 aspects
+---
+Train data. Positive: 215, Neutral: 89, Negative: 196, Total: 500
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Train accuracy: 0.942000, Test accuracy: 0.700428, Combined accuracy: 0.700428
+Maximum. Test accuracy: 0.734665, Combined accuracy: 0.734665
+
+Test results.
+Positive. Correct: 323, Incorrect: 44, Total: 367
+Neutral. Correct: 56, Incorrect: 128, Total: 184
+Negative. Correct: 112, Incorrect: 38, Total: 150
+
+restaurant to laptop with laptop fine-tuning using 750 aspects
+---
+Train data. Positive: 327, Neutral: 146, Negative: 277, Total: 750
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Train accuracy: 0.924000, Test accuracy: 0.699001, Combined accuracy: 0.699001
+Maximum. Test accuracy: 0.736091, Combined accuracy: 0.736091
+
+Test results.
+Positive. Correct: 324, Incorrect: 43, Total: 367
+Neutral. Correct: 59, Incorrect: 125, Total: 184
+Negative. Correct: 107, Incorrect: 43, Total: 150
+
+restaurant to laptop with laptop fine-tuning using 1000 aspects
+---
+Train data. Positive: 448, Neutral: 175, Negative: 377, Total: 1000
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Train accuracy: 0.934000, Test accuracy: 0.697575, Combined accuracy: 0.697575
+Maximum. Test accuracy: 0.728959, Combined accuracy: 0.728959
+
+Test results.
+Positive. Correct: 325, Incorrect: 42, Total: 367
+Neutral. Correct: 44, Incorrect: 140, Total: 184
+Negative. Correct: 120, Incorrect: 30, Total: 150
+
+restaurant to laptop with laptop fine-tuning using 1250 aspects
+---
+Train data. Positive: 547, Neutral: 227, Negative: 476, Total: 1250
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Train accuracy: 0.916800, Test accuracy: 0.703281, Combined accuracy: 0.703281
+Maximum. Test accuracy: 0.736091, Combined accuracy: 0.736091
+
+Test results.
+Positive. Correct: 326, Incorrect: 41, Total: 367
+Neutral. Correct: 59, Incorrect: 125, Total: 184
+Negative. Correct: 108, Incorrect: 42, Total: 150
+
+restaurant to laptop with laptop fine-tuning using 1500 aspects
+---
+Train data. Positive: 648, Neutral: 287, Negative: 565, Total: 1500
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Train accuracy: 0.907333, Test accuracy: 0.690442, Combined accuracy: 0.690442
+Maximum. Test accuracy: 0.744650, Combined accuracy: 0.744650
+
+Test results.
+Positive. Correct: 326, Incorrect: 41, Total: 367
+Neutral. Correct: 45, Incorrect: 139, Total: 184
+Negative. Correct: 113, Incorrect: 37, Total: 150
+
+restaurant to laptop with laptop fine-tuning using 1750 aspects
+---
+Train data. Positive: 756, Neutral: 348, Negative: 646, Total: 1750
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Train accuracy: 0.916571, Test accuracy: 0.701854, Combined accuracy: 0.701854
+Maximum. Test accuracy: 0.740371, Combined accuracy: 0.740371
+
+Test results.
+Positive. Correct: 328, Incorrect: 39, Total: 367
+Neutral. Correct: 57, Incorrect: 127, Total: 184
+Negative. Correct: 107, Incorrect: 43, Total: 150
+
+restaurant to laptop with laptop fine-tuning using 2000 aspects
+---
+Train data. Positive: 864, Neutral: 402, Negative: 734, Total: 2000
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Train accuracy: 0.899000, Test accuracy: 0.706134, Combined accuracy: 0.706134
+Maximum. Test accuracy: 0.744650, Combined accuracy: 0.744650
+
+Test results.
+Positive. Correct: 329, Incorrect: 38, Total: 367
+Neutral. Correct: 63, Incorrect: 121, Total: 184
+Negative. Correct: 103, Incorrect: 47, Total: 150
+

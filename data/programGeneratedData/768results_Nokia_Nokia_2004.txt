@@ -1,0 +1,150 @@
+Nokia to Nokia using 22 aspects
+---
+Train data. Positive: 16, Neutral: 0, Negative: 6, Total: 22
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.812500, Combined accuracy: 0.812500
+Maximum. Test accuracy: 0.843750, Combined accuracy: 0.843750
+---
+Test results.
+Positive. Correct: 52, Incorrect: 0, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 0, Incorrect: 12, Total: 12
+---
+Runtime: 1211.1839666366577 seconds.
+
+Nokia to Nokia using 44 aspects
+---
+Train data. Positive: 26, Neutral: 0, Negative: 18, Total: 44
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.734375, Combined accuracy: 0.734375
+Maximum. Test accuracy: 0.859375, Combined accuracy: 0.859375
+---
+Test results.
+Positive. Correct: 41, Incorrect: 11, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 6, Incorrect: 6, Total: 12
+---
+Runtime: 1492.6772220134735 seconds.
+
+Nokia to Nokia using 66 aspects
+---
+Train data. Positive: 40, Neutral: 0, Negative: 26, Total: 66
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.687500, Combined accuracy: 0.687500
+Maximum. Test accuracy: 0.843750, Combined accuracy: 0.843750
+---
+Test results.
+Positive. Correct: 36, Incorrect: 16, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 8, Incorrect: 4, Total: 12
+---
+Runtime: 1821.7272551059723 seconds.
+
+Nokia to Nokia using 88 aspects
+---
+Train data. Positive: 59, Neutral: 0, Negative: 29, Total: 88
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.734375, Combined accuracy: 0.734375
+Maximum. Test accuracy: 0.859375, Combined accuracy: 0.859375
+---
+Test results.
+Positive. Correct: 38, Incorrect: 14, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 9, Incorrect: 3, Total: 12
+---
+Runtime: 2794.9334814548492 seconds.
+
+Nokia to Nokia using 110 aspects
+---
+Train data. Positive: 71, Neutral: 0, Negative: 39, Total: 110
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.734375, Combined accuracy: 0.734375
+Maximum. Test accuracy: 0.890625, Combined accuracy: 0.890625
+---
+Test results.
+Positive. Correct: 37, Incorrect: 15, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 10, Incorrect: 2, Total: 12
+---
+Runtime: 3091.3127512931824 seconds.
+
+Nokia to Nokia using 132 aspects
+---
+Train data. Positive: 89, Neutral: 0, Negative: 43, Total: 132
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.875000, Combined accuracy: 0.875000
+Maximum. Test accuracy: 0.906250, Combined accuracy: 0.906250
+---
+Test results.
+Positive. Correct: 50, Incorrect: 2, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 6, Incorrect: 6, Total: 12
+---
+Runtime: 5230.555230617523 seconds.
+
+Nokia to Nokia using 154 aspects
+---
+Train data. Positive: 105, Neutral: 0, Negative: 49, Total: 154
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.937500, Combined accuracy: 0.937500
+Maximum. Test accuracy: 0.953125, Combined accuracy: 0.953125
+---
+Test results.
+Positive. Correct: 51, Incorrect: 1, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 9, Incorrect: 3, Total: 12
+---
+Runtime: 4604.616490840912 seconds.
+
+Nokia to Nokia using 176 aspects
+---
+Train data. Positive: 126, Neutral: 0, Negative: 50, Total: 176
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.906250, Combined accuracy: 0.906250
+Maximum. Test accuracy: 0.921875, Combined accuracy: 0.921875
+---
+Test results.
+Positive. Correct: 51, Incorrect: 1, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 7, Incorrect: 5, Total: 12
+---
+Runtime: 3792.646992921829 seconds.
+
+Nokia to Nokia using 198 aspects
+---
+Train data. Positive: 146, Neutral: 0, Negative: 52, Total: 198
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.890625, Combined accuracy: 0.890625
+Maximum. Test accuracy: 0.937500, Combined accuracy: 0.937500
+---
+Test results.
+Positive. Correct: 48, Incorrect: 4, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 9, Incorrect: 3, Total: 12
+---
+Runtime: 4023.5770654678345 seconds.
+
+Nokia to Nokia using 220 aspects
+---
+Train data. Positive: 162, Neutral: 0, Negative: 58, Total: 220
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.906250, Combined accuracy: 0.906250
+Maximum. Test accuracy: 0.937500, Combined accuracy: 0.937500
+---
+Test results.
+Positive. Correct: 50, Incorrect: 2, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 8, Incorrect: 4, Total: 12
+---
+Runtime: 4362.179005622864 seconds.
+

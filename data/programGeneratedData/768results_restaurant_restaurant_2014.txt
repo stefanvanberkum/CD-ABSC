@@ -1,0 +1,10 @@
+Restaurant to restaurant
+---
+Test data. Positive: 728, Neutral: 196, Negative: 196, Total: 1120
+---
+LCR-Rot-Hop++. Test accuracy: 0.811607, Combined accuracy: 0.811607
+Test results.
+Positive. Correct: 678, Incorrect: 50, Total: 728
+Neutral. Correct: 88, Incorrect: 108, Total: 196
+Negative. Correct: 143, Incorrect: 53, Total: 196
+

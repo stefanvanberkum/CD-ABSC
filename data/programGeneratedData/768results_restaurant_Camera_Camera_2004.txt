@@ -1,0 +1,150 @@
+restaurant to Camera with Camera fine-tuning using 31 aspects
+---
+Train data. Positive: 27, Neutral: 0, Negative: 4, Total: 31
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.894118, Combined accuracy: 0.894118
+Maximum. Test accuracy: 0.917647, Combined accuracy: 0.917647
+---
+Test results.
+Positive. Correct: 72, Incorrect: 1, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 4, Incorrect: 8, Total: 12
+---
+Runtime: 756.3812592029572 seconds.
+
+restaurant to Camera with Camera fine-tuning using 62 aspects
+---
+Train data. Positive: 55, Neutral: 0, Negative: 7, Total: 62
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 0.112903, Test accuracy: 0.141176, Combined accuracy: 0.141176
+Maximum. Test accuracy: 0.882353, Combined accuracy: 0.882353
+---
+Test results.
+Positive. Correct: 0, Incorrect: 73, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 12, Incorrect: 0, Total: 12
+---
+Runtime: 988.5428395271301 seconds.
+
+restaurant to Camera with Camera fine-tuning using 93 aspects
+---
+Train data. Positive: 79, Neutral: 0, Negative: 14, Total: 93
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.905882, Combined accuracy: 0.905882
+Maximum. Test accuracy: 0.917647, Combined accuracy: 0.917647
+---
+Test results.
+Positive. Correct: 73, Incorrect: 0, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 4, Incorrect: 8, Total: 12
+---
+Runtime: 1218.511884689331 seconds.
+
+restaurant to Camera with Camera fine-tuning using 124 aspects
+---
+Train data. Positive: 101, Neutral: 0, Negative: 23, Total: 124
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 0.975806, Test accuracy: 0.905882, Combined accuracy: 0.905882
+Maximum. Test accuracy: 0.929412, Combined accuracy: 0.929412
+---
+Test results.
+Positive. Correct: 73, Incorrect: 0, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 4, Incorrect: 8, Total: 12
+---
+Runtime: 1486.1185607910156 seconds.
+
+restaurant to Camera with Camera fine-tuning using 155 aspects
+---
+Train data. Positive: 123, Neutral: 0, Negative: 32, Total: 155
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 0.993548, Test accuracy: 0.882353, Combined accuracy: 0.882353
+Maximum. Test accuracy: 0.929412, Combined accuracy: 0.929412
+---
+Test results.
+Positive. Correct: 71, Incorrect: 2, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 4, Incorrect: 8, Total: 12
+---
+Runtime: 1767.8733532428741 seconds.
+
+restaurant to Camera with Camera fine-tuning using 186 aspects
+---
+Train data. Positive: 145, Neutral: 0, Negative: 41, Total: 186
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 0.994624, Test accuracy: 0.905882, Combined accuracy: 0.905882
+Maximum. Test accuracy: 0.929412, Combined accuracy: 0.929412
+---
+Test results.
+Positive. Correct: 71, Incorrect: 2, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 6, Incorrect: 6, Total: 12
+---
+Runtime: 1982.1834781169891 seconds.
+
+restaurant to Camera with Camera fine-tuning using 217 aspects
+---
+Train data. Positive: 171, Neutral: 0, Negative: 46, Total: 217
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 0.976959, Test accuracy: 0.917647, Combined accuracy: 0.917647
+Maximum. Test accuracy: 0.941176, Combined accuracy: 0.941176
+---
+Test results.
+Positive. Correct: 71, Incorrect: 2, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 7, Incorrect: 5, Total: 12
+---
+Runtime: 2191.7033882141113 seconds.
+
+restaurant to Camera with Camera fine-tuning using 248 aspects
+---
+Train data. Positive: 201, Neutral: 0, Negative: 47, Total: 248
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 0.959677, Test accuracy: 0.882353, Combined accuracy: 0.882353
+Maximum. Test accuracy: 0.929412, Combined accuracy: 0.929412
+---
+Test results.
+Positive. Correct: 71, Incorrect: 2, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 4, Incorrect: 8, Total: 12
+---
+Runtime: 2452.3353168964386 seconds.
+
+restaurant to Camera with Camera fine-tuning using 279 aspects
+---
+Train data. Positive: 218, Neutral: 0, Negative: 61, Total: 279
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 0.964158, Test accuracy: 0.917647, Combined accuracy: 0.917647
+Maximum. Test accuracy: 0.929412, Combined accuracy: 0.929412
+---
+Test results.
+Positive. Correct: 72, Incorrect: 1, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 6, Incorrect: 6, Total: 12
+---
+Runtime: 2656.1253476142883 seconds.
+
+restaurant to Camera with Camera fine-tuning using 310 aspects
+---
+Train data. Positive: 248, Neutral: 0, Negative: 62, Total: 310
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 0.954839, Test accuracy: 0.905882, Combined accuracy: 0.905882
+Maximum. Test accuracy: 0.929412, Combined accuracy: 0.929412
+---
+Test results.
+Positive. Correct: 72, Incorrect: 1, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 5, Incorrect: 7, Total: 12
+---
+Runtime: 2902.195900440216 seconds.
+

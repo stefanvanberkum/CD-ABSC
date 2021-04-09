@@ -1,0 +1,360 @@
+$T$ was_0 acceptable_0 
+room_0 
+0
+the_0 $T$ was_1 nice_0 and_0 furnishings_0 were_0 comfortable_0 ._0 
+room_1 
+1
+the_1 room_2 was_2 nice_1 and_1 $T$ were_1 comfortable_1 ._1 
+furnishings_1 
+1
+the_2 $T$ from_0 restaurant_0 was_3 very_0 good_0 but_0 price_0 ##y_0 which_0 standard_0 for_0 everything_0 in_0 this_0 hotel_0 ._2 
+food_0 
+1
+the_3 $T$ from_1 restaurant_1 was_4 very_1 good_1 but_1 price_1 ##y_1 which_1 standard_1 for_1 everything_1 in_1 this_1 hotel_1 ._3 
+food_1 
+-1
+the_4 food_2 from_2 restaurant_2 was_5 very_2 good_2 but_2 price_2 ##y_2 which_2 standard_2 for_2 everything_2 in_2 this_2 $T$ ._4 
+hotel_2 
+-1
+the_5 $T$ from_3 room_3 was_6 $_0 9_0 ._5 95_0 for_3 a_0 24_0 hour_0 period_0 
+internet_0 access_0 
+-1
+to_0 check_0 in_3 for_4 my_0 flight_0 using_0 the_6 $T$ cost_0 me_0 $_1 4_0 ._6 59_0 which_3 included_0 three_0 minutes_0 use_0 of_0 internet_1 and_2 printing_0 seven_0 pages_0 boarding_0 pass_0 
+business_0 center_0 
+-1
+$T$ was_7 very_3 pleasant_0 and_3 helpful_0 ._7 
+staff_0 
+1
+$T$ was_8 fast_0 and_4 court_0 ##eous_0 ._8 
+check_1 in_4 
+1
+$T$ were_2 clean_0 ,_0 spacious_0 and_5 com_0 ##for_0 ##atable_0 ._9 
+rooms_0 
+1
+$T$ were_3 clean_1 ,_1 spacious_1 and_6 com_1 ##for_1 ##atable_1 ._10 
+rooms_1 
+1
+$T$ were_4 clean_2 ,_2 spacious_2 and_7 com_2 ##for_2 ##atable_2 ._11 
+rooms_2 
+1
+$T$ was_9 outstanding_0 ,_3 for_5 both_0 the_7 conference_0 and_8 on_0 my_1 own_0 ._12 
+food_3 
+1
+$T$ was_10 refreshing_0 on_1 the_8 hot_0 days_0 ._13 
+pool_0 
+1
+overall_0 for_6 the_9 price_3 of_1 this_3 $T$ it_0 can_0 not_0 be_0 beat_0 !_0 
+hotel_3 
+1
+overall_1 for_7 the_10 price_4 of_2 this_4 $T$ it_1 can_1 not_1 be_1 beat_1 !_1 
+hotel_4 
+1
+good_3 business_1 $T$ 
+hotel_5 
+1
+very_4 nice_2 $T$ for_8 business_2 travelers_0 -_0 few_0 kids_0 ._14 
+hotel_6 
+1
+great_0 $T$ with_0 very_5 comfortable_2 beds_0 ._15 
+rooms_3 
+1
+great_1 rooms_4 with_1 very_6 comfortable_3 $T$ ._16 
+beds_1 
+1
+big_0 $T$ ,_4 very_7 good_4 fitness_0 center_1 -_1 nice_3 lobby_0 and_9 common_0 areas_0 ._17 
+pool_1 area_0 
+1
+big_1 pool_2 area_1 ,_5 very_8 good_5 $T$ -_2 nice_4 lobby_1 and_10 common_1 areas_1 ._18 
+fitness_1 center_2 
+1
+big_2 pool_3 area_2 ,_6 very_9 good_6 fitness_2 center_3 -_3 nice_5 $T$ and_11 common_2 areas_2 ._19 
+lobby_2 
+1
+big_3 pool_4 area_3 ,_7 very_10 good_7 fitness_3 center_4 -_4 nice_6 lobby_3 and_12 $T$ ._20 
+common_3 areas_3 
+1
+i_0 had_0 excellent_0 $T$ ._21 
+shuttle_0 service_0 
+1
+the_11 sports_0 bar_0 had_1 good_8 $T$ with_2 very_11 reasonable_0 prices_0 ._22 
+food_4 
+1
+the_12 sports_1 bar_1 had_2 good_9 $T$ with_3 very_12 reasonable_1 prices_1 ._23 
+food_5 
+1
+the_13 only_0 downs_0 ##ide_0 was_11 a_1 per_0 minute_0 charge_0 to_1 use_1 $T$ ._24 
+business_3 center_5 computers_0 
+-1
+the_14 $T$ was_12 friendly_0 and_13 helpful_1 ,_8 they_0 upgraded_0 our_0 room_4 to_2 queen_0 beds_2 without_0 us_0 asking_0 ._25 
+staff_1 
+1
+the_15 $T$ are_0 lovely_0 ,_9 and_14 hotel_7 is_0 quiet_0 even_0 though_0 it_2 so_0 close_0 to_3 airport_0 ._26 
+rooms_5 
+1
+the_16 rooms_6 are_1 lovely_1 ,_10 and_15 $T$ is_1 quiet_1 even_1 though_1 it_3 so_1 close_1 to_4 airport_1 ._27 
+hotel_8 
+1
+the_17 $T$ to_5 airport_2 is_2 very_13 ,_11 convenient_0 and_16 gets_0 you_0 there_0 in_5 about_0 4_1 minutes_1 ._28 
+24_1 hour_1 shuttle_1 
+1
+we_0 ate_0 at_0 the_18 restaurant_3 and_17 $T$ was_13 good_10 heart_0 ##y_3 best_0 av_0 ##oca_0 ##do_0 i_1 '_0 ve_0 ever_0 had_3 ._29 so_2 all_0 in_6 you_1 ca_0 n_0 t_0 beat_2 deal_0 ,_12 location_0 clean_3 rooms_7 service_1 
+food_6 
+1
+we_1 ate_1 at_1 the_19 restaurant_4 and_18 food_7 was_14 good_11 heart_1 ##y_4 best_1 $T$ i_2 '_1 ve_1 ever_1 had_4 ._30 so_3 all_1 in_7 you_2 ca_1 n_1 t_1 beat_3 deal_1 ,_13 location_1 clean_4 rooms_8 service_2 
+av_1 ##oca_1 ##do_1 
+1
+we_2 ate_2 at_2 the_20 restaurant_5 and_19 food_8 was_15 good_12 heart_2 ##y_5 best_2 av_2 ##oca_2 ##do_2 i_3 '_2 ve_2 ever_2 had_5 ._31 so_4 all_2 in_8 you_3 ca_2 n_2 t_2 beat_4 deal_2 ,_14 $T$ clean_5 rooms_9 service_3 
+location_2 
+1
+we_3 ate_3 at_3 the_21 restaurant_6 and_20 food_9 was_16 good_13 heart_3 ##y_6 best_3 av_3 ##oca_3 ##do_3 i_4 '_3 ve_3 ever_3 had_6 ._32 so_5 all_3 in_9 you_4 ca_3 n_3 t_3 beat_5 deal_3 ,_15 location_3 clean_6 $T$ service_4 
+rooms_10 
+1
+we_4 ate_4 at_4 the_22 restaurant_7 and_21 food_10 was_17 good_14 heart_4 ##y_7 best_4 av_4 ##oca_4 ##do_4 i_5 '_4 ve_4 ever_4 had_7 ._33 so_6 all_4 in_10 you_5 ca_4 n_4 t_4 beat_6 deal_4 ,_16 location_4 clean_7 rooms_11 $T$ 
+service_5 
+1
+a_2 great_2 $T$ 
+hotel_9 
+1
+our_1 stay_0 at_5 this_5 $T$ was_18 wonderful_0 ._34 
+hotel_10 
+1
+the_23 $T$ was_19 very_14 court_1 ##eous_1 upon_0 check_2 -_5 in_11 ._35 
+staff_2 
+1
+our_2 $T$ was_20 perfectly_0 spot_0 ##less_0 ._36 
+room_5 
+1
+no_0 problems_0 whatsoever_0 ,_17 and_22 i_6 would_0 recommend_0 this_6 $T$ to_6 anybody_0 ._37 
+hotel_11 
+1
+good_15 $T$ but_3 rude_0 desk_0 clerk_0 
+service_6 
+1
+good_16 service_7 but_4 rude_1 $T$ 
+desk_1 clerk_1 
+-1
+the_24 same_0 $T$ started_0 to_7 yell_0 again_0 stating_0 that_0 she_0 had_8 told_0 me_1 when_0 i_7 called_0 could_0 upgrade_0 for_9 a_3 charge_1 and_23 was_21 her_0 rules_0 ._38 
+desk_2 clerk_2 
+-1
+overall_2 $T$ was_22 great_3 and_24 the_25 staff_3 as_0 a_4 whole_0 were_5 very_15 court_2 ##eous_2 helpful_2 ._39 
+service_8 
+1
+overall_3 service_9 was_23 great_4 and_25 the_26 $T$ as_1 a_5 whole_1 were_6 very_16 court_3 ##eous_3 helpful_3 ._40 
+staff_4 
+1
+$T$ were_7 friendly_1 and_26 helpful_4 both_1 with_4 early_0 check_3 -_6 in_12 an_0 out_0 ._41 
+front_0 desk_3 staff_5 
+1
+$T$ was_24 large_0 and_27 spacious_3 ,_18 but_5 rather_0 bland_0 ._42 
+room_6 
+1
+$T$ was_25 large_1 and_28 spacious_4 ,_19 but_6 rather_1 bland_1 ._43 
+room_7 
+1
+$T$ was_26 large_2 and_29 spacious_5 ,_20 but_7 rather_2 bland_2 ._44 
+room_8 
+-1
+ideal_0 $T$ ._45 
+location_5 
+1
+the_27 $T$ looked_0 nice_7 ,_21 as_2 did_0 their_0 restaurant_8 but_8 n_5 '_5 t_5 try_0 either_0 one_0 ._46 
+pool_5 
+1
+the_28 pool_6 looked_1 nice_8 ,_22 as_3 did_1 their_1 $T$ but_9 n_6 '_6 t_6 try_1 either_1 one_1 ._47 
+restaurant_9 
+1
+$T$ are_2 large_3 but_10 very_17 plain_0 ,_23 with_5 furnishings_2 and_30 fixtures_0 as_4 cheap_0 possible_0 ._48 
+rooms_12 
+1
+$T$ are_3 large_4 but_11 very_18 plain_1 ,_24 with_6 furnishings_3 and_31 fixtures_1 as_5 cheap_1 possible_1 ._49 
+rooms_13 
+-1
+rooms_14 are_4 large_5 but_12 very_19 plain_2 ,_25 with_7 furnishings_4 and_32 $T$ as_6 cheap_2 possible_2 ._50 
+fixtures_2 
+-1
+rooms_15 are_5 large_6 but_13 very_20 plain_3 ,_26 with_8 $T$ and_33 fixtures_3 as_7 cheap_3 possible_3 ._51 
+furnishings_5 
+-1
+the_29 $T$ shows_0 its_0 age_0 and_34 badly_0 needs_0 ref_0 ##ur_0 ##bis_0 ##hing_0 ._52 
+hotel_12 
+-1
+$T$ was_27 on_2 a_6 slight_0 slant_0 because_0 it_4 pulling_0 out_1 of_3 the_30 wall_0 ._53 
+bathroom_0 sink_0 
+-1
+nothing_0 is_3 especially_0 terrible_0 or_0 unacceptable_0 about_1 this_7 $T$ ._54 
+hotel_13 
+0
+this_8 $T$ is_4 run_0 down_0 ,_27 dirty_0 and_35 loud_0 ._55 
+place_0 
+-1
+this_9 $T$ is_5 run_1 down_1 ,_28 dirty_1 and_36 loud_1 ._56 
+place_1 
+-1
+this_10 $T$ is_6 run_2 down_2 ,_29 dirty_2 and_37 loud_2 ._57 
+place_2 
+-1
+great_5 $T$ 
+restaurant_10 
+1
+this_11 $T$ has_0 really_0 improved_0 since_0 our_3 last_0 stay_1 ._58 
+property_0 
+1
+$T$ was_28 cool_0 ,_30 clean_8 and_38 com_3 ##fy_0 ._59 
+room_9 
+1
+$T$ was_29 cool_1 ,_31 clean_9 and_39 com_4 ##fy_1 ._60 
+room_10 
+1
+$T$ was_30 cool_2 ,_32 clean_10 and_40 com_5 ##fy_2 ._61 
+room_11 
+1
+the_31 $T$ downstairs_0 is_7 best_5 kept_0 secret_0 in_13 area_4 !_2 
+restaurant_11 
+1
+the_32 $T$ and_41 service_10 was_31 outstanding_1 (_0 try_2 sea_0 $_2 t_7 platt_0 ##er_0 )_0 ._62 
+food_11 
+1
+the_33 food_12 and_42 $T$ was_32 outstanding_2 (_1 try_3 seafood_0 platt_1 ##er_1 )_1 ._63 
+service_11 
+1
+the_34 food_13 and_43 service_12 was_33 outstanding_3 (_2 try_4 $T$ )_2 ._64 
+seafood_1 platt_2 ##er_2 
+1
+$T$ was_34 court_4 ##eous_4 and_44 efficient_0 ._65 
+staff_6 
+1
+i_8 '_7 ve_5 been_0 going_0 to_8 this_12 place_3 every_0 year_0 and_45 keep_0 on_3 coming_0 back_0 $T$ ._66 
+hotel_14 
+1
+the_35 $T$ is_8 excellent_1 !_3 
+breakfast_0 
+1
+it_5 is_9 rare_0 that_1 hotels_0 in_14 this_13 class_0 serve_0 hot_1 $T$ ,_33 yet_0 they_1 do_0 !_4 
+meals_0 
+1
+$T$ is_10 fit_0 for_10 a_7 king_0 ._67 
+breakfast_1 
+1
+plus_0 ,_34 the_36 staff_7 at_6 front_1 desk_4 are_6 always_0 court_5 ##eous_5 and_46 friendly_2 ._68 
+
+1
+though_2 the_37 $T$ are_7 a_8 bit_0 old_0 ,_35 beds_3 still_0 cozy_0 ._69 
+bathrooms_0 
+-1
+though_3 the_38 bathrooms_1 are_8 a_9 bit_1 old_1 ,_36 $T$ still_1 cozy_1 ._70 
+beds_4 
+1
+and_47 the_39 $T$ is_11 right_0 in_15 middle_0 of_4 everywhere_0 ._71 
+hotel_15 
+1
+above_0 average_0 $T$ for_11 great_6 price_5 !_5 
+hotel_16 
+1
+above_1 average_1 $T$ for_12 great_7 price_6 !_6 
+hotel_17 
+1
+the_40 $T$ was_35 perfect_0 for_13 me_2 ,_37 bed_0 one_2 of_5 most_0 comfortable_4 i_9 '_8 ve_6 ever_5 had_9 in_16 a_10 hotel_18 ._72 
+room_12 
+1
+the_41 room_13 was_36 perfect_1 for_14 me_3 ,_38 $T$ one_3 of_6 most_1 comfortable_5 i_10 '_9 ve_7 ever_6 had_10 in_17 a_11 hotel_19 ._73 
+bed_1 
+1
+very_21 clean_11 ,_39 great_8 $T$ -_7 they_2 gave_0 me_4 a_12 compliment_0 ##ary_0 bottle_0 of_7 wine_0 because_1 i_11 missed_0 the_42 hotel_20 shuttle_2 ._74 
+service_13 
+1
+good_17 $T$ and_48 bar_2 attached_0 ._75 
+restaurant_12 
+1
+good_18 restaurant_13 and_49 $T$ attached_1 ._76 
+bar_3 
+1
+$T$ was_37 not_2 helpful_5 ,_40 but_14 who_0 cares_0 ._77 for_15 $_3 69_0 you_6 get_0 a_13 clean_12 fairly_0 -_8 large_7 room_14 central_0 air_0 ref_1 ##ri_0 ##g_0 /_0 micro_0 free_0 (_3 sparse_0 )_3 breakfast_2 buffet_0 
+front_2 desk_5 
+-1
+front_3 desk_6 was_38 not_3 helpful_6 ,_41 but_15 who_1 cares_1 ._78 for_16 $_4 69_1 you_7 get_1 a_14 clean_13 fairly_1 -_9 large_8 $T$ central_1 air_1 ref_2 ##ri_1 ##g_1 /_1 micro_1 free_1 (_4 sparse_1 )_4 breakfast_3 buffet_1 
+room_15 
+1
+front_4 desk_7 was_39 not_4 helpful_7 ,_42 but_16 who_2 cares_2 ._79 for_17 $_5 69_2 you_8 get_2 a_15 clean_14 fairly_2 -_10 large_9 $T$ central_2 air_2 ref_3 ##ri_2 ##g_2 /_2 micro_2 free_2 (_5 sparse_2 )_5 breakfast_4 buffet_2 
+room_16 
+1
+front_5 desk_8 was_40 not_5 helpful_8 ,_43 but_17 who_3 cares_3 ._80 for_18 $_6 69_3 you_9 get_3 a_16 clean_15 fairly_3 -_11 large_10 $T$ central_3 air_3 ref_4 ##ri_3 ##g_3 /_3 micro_3 free_3 (_6 sparse_3 )_6 breakfast_5 buffet_3 
+room_17 
+1
+front_6 desk_9 was_41 not_6 helpful_9 ,_44 but_18 who_4 cares_4 ._81 for_19 $_7 69_4 you_10 get_4 a_17 clean_16 fairly_4 -_12 large_11 room_18 central_4 air_4 ref_5 ##ri_4 ##g_4 /_4 micro_4 free_4 (_7 sparse_4 )_7 $T$ 
+breakfast_6 buffet_4 
+1
+front_7 desk_10 was_42 not_7 helpful_10 ,_45 but_19 who_5 cares_5 ._82 for_20 $_8 69_5 you_11 get_5 a_18 clean_17 fairly_5 -_13 large_12 room_19 central_5 air_5 ref_6 ##ri_5 ##g_5 /_5 micro_5 free_5 (_8 sparse_5 )_8 $T$ 
+breakfast_7 buffet_5 
+-1
+friendly_3 $T$ 
+staff_8 
+1
+the_43 $T$ was_43 extremely_0 helpful_11 and_50 friendly_4 ._83 
+staff_9 
+1
+an_1 $T$ was_44 broken_0 during_0 our_4 last_1 stay_2 and_51 it_6 most_2 annoying_0 ,_46 but_20 did_2 not_8 greatly_0 impact_0 the_44 overall_4 experience_0 ._84 
+elevator_0 
+-1
+all_5 in_18 it_7 is_12 a_19 nice_9 and_52 affordable_0 $T$ for_21 sights_0 ##ee_0 ##ing_0 the_45 area_5 ._85 
+spot_1 
+1
+all_6 in_19 it_8 is_13 a_20 nice_10 and_53 affordable_1 $T$ for_22 sights_1 ##ee_1 ##ing_1 the_46 area_6 ._86 
+spot_2 
+1
+all_7 in_20 it_9 is_14 a_21 nice_11 and_54 affordable_2 $T$ for_23 sights_2 ##ee_2 ##ing_2 the_47 area_7 ._87 
+spot_3 
+1
+the_48 $T$ is_15 an_2 average_2 place_4 to_9 stay_3 (_9 though_4 a_22 bit_2 far_0 from_4 downtown_0 )_9 with_9 sub_0 ##stand_0 ##ard_0 management_0 team_0 ._88 
+best_6 western_0 executive_0 park_0 hotel_21 
+0
+the_49 $T$ is_16 an_3 average_3 place_5 to_10 stay_4 (_10 though_5 a_23 bit_3 far_1 from_5 downtown_1 )_10 with_10 sub_1 ##stand_1 ##ard_1 management_1 team_1 ._89 
+best_7 western_1 executive_1 park_1 hotel_22 
+-1
+the_50 best_8 western_2 executive_2 park_2 hotel_23 is_17 an_4 average_4 place_6 to_11 stay_5 (_11 though_6 a_24 bit_4 far_2 from_6 downtown_2 )_11 with_11 sub_2 ##stand_2 ##ard_2 $T$ ._90 
+management_2 team_2 
+-1
+there_1 '_10 s_0 never_0 anyone_0 to_12 talk_0 from_7 $T$ and_55 phone_0 calls_0 /_6 e_0 mail_0 ##s_0 receive_0 no_1 response_0 ._91 
+management_3 
+-1
+the_51 $T$ was_45 in_21 a_25 rude_2 mood_0 ._92 
+desk_11 person_0 
+-1
+the_52 $T$ was_46 very_22 loud_3 ._93 
+air_6 condition_0 ##er_3 
+-1
+nothing_1 told_1 us_1 that_2 there_2 was_47 a_26 free_6 breakfast_8 -_14 the_53 $T$ looked_2 like_0 it_10 closed_0 ._94 
+restaurant_14 
+-1
+all_8 in_22 the_54 price_7 was_48 way_0 too_0 high_0 for_24 such_0 a_27 poor_0 $T$ ._95 
+acc_0 ##omo_0 ##dation_0 ##s_1 
+-1
+all_9 in_23 the_55 price_8 was_49 way_1 too_1 high_1 for_25 such_1 a_28 poor_1 $T$ ._96 
+acc_1 ##omo_1 ##dation_1 ##s_2 
+-1
+excellent_2 $T$ ._97 
+service_14 
+1
+the_56 $T$ was_50 friendly_5 overall_5 ._98 
+staff_10 
+1
+$T$ was_51 convenient_1 as_8 i_12 chose_0 not_9 to_13 rent_0 a_29 car_0 during_1 this_14 trip_0 ._99 
+airport_3 shuttle_3 service_15 
+1
+no_2 complaints_0 about_2 the_57 $T$ ,_47 pretty_0 clean_18 ._100 
+room_20 
+1
+no_3 complaints_1 about_3 the_58 $T$ ,_48 pretty_1 clean_19 ._101 
+room_21 
+1
+i_13 went_0 to_14 the_59 $T$ twice_0 and_56 had_11 a_30 nice_12 meal_0 again_1 at_7 very_23 reasonable_2 price_9 ._102 
+lunch_0 buffet_6 
+1
+i_14 went_1 to_15 the_60 $T$ twice_1 and_57 had_12 a_31 nice_13 meal_1 again_2 at_8 very_24 reasonable_3 price_10 ._103 
+lunch_1 buffet_7 
+1
+the_61 $T$ was_52 great_9 ._104 
+conference_1 /_7 banquet_0 room_22 
+1
+not_10 sure_0 where_0 the_62 $T$ was_53 in_24 reference_0 to_16 tourist_0 spots_0 ,_49 etc_0 ._105 but_21 for_26 a_32 local_0 conference_2 it_11 perfect_2 
+location_6 
+1

@@ -1,0 +1,750 @@
+i_0 charge_0 it_0 at_0 night_0 and_0 skip_0 taking_0 the_0 $T$ with_0 me_0 because_0 of_0 good_0 battery_0 life_0 ._0 
+cord_0 
+0
+i_1 charge_1 it_1 at_1 night_1 and_1 skip_1 taking_1 the_1 cord_1 with_1 me_1 because_1 of_1 good_1 $T$ ._1 
+battery_1 life_1 
+1
+the_2 tech_0 guy_0 then_0 said_0 $T$ does_0 not_0 do_0 1_0 -_0 to_0 exchange_0 and_2 i_2 have_0 direct_0 my_0 concern_0 `_0 sales_0 '_0 team_0 ,_0 which_0 is_0 retail_0 shop_0 bought_0 net_0 ##book_0 from_0 ._2 
+service_0 center_0 
+-1
+the_3 tech_1 guy_1 then_1 said_1 service_1 center_1 does_1 not_1 do_1 1_1 -_1 to_1 exchange_1 and_3 i_3 have_1 direct_1 my_1 concern_1 `_1 sales_1 '_1 team_1 ,_1 which_1 is_1 retail_1 shop_1 bought_1 net_1 ##book_1 from_1 ._3 
+
+-1
+the_4 $T$ then_2 said_2 service_2 center_2 does_2 not_2 do_2 1_2 -_2 to_2 exchange_2 and_4 i_4 have_2 direct_2 my_2 concern_2 `_2 sales_2 '_2 team_2 ,_2 which_2 is_2 retail_2 shop_2 bought_2 net_2 ##book_2 from_2 ._4 
+tech_2 guy_2 
+0
+it_2 is_3 of_2 high_0 $T$ ,_3 has_0 a_0 killer_0 gui_0 extremely_0 stable_0 highly_0 expand_0 ##able_0 bundled_0 with_2 lots_0 very_0 good_2 applications_0 easy_0 to_3 use_0 and_5 absolutely_0 gorgeous_0 ._5 
+quality_0 
+1
+it_3 is_4 of_3 high_1 quality_1 ,_4 has_1 a_1 killer_1 $T$ extremely_1 stable_1 highly_1 expand_1 ##able_1 bundled_1 with_3 lots_1 very_1 good_3 applications_1 easy_1 to_4 use_1 and_6 absolutely_1 gorgeous_1 ._6 
+gui_1 
+1
+it_4 is_5 of_4 high_2 quality_2 ,_5 has_2 a_2 killer_2 gui_2 extremely_2 stable_2 highly_2 expand_2 ##able_2 bundled_2 with_4 lots_2 very_2 good_4 $T$ easy_2 to_5 use_2 and_7 absolutely_2 gorgeous_2 ._7 
+applications_2 
+1
+it_5 is_6 of_5 high_3 quality_3 ,_6 has_3 a_3 killer_3 gui_3 extremely_3 stable_3 highly_3 expand_3 ##able_3 bundled_3 with_5 lots_3 very_3 good_5 applications_3 easy_3 to_6 $T$ and_8 absolutely_3 gorgeous_3 ._8 
+use_3 
+1
+easy_4 to_7 $T$ and_9 does_3 not_3 over_0 ##hea_0 ##t_0 as_0 much_0 other_0 laptop_0 ##s_0 ._9 
+start_0 up_0 
+1
+i_5 even_0 got_0 my_3 teenage_0 son_0 one_0 ,_7 because_2 of_6 the_5 $T$ that_0 it_6 offers_0 like_0 ich_0 ##at_0 photo_0 ##boot_0 ##h_0 garage_0 band_0 and_10 more_0 !_0 
+features_0 
+1
+i_6 even_1 got_1 my_4 teenage_1 son_1 one_1 ,_8 because_3 of_7 the_6 features_1 that_1 it_7 offers_1 like_1 $T$ photo_1 ##boot_1 ##h_1 garage_1 band_1 and_11 more_1 !_1 
+ich_1 ##at_1 
+1
+i_7 even_2 got_2 my_5 teenage_2 son_2 one_2 ,_9 because_4 of_8 the_7 features_2 that_2 it_8 offers_2 like_2 ich_2 ##at_2 $T$ garage_2 band_2 and_12 more_2 !_2 
+photo_2 ##boot_2 ##h_2 
+1
+i_8 even_3 got_3 my_6 teenage_3 son_3 one_3 ,_10 because_5 of_9 the_8 features_3 that_3 it_9 offers_3 like_3 ich_3 ##at_3 photo_3 ##boot_3 ##h_3 $T$ and_13 more_3 !_3 
+garage_3 band_3 
+1
+great_0 laptop_1 that_4 offers_4 many_0 $T$ !_4 
+features_4 
+1
+one_4 night_2 i_9 turned_0 the_9 freaking_0 thing_0 off_0 after_0 using_0 it_10 ,_11 next_0 day_0 turn_0 on_0 no_0 $T$ screen_0 all_0 dark_0 power_0 light_0 steady_0 hard_0 drive_0 and_14 not_4 flashing_0 as_1 usually_0 does_4 ._10 
+gui_4 
+-1
+one_5 night_3 i_10 turned_1 the_10 freaking_1 thing_1 off_1 after_1 using_1 it_11 ,_12 next_1 day_1 turn_1 on_1 no_1 gui_5 $T$ all_1 dark_1 power_1 light_1 steady_1 hard_1 drive_1 and_15 not_5 flashing_1 as_2 usually_1 does_5 ._11 
+screen_1 
+-1
+one_6 night_4 i_11 turned_2 the_11 freaking_2 thing_2 off_2 after_2 using_2 it_12 ,_13 next_2 day_2 turn_2 on_2 no_2 gui_6 screen_2 all_2 dark_2 $T$ steady_2 hard_2 drive_2 and_16 not_6 flashing_2 as_3 usually_2 does_6 ._12 
+power_2 light_2 
+0
+one_7 night_5 i_12 turned_3 the_12 freaking_3 thing_3 off_3 after_3 using_3 it_13 ,_14 next_3 day_3 turn_3 on_3 no_3 gui_7 screen_3 all_3 dark_3 power_3 light_3 steady_3 hard_3 drive_3 and_17 not_7 flashing_3 as_4 usually_3 does_7 ._13 
+
+-1
+i_13 took_0 it_14 back_0 for_0 an_0 as_5 ##us_0 and_18 same_0 thing_4 -_3 blue_0 screen_4 which_3 required_0 me_2 to_8 remove_0 the_13 $T$ reset_0 ._14 
+battery_2 
+0
+in_0 the_14 shop_3 ,_15 these_0 mac_0 ##books_0 are_0 en_0 ##cased_0 a_4 soft_0 $T$ -_4 so_0 you_0 will_0 never_0 know_0 about_0 razor_0 edge_0 until_0 buy_0 it_15 get_0 home_0 break_0 seal_0 and_19 use_4 (_0 very_4 clever_0 con_0 )_0 ._15 
+rubber_0 enclosure_0 
+1
+in_1 the_15 shop_4 ,_16 these_1 mac_1 ##books_1 are_1 en_1 ##cased_1 a_5 soft_1 rubber_1 enclosure_1 -_5 so_1 you_1 will_1 never_1 know_1 about_1 razor_1 $T$ until_1 buy_1 it_16 get_1 home_1 break_1 seal_1 and_20 use_5 (_1 very_5 clever_1 con_1 )_1 ._16 
+edge_1 
+-1
+however_0 ,_17 the_16 $T$ and_21 large_0 tracking_0 area_0 make_0 having_0 an_1 external_0 mouse_0 unnecessary_0 (_2 unless_0 you_2 '_3 re_0 gaming_0 )_2 ._17 
+multi_0 -_6 touch_0 gestures_0 
+1
+however_1 ,_18 the_17 multi_1 -_7 touch_1 gestures_1 and_22 large_1 $T$ make_1 having_1 an_2 external_1 mouse_1 unnecessary_1 (_3 unless_1 you_3 '_4 re_1 gaming_1 )_3 ._18 
+tracking_1 area_1 
+1
+however_2 ,_19 the_18 multi_2 -_8 touch_2 gestures_2 and_23 large_2 tracking_2 area_2 make_2 having_2 an_3 $T$ unnecessary_2 (_4 unless_2 you_4 '_5 re_2 gaming_2 )_4 ._19 
+external_2 mouse_2 
+0
+however_3 ,_20 the_19 multi_3 -_9 touch_3 gestures_3 and_24 large_3 tracking_3 area_3 make_3 having_3 an_4 external_3 mouse_3 unnecessary_3 (_5 unless_3 you_5 '_6 re_3 $T$ )_5 ._20 
+gaming_3 
+0
+i_14 love_0 the_20 way_0 entire_0 $T$ works_0 together_0 ._21 
+suite_0 of_10 software_0 
+1
+the_21 $T$ is_7 incredible_0 and_25 i_15 am_0 more_4 than_0 satisfied_0 ._22 
+speed_0 
+1
+this_0 laptop_2 meets_0 every_0 expectation_0 and_26 $T$ is_8 great_1 !_5 
+windows_0 7_0 
+1
+i_16 can_0 barely_0 use_6 any_0 $T$ because_6 they_0 will_2 not_8 stay_0 connected_0 properly_0 ._23 
+usb_0 devices_0 
+-1
+when_0 i_17 finally_0 had_0 everything_0 running_0 with_6 all_4 my_7 $T$ installed_0 plug_0 ##ged_0 in_2 dr_0 ##oid_0 to_9 rec_0 ##har_0 ##ge_0 and_27 the_22 system_0 crashed_0 ._24 
+software_1 
+0
+when_1 i_18 finally_1 had_1 everything_1 running_1 with_7 all_5 my_8 software_2 installed_1 plug_1 ##ged_1 in_3 dr_1 ##oid_1 to_10 rec_1 ##har_1 ##ge_1 and_28 the_23 $T$ crashed_1 ._25 
+system_1 
+-1
+one_8 suggestion_0 i_19 do_3 have_3 ,_21 is_9 to_11 not_9 bother_0 getting_0 $T$ expecting_0 it_17 will_3 work_0 just_0 like_4 you_6 knew_0 on_4 a_6 pc_0 ._26 
+microsoft_0 office_0 for_1 the_24 mac_2 
+-1
+pairing_0 it_18 with_8 an_5 iphone_0 is_10 a_7 pure_0 pleasure_0 -_10 talk_0 about_2 pain_0 ##less_0 $T$ used_0 to_12 take_0 me_3 forever_0 now_0 '_7 s_0 snap_0 ._27 
+sync_0 ##ing_0 
+1
+i_20 also_0 got_4 the_25 added_0 bonus_0 of_11 a_8 30_0 '_8 hd_0 monitor_0 ,_22 which_4 really_0 helps_0 to_13 extend_0 my_9 screen_5 and_29 keep_0 eyes_0 fresh_0 !_6 
+
+1
+i_21 also_1 got_5 the_26 added_1 bonus_1 of_12 a_9 30_1 '_9 hd_1 monitor_1 ,_23 which_5 really_1 helps_1 to_14 extend_1 my_10 $T$ and_30 keep_1 eyes_1 fresh_1 !_7 
+screen_6 
+0
+the_27 machine_0 is_11 slow_0 to_15 $T$ and_31 occasionally_0 crashes_0 completely_0 ._28 
+boot_0 up_1 
+-1
+after_4 paying_0 several_0 hundred_0 dollars_0 for_2 this_1 $T$ ,_24 it_19 is_12 frustrating_0 that_5 you_7 can_1 not_10 get_2 help_0 hours_0 ._29 
+service_3 
+-1
+i_22 love_1 the_28 $T$ and_32 pre_0 ##loaded_0 software_3 ._30 
+operating_0 system_2 
+1
+i_23 love_2 the_29 operating_1 system_3 and_33 $T$ ._31 
+pre_1 ##loaded_1 software_4 
+1
+the_30 best_0 thing_5 about_3 this_2 laptop_3 is_13 $T$ along_0 with_9 some_0 of_13 newer_0 features_5 ._32 
+price_0 
+1
+the_31 best_1 thing_6 about_4 this_3 laptop_4 is_14 price_1 along_1 with_10 some_1 of_14 newer_1 $T$ ._33 
+features_6 
+1
+after_5 numerous_0 attempts_0 of_15 trying_0 (_6 including_0 setting_0 the_32 $T$ directly_0 )_6 ,_25 i_24 gave_0 up_2 am_1 a_10 tech_3 ##ie_0 ._34 
+clock_0 in_4 bio_0 ##s_1 setup_0 
+-1
+you_8 will_4 not_11 be_0 able_0 to_16 talk_1 an_6 american_0 $T$ is_15 out_0 of_16 country_0 ._35 
+warrant_0 ##y_0 service_4 
+-1
+but_0 now_1 i_25 have_4 realized_0 its_0 a_11 problem_0 with_11 this_4 $T$ ._36 
+brand_0 
+-1
+i_26 sent_0 it_20 back_1 to_17 ##shi_0 ##ba_0 twice_0 they_1 covered_0 under_0 the_33 $T$ ._37 
+warrant_1 ##y_1 
+1
+i_27 was_0 looking_0 for_3 a_12 mac_3 which_6 is_16 portable_0 and_34 has_4 all_6 the_34 $T$ that_6 ._38 
+features_7 
+1
+also_2 kinda_0 loud_0 when_2 the_35 $T$ was_1 running_2 ._39 
+fan_0 
+-1
+in_5 des_0 ##para_0 ##tion_0 ,_26 i_28 called_0 their_0 $T$ and_35 was_2 told_0 that_7 my_11 warrant_2 ##y_2 had_2 expired_0 (_7 2_0 days_0 old_0 )_7 the_36 pri_0 ##vil_0 ##edge_0 of_17 talking_0 to_18 a_13 technician_0 would_0 cost_0 me_4 `_3 have_5 your_0 credit_0 card_0 ready_0 '_10 ._40 
+customer_0 service_5 number_0 
+0
+in_6 des_1 ##para_1 ##tion_1 ,_27 i_29 called_1 their_1 customer_1 service_6 number_1 and_36 was_3 told_1 that_8 my_12 $T$ had_3 expired_1 (_8 2_1 days_1 old_1 )_8 the_37 pri_1 ##vil_1 ##edge_1 of_18 talking_1 to_19 a_14 technician_1 would_1 cost_1 me_5 `_4 have_6 your_1 credit_1 card_1 ready_1 '_11 ._41 
+warrant_3 ##y_3 
+-1
+in_7 des_2 ##para_2 ##tion_2 ,_28 i_30 called_2 their_2 customer_2 service_7 number_2 and_37 was_4 told_2 that_9 my_13 warrant_4 ##y_4 had_4 expired_2 (_9 2_2 days_2 old_2 )_9 the_38 pri_2 ##vil_2 ##edge_2 of_19 $T$ would_2 cost_2 me_6 `_5 have_7 your_2 credit_2 card_2 ready_2 '_12 ._42 
+talking_2 to_20 a_15 technician_2 
+-1
+there_0 also_3 seemed_0 to_21 be_1 a_16 problem_1 with_12 the_39 $T$ as_6 certain_0 times_0 windows_1 loads_0 but_1 claims_0 not_12 able_1 find_0 any_1 drivers_0 or_0 files_0 ._43 
+hard_4 disc_0 
+-1
+there_1 also_4 seemed_1 to_22 be_2 a_17 problem_2 with_13 the_40 hard_5 disc_1 as_7 certain_1 times_1 $T$ loads_1 but_2 claims_1 not_13 able_2 find_1 any_2 drivers_1 or_1 files_1 ._44 
+windows_2 
+-1
+there_2 also_5 seemed_2 to_23 be_3 a_18 problem_3 with_14 the_41 hard_6 disc_2 as_8 certain_2 times_2 windows_3 loads_2 but_3 claims_2 not_14 able_3 find_2 any_3 $T$ or_2 files_2 ._45 
+drivers_2 
+0
+$T$ updated_0 ok_0 but_4 the_42 bio_1 ##s_2 update_0 froze_0 system_4 up_3 and_38 computer_0 shut_0 down_0 ._46 
+drivers_3 
+1
+drivers_4 updated_1 ok_1 but_5 the_43 $T$ froze_1 system_5 up_4 and_39 computer_1 shut_1 down_1 ._47 
+bio_2 ##s_3 update_1 
+-1
+drivers_5 updated_2 ok_2 but_6 the_44 bio_3 ##s_4 update_2 froze_2 $T$ up_5 and_40 computer_2 shut_2 down_2 ._48 
+system_6 
+-1
+spent_0 2_3 hours_1 on_5 phone_0 with_15 $T$ ._49 
+hp_0 technical_0 support_0 
+0
+speaking_0 of_20 the_45 $T$ ,_29 it_21 too_0 has_5 problems_0 ._50 
+browser_0 
+-1
+the_46 $T$ is_17 too_1 slick_0 ._51 
+keyboard_0 
+-1
+nightly_0 my_14 computer_3 def_0 ##rag_0 ##s_5 itself_0 and_41 runs_0 a_19 $T$ ._52 
+virus_0 scan_0 
+0
+it_22 '_13 s_1 like_5 $T$ ,_30 but_7 if_0 you_9 can_2 look_0 past_0 great_2 !_8 
+9_0 pun_0 ##ds_0 
+-1
+it_23 '_14 s_2 just_1 as_9 fast_0 with_16 one_9 $T$ open_0 is_18 sixteen_0 ._53 
+program_0 
+0
+still_0 under_1 $T$ so_2 called_3 to_24 ##shi_1 ##ba_1 ,_31 no_4 help_1 at_2 all_7 ._54 
+warren_0 ##ty_0 
+-1
+i_31 was_5 happy_0 with_17 my_15 purchase_0 of_21 a_20 to_25 ##shi_2 ##ba_2 satellite_0 l_0 ##30_0 ##5_0 ##d_0 -_11 s_3 ##59_0 ##34_0 laptop_5 until_2 it_24 came_0 time_0 have_8 repaired_0 under_2 the_47 warrant_5 ##y_5 ._55 
+
+-1
+amazing_0 $T$ !_9 
+quality_4 
+1
+the_48 fact_0 that_10 you_10 can_3 spend_0 over_1 $_0 100_0 on_6 just_2 a_21 $T$ under_3 ##sco_0 ##res_0 value_0 of_22 this_5 machine_1 ._56 
+web_0 ##cam_0 
+0
+the_49 fact_1 that_11 you_11 can_4 spend_1 over_2 $_1 100_1 on_7 just_3 a_22 web_1 ##cam_1 under_4 ##sco_1 ##res_1 $T$ of_23 this_6 machine_2 ._57 
+value_1 
+1
+i_32 mainly_0 use_7 it_25 for_4 email_0 ,_32 $T$ and_42 managing_0 personal_0 files_3 (_10 pic_0 ##s_6 vi_0 ##ds_1 etc_0 ._58 )_10 
+internet_0 
+0
+i_33 mainly_1 use_8 it_26 for_5 email_1 ,_33 internet_1 and_43 $T$ (_11 pic_1 ##s_7 vi_1 ##ds_2 etc_1 ._59 )_11 
+managing_1 personal_1 files_4 
+0
+a_23 month_0 or_3 so_3 ago_0 ,_34 the_50 freaking_4 $T$ just_4 died_0 ._60 
+mother_0 ##board_0 
+-1
+the_51 $T$ it_27 comes_0 with_18 does_8 not_15 work_1 properly_1 ,_35 so_4 when_3 trying_1 to_26 fix_0 problems_1 started_0 working_0 at_3 all_8 ._61 
+system_7 
+-1
+then_3 after_6 4_0 or_4 so_5 months_0 the_52 $T$ stopped_0 working_1 i_34 was_6 forced_0 to_27 go_0 out_1 and_44 buy_2 new_0 hardware_0 just_5 keep_2 this_7 computer_4 running_3 ._62 
+charge_2 ##r_0 
+-1
+then_4 after_7 4_1 or_5 so_6 months_1 the_53 charge_3 ##r_1 stopped_1 working_2 i_35 was_7 forced_1 to_28 go_1 out_2 and_45 buy_3 new_1 $T$ just_6 keep_3 this_8 computer_5 running_4 ._63 
+hardware_1 
+-1
+if_1 a_24 website_0 ever_0 freeze_0 ##s_8 (_12 which_7 is_19 rare_0 )_12 ,_36 its_1 really_2 easy_5 to_29 $T$ ._64 
+force_0 quit_0 
+1
+it_28 rarely_0 $T$ and_46 when_4 does_9 '_15 s_4 incredibly_0 slow_1 ._65 
+works_1 
+-1
+i_36 also_6 enjoy_0 the_54 fact_2 that_12 my_16 mac_4 ##book_3 pro_0 laptop_6 allows_0 me_7 to_30 run_0 $T$ on_8 it_29 by_0 using_4 v_0 ##m_0 ##ware_0 program_1 ._66 
+windows_4 7_1 
+1
+i_37 also_7 enjoy_1 the_55 fact_3 that_13 my_17 mac_5 ##book_4 pro_1 laptop_7 allows_1 me_8 to_31 run_1 windows_5 7_2 on_9 it_30 by_1 using_5 $T$ ._67 
+v_1 ##m_1 ##ware_1 program_2 
+0
+it_31 '_16 s_5 so_7 much_1 easier_0 to_32 navigate_0 through_0 the_56 $T$ ,_37 find_3 files_5 and_47 runs_1 a_25 lot_0 faster_0 !_10 
+operating_2 system_8 
+1
+it_32 '_17 s_6 so_8 much_2 easier_1 to_33 navigate_1 through_1 the_57 operating_3 system_9 ,_38 find_4 files_6 and_48 $T$ a_26 lot_1 faster_1 !_11 
+runs_2 
+1
+it_33 '_18 s_7 so_9 much_3 easier_2 to_34 $T$ through_2 the_58 operating_4 system_10 ,_39 find_5 files_7 and_49 runs_3 a_27 lot_2 faster_2 !_12 
+navigate_2 
+1
+it_34 '_19 s_8 so_10 much_4 easier_3 to_35 navigate_3 through_3 the_59 operating_5 system_11 ,_40 $T$ and_50 runs_4 a_28 lot_3 faster_3 !_13 
+find_6 files_8 
+1
+purchased_0 a_29 to_36 ##shi_3 ##ba_3 lap_0 top_0 it_35 worked_0 good_6 until_3 just_7 after_8 the_60 $T$ went_0 out_3 ._68 
+warren_1 ##ty_1 
+-1
+i_38 wanted_0 to_37 purchase_1 the_61 $T$ and_51 they_2 refused_0 ,_41 because_7 knew_1 it_36 was_8 trouble_0 ._69 
+extended_0 warrant_6 ##y_6 
+0
+we_0 upgraded_0 the_62 $T$ to_38 four_0 gig_0 ##aby_0 ##tes_0 in_8 order_0 take_1 advantage_0 of_24 perform_0 ##ace_0 increase_0 speed_1 ._70 
+memory_0 
+0
+we_1 upgraded_1 the_63 memory_1 to_39 four_1 gig_1 ##aby_1 ##tes_1 in_9 order_1 take_2 advantage_1 of_25 perform_1 ##ace_1 increase_1 $T$ ._71 
+speed_2 
+1
+we_2 upgraded_2 the_64 memory_2 to_40 four_2 gig_2 ##aby_2 ##tes_2 in_10 order_2 take_3 advantage_2 of_26 $T$ increase_2 speed_3 ._72 
+perform_2 ##ace_2 
+1
+the_65 reality_0 was_9 ,_42 it_37 heated_0 up_6 very_6 quickly_0 and_52 took_1 way_1 too_2 long_0 to_41 do_4 simple_0 things_0 like_6 $T$ ._73 
+opening_0 my_18 documents_0 folder_0 
+-1
+i_39 had_5 always_0 used_1 pcs_0 and_53 been_0 constantly_0 frustrated_0 by_2 the_66 crashing_0 poorly_0 designed_0 $T$ that_14 were_0 never_2 very_7 intuitive_0 ._74 
+operating_6 systems_0 
+-1
+then_5 ,_43 within_0 5_0 months_2 the_67 $T$ crap_0 ##ped_0 out_4 on_10 me_9 ._75 
+charge_4 ##r_2 
+-1
+and_54 if_2 you_12 have_9 a_30 iphone_1 or_6 ipod_0 touch_4 can_5 connect_0 download_0 songs_0 to_42 it_38 at_4 high_4 $T$ ._76 
+speed_4 
+1
+i_40 love_3 the_68 $T$ ._77 
+glass_0 touch_5 ##pad_0 
+1
+i_41 continued_0 to_43 take_4 the_69 computer_6 in_11 again_0 and_55 they_3 replaced_0 $T$ mother_1 board_0 yet_0 ._78 
+hard_7 drive_4 
+-1
+i_42 continued_1 to_44 take_5 the_70 computer_7 in_12 again_1 and_56 they_4 replaced_1 hard_8 drive_5 $T$ yet_1 ._79 
+mother_2 board_1 
+-1
+i_43 am_2 using_6 the_71 $_2 t_0 -_12 sound_0 is_20 good_7 ._80 $T$ 
+external_4 speaker_0 
+1
+i_44 am_3 using_7 the_72 external_5 speaker_1 -_13 $T$ is_21 good_8 ._81 
+sound_1 
+1
+still_1 testing_0 the_73 $T$ as_10 i_45 thought_0 it_39 would_3 be_4 better_0 ,_44 but_8 am_4 very_8 happy_1 with_19 upgrade_0 ._82 
+battery_3 life_2 
+-1
+then_6 hp_1 sends_0 it_40 back_2 to_45 me_10 with_20 the_74 $T$ screwed_0 up_7 ,_45 not_16 able_4 connect_1 ._83 
+hardware_2 
+-1
+oh_0 yeah_0 ,_46 do_5 n_0 '_20 t_1 forget_0 the_75 expensive_0 $T$ to_46 and_57 from_3 hp_2 ._84 
+shipping_0 
+-1
+everything_2 is_22 so_11 easy_6 to_47 use_9 ,_47 $T$ just_8 much_5 simpler_0 than_1 microsoft_1 ._85 
+mac_6 software_5 
+1
+everything_3 is_23 so_12 easy_7 to_48 use_10 ,_48 mac_7 software_6 just_9 much_6 simpler_1 than_2 microsoft_2 ._86 
+
+-1
+everything_4 is_24 so_13 easy_8 to_49 $T$ ,_49 mac_8 software_7 just_10 much_7 simpler_2 than_3 microsoft_3 ._87 
+use_11 
+1
+and_58 if_3 you_13 do_6 a_31 lot_4 of_27 writing_0 ,_50 editing_0 is_25 problem_4 since_0 there_3 no_5 forward_0 $T$ ._88 
+del_0 ##ete_0 key_0 
+-1
+and_59 if_4 you_14 do_7 a_32 lot_5 of_28 writing_1 ,_51 $T$ is_26 problem_5 since_1 there_4 no_6 forward_1 del_1 ##ete_1 key_1 ._89 
+editing_1 
+-1
+its_2 ease_0 of_29 $T$ and_60 the_76 top_1 service_8 from_4 apple_0 -_14 be_5 it_41 their_3 phone_1 assistance_0 or_7 belly_0 ##ing_1 up_8 to_50 genius_0 bar_0 can_6 not_17 beat_0 ._90 
+use_12 
+1
+its_3 ease_1 of_30 use_13 and_61 the_77 top_2 $T$ from_5 apple_1 -_15 be_6 it_42 their_4 phone_2 assistance_1 or_8 belly_1 ##ing_2 up_9 to_51 genius_1 bar_1 can_7 not_18 beat_1 ._91 
+service_9 
+1
+its_4 ease_2 of_31 use_14 and_62 the_78 top_3 service_10 from_6 apple_2 -_16 be_7 it_43 their_5 $T$ or_9 belly_2 ##ing_3 up_10 to_52 genius_2 bar_2 can_8 not_19 beat_2 ._92 
+phone_3 assistance_2 
+1
+its_5 ease_3 of_32 use_15 and_63 the_79 top_4 service_11 from_7 apple_3 -_17 be_8 it_44 their_6 phone_4 assistance_3 or_10 belly_3 ##ing_4 up_11 to_53 $_3 t_2 can_9 not_20 beat_3 ._93 $T$ 
+genius_3 bar_3 
+1
+it_45 has_6 a_33 10_0 hour_0 $T$ when_5 you_15 '_21 re_4 doing_0 web_2 brows_0 ##ing_5 and_64 word_0 editing_2 ,_52 making_0 perfect_0 for_6 the_80 classroom_0 or_11 office_1 in_13 terms_0 of_33 gaming_4 movie_0 playing_0 ll_0 have_10 just_11 over_3 5_1 hours_2 ._94 
+battery_4 life_3 
+1
+it_46 has_7 a_34 10_1 hour_1 $T$ when_6 you_16 '_22 re_5 doing_1 web_3 brows_1 ##ing_6 and_65 word_1 editing_3 ,_53 making_1 perfect_1 for_7 the_81 classroom_1 or_12 office_2 in_14 terms_1 of_34 gaming_5 movie_1 playing_1 ll_1 have_11 just_12 over_4 5_2 hours_3 ._95 
+battery_5 life_4 
+1
+it_47 has_8 a_35 10_2 hour_2 battery_6 life_5 when_7 you_17 '_23 re_6 doing_2 web_4 brows_2 ##ing_7 and_66 word_2 editing_4 ,_54 making_2 perfect_2 for_8 the_82 classroom_2 or_13 office_3 in_15 terms_2 of_35 $T$ movie_2 playing_2 ll_2 have_12 just_13 over_5 5_3 hours_4 ._96 
+gaming_6 
+0
+it_48 has_9 a_36 10_3 hour_3 battery_7 life_6 when_8 you_18 '_24 re_7 doing_3 web_5 brows_3 ##ing_8 and_67 word_3 editing_5 ,_55 making_3 perfect_3 for_9 the_83 classroom_3 or_14 office_4 in_16 terms_3 of_36 gaming_7 $T$ ll_3 have_13 just_14 over_6 5_4 hours_5 ._97 
+movie_3 playing_3 
+0
+it_49 has_10 a_37 10_4 hour_4 battery_8 life_7 when_9 you_19 '_25 re_8 doing_4 $T$ and_68 word_4 editing_6 ,_56 making_4 perfect_4 for_10 the_84 classroom_4 or_15 office_5 in_17 terms_4 of_37 gaming_8 movie_4 playing_4 ll_4 have_14 just_15 over_7 5_5 hours_6 ._98 
+web_6 brows_4 ##ing_9 
+0
+it_50 has_11 a_38 10_5 hour_5 battery_9 life_8 when_10 you_20 '_26 re_9 doing_5 web_7 brows_5 ##ing_10 and_69 $T$ ,_57 making_5 perfect_5 for_11 the_85 classroom_5 or_16 office_6 in_18 terms_5 of_38 gaming_9 movie_5 playing_5 ll_5 have_15 just_16 over_8 5_6 hours_7 ._99 
+word_5 editing_7 
+0
+ace_0 ##r_3 has_12 set_0 me_11 up_12 with_21 free_0 $T$ ,_58 when_11 they_5 are_2 available_0 since_2 i_46 asked_0 ._100 
+recovery_0 discs_0 
+1
+i_47 also_8 purchased_1 office_7 max_0 '_27 s_9 `_6 assurance_0 with_22 the_86 no_7 lemon_0 clause_0 ._101 
+
+0
+i_48 eventually_0 did_0 the_87 migration_0 from_8 my_19 $T$ which_8 uses_0 usb_1 ._102 
+im_0 ##ac_0 backup_0 disc_3 
+0
+i_49 eventually_1 did_1 the_88 migration_1 from_9 my_20 im_1 ##ac_1 backup_1 disc_4 which_9 uses_1 $T$ ._103 
+usb_2 
+0
+the_89 $T$ seems_0 to_54 be_9 very_9 good_9 ,_59 and_70 have_16 had_6 no_8 issues_0 with_23 it_51 ._104 
+battery_10 life_9 
+1
+enabling_0 the_90 $T$ is_27 useless_0 ._105 
+battery_11 timer_0 
+-1
+$T$ on_11 the_91 outside_0 were_1 alright_0 but_9 i_50 did_2 not_21 track_0 in_19 core_0 processing_0 unit_0 ._106 
+temperatures_0 
+0
+temperatures_1 on_12 the_92 outside_1 were_2 alright_1 but_10 i_51 did_3 not_22 track_1 in_20 core_1 processing_1 unit_1 ._107 
+
+0
+going_0 to_55 bring_0 it_52 $T$ today_0 ._108 
+service_12 
+0
+there_5 is_28 no_9 need_0 to_56 purchase_2 $T$ ,_60 which_10 saves_0 me_12 a_39 lot_6 of_39 time_1 and_71 money_0 ._109 
+virus_1 protection_0 for_12 mac_9 
+1
+but_11 we_3 had_7 paid_0 for_13 $T$ ,_61 and_72 there_6 was_10 none_0 ._110 
+blue_1 ##tooth_0 
+-1
+so_14 ,_62 i_52 paid_1 a_40 visit_0 to_57 $T$ at_5 alexandra_0 road_0 hoping_0 they_6 can_10 make_4 the_93 hi_0 ##nge_0 tighter_0 ._111 
+l_1 ##g_0 notebook_0 service_13 center_3 
+0
+so_15 ,_63 i_53 paid_2 a_41 visit_1 to_58 l_2 ##g_1 notebook_1 service_14 center_4 at_6 alexandra_1 road_1 hoping_1 they_7 can_11 make_5 the_94 $T$ tighter_1 ._112 
+hi_1 ##nge_1 
+-1
+my_21 daughter_0 uses_2 it_53 for_14 $T$ ,_64 email_2 facebook_0 pictures_0 and_73 music_0 ._113 
+games_0 
+0
+it_54 is_29 always_1 reliable_0 ,_65 never_3 bug_0 ##ged_2 and_74 $T$ well_0 ._114 
+responds_0 
+1
+after_9 about_5 a_42 week_0 i_54 finally_2 got_6 it_55 back_3 and_75 was_11 told_3 that_15 the_95 $T$ had_8 failed_0 so_16 they_8 installed_2 new_2 ._115 
+mother_3 ##board_1 
+-1
+after_10 about_6 a_43 week_1 i_55 finally_3 got_7 it_56 back_4 and_76 was_12 told_4 that_16 the_96 $T$ had_9 failed_1 so_17 they_9 installed_3 new_3 ._116 
+mother_4 ##board_2 
+0
+it_57 was_13 slow_2 ,_66 locked_0 up_13 and_77 also_9 had_10 $T$ replaced_2 after_11 only_0 2_4 months_3 !_14 
+hardware_3 
+-1
+they_10 had_11 to_59 replace_0 the_97 $T$ in_21 april_0 
+mother_5 ##board_3 
+-1
+yes_0 ,_67 the_98 computer_8 was_14 light_4 weight_0 less_0 expensive_1 than_4 average_0 laptop_8 and_78 pretty_0 self_0 ex_0 ##pl_0 ##anto_0 ##ry_0 in_22 $T$ ._117 
+use_16 
+1
+also_10 ,_68 if_5 you_21 need_1 to_60 talk_2 a_44 $T$ there_7 is_30 charge_5 which_11 i_56 believe_0 robbery_0 since_3 are_3 charged_0 enormous_0 amounts_0 for_15 very_10 badly_0 designed_1 system_12 most_0 people_0 would_4 have_17 went_1 with_24 xp_0 they_11 could_0 ._118 
+represent_0 ##ive_0 at_7 microsoft_4 
+-1
+also_11 ,_69 if_6 you_22 need_2 to_61 talk_3 a_45 represent_1 ##ive_1 at_8 microsoft_5 there_8 is_31 charge_6 which_12 i_57 believe_1 robbery_1 since_4 are_4 charged_1 enormous_1 amounts_1 for_16 very_11 badly_1 designed_2 $T$ most_1 people_1 would_5 have_18 went_2 with_25 xp_1 they_12 could_1 ._119 
+system_13 
+-1
+also_12 ,_70 if_7 you_23 need_3 to_62 talk_4 a_46 represent_2 ##ive_2 at_9 microsoft_6 there_9 is_32 charge_7 which_13 i_58 believe_2 robbery_2 since_5 are_5 charged_2 enormous_2 amounts_2 for_17 very_12 badly_2 designed_3 system_14 most_2 people_2 would_6 have_19 went_3 with_26 $T$ they_13 could_2 ._120 
+xp_2 
+1
+i_59 love_4 $T$ which_14 is_33 a_47 vast_0 imp_0 ##rov_0 ##ment_0 over_9 vista_0 ._121 
+windows_6 7_3 
+1
+i_60 love_5 windows_7 7_4 which_15 is_34 a_48 vast_1 imp_1 ##rov_1 ##ment_1 over_10 $T$ ._122 
+vista_1 
+-1
+$T$ is_35 great_3 ,_71 very_13 quiet_0 for_18 all_9 the_99 typing_0 that_17 i_61 do_8 ._123 
+keyboard_1 
+1
+$T$ is_36 an_7 insult_0 to_63 it_58 customers_0 who_0 pay_0 good_10 money_1 for_19 sho_0 ##ddy_0 products_0 ._124 
+dell_0 '_28 s_10 customer_3 di_0 ##sser_0 ##vic_0 ##e_0 
+-1
+it_59 had_12 a_49 $T$ mal_0 ##fu_0 ##nction_0 after_12 10_6 minutes_0 of_40 general_0 use_17 ,_72 and_79 would_7 not_23 move_0 past_1 this_9 error_0 ._125 
+cooling_0 system_15 
+-1
+it_60 had_13 a_50 cooling_1 system_16 mal_1 ##fu_1 ##nction_1 after_13 10_7 minutes_1 of_41 general_1 $T$ ,_73 and_80 would_8 not_24 move_1 past_2 this_10 error_1 ._126 
+use_18 
+0
+i_62 can_12 render_0 av_0 ##ch_0 ##d_1 movies_0 with_27 little_0 effort_0 ,_74 which_16 was_15 a_51 problem_6 for_20 most_3 pc_1 '_29 s_11 unless_4 you_24 had_14 quad_0 core_2 ##7_0 ._127 
+
+1
+after_14 talking_3 it_61 over_11 with_28 the_100 very_14 knowledge_0 ##able_4 $T$ ,_75 i_63 chose_0 mac_10 ##book_5 pro_2 white_0 ._128 
+sales_3 associate_0 
+1
+if_8 you_25 really_3 want_0 a_52 bang_0 -_18 up_14 $T$ and_81 do_9 n_1 '_30 t_3 need_4 to_64 run_2 windows_8 applications_4 ,_76 go_2 with_29 an_8 apple_4 ;_0 
+system_17 
+1
+if_9 you_26 really_4 want_1 a_53 bang_1 -_19 up_15 system_18 and_82 do_10 n_2 '_31 t_4 need_5 to_65 run_3 $T$ ,_77 go_3 with_30 an_9 apple_5 ;_1 
+windows_9 applications_5 
+0
+you_27 wo_0 n_3 '_32 t_5 have_20 to_66 spend_2 go_4 ##bs_0 of_42 money_2 on_13 some_2 in_23 ##ef_0 ##fi_0 ##cie_0 ##nt_0 $T$ that_18 needs_0 be_10 updated_3 every_1 month_1 and_83 constantly_1 drains_0 your_3 wallet_0 ._129 
+virus_2 program_3 
+-1
+it_62 $T$ like_7 seven_0 pounds_0 or_17 something_0 that_19 ._130 
+weighed_0 
+0
+it_63 weighed_1 like_8 $T$ or_18 something_1 that_20 ._131 
+seven_1 pounds_1 
+0
+2_5 months_4 later_0 ,_78 the_101 $T$ went_4 ._132 
+battery_12 
+-1
+you_28 may_0 need_6 to_67 special_0 order_3 a_54 $T$ ._133 
+bag_0 
+0
+it_64 '_33 s_12 $T$ is_37 even_4 cool_0 ._134 
+color_0 
+1
+$T$ are_6 all_10 in_24 weird_0 places_0 and_84 is_38 way_2 too_3 large_4 for_21 the_102 it_65 designed_4 ._135 
+keys_0 
+-1
+keys_1 are_7 all_11 in_25 weird_1 places_1 and_85 is_39 way_3 too_4 large_5 for_22 the_103 it_66 $T$ ._136 
+designed_5 
+-1
+yes_1 ,_79 a_55 mac_11 is_40 much_8 more_5 money_3 than_5 the_104 average_1 laptop_9 out_5 there_10 but_12 no_10 comparison_0 in_26 $T$ speed_5 and_86 just_17 cool_1 factor_0 ._137 
+style_0 
+1
+yes_2 ,_80 a_56 mac_12 is_41 much_9 more_6 money_4 than_6 the_105 average_2 laptop_10 out_6 there_11 but_13 no_11 comparison_1 in_27 style_1 $T$ and_87 just_18 cool_2 factor_1 ._138 
+speed_6 
+1
+the_106 $T$ feels_0 good_11 and_88 i_64 type_0 just_19 fine_0 on_14 it_67 ._139 
+keyboard_2 
+1
+i_65 thought_1 the_107 white_1 mac_13 computers_0 looked_0 dirty_0 too_5 qui_0 ##cl_0 ##y_7 where_0 you_29 use_19 $T$ and_89 place_0 your_4 hands_0 when_12 typing_1 ._140 
+mouse_4 ##pad_1 
+0
+and_90 not_25 to_68 mention_0 after_15 using_8 it_68 for_23 a_57 few_0 months_5 or_19 so_18 ,_81 the_108 $T$ will_5 slowly_0 less_1 hold_0 charge_8 until_4 you_30 ca_0 n_4 '_34 t_6 leave_0 un_0 ##pl_1 ##ug_0 ##ged_3 more_7 than_7 5_7 minutes_2 without_0 thing_7 dying_0 ._141 
+battery_13 
+-1
+best_2 buy_4 -_20 5_8 stars_0 +_0 (_13 $T$ ,_82 service_15 respect_0 for_24 old_3 men_0 who_1 are_8 n_5 '_35 t_7 familiar_0 with_31 the_109 technology_0 )_13 dell_1 computers_1 3_0 support_1 owes_0 a_58 me_13 couple_0 
+sales_4 
+1
+best_3 buy_5 -_21 5_9 stars_1 +_1 (_14 sales_5 ,_83 $T$ respect_1 for_25 old_4 men_1 who_2 are_9 n_6 '_36 t_8 familiar_1 with_32 the_110 technology_1 )_14 dell_2 computers_2 3_1 support_2 owes_1 a_59 me_14 couple_1 
+service_16 
+1
+best_4 buy_6 -_22 5_10 stars_2 +_2 (_15 sales_6 ,_84 service_17 respect_2 for_26 old_5 men_2 who_3 are_10 n_7 '_37 t_9 familiar_2 with_33 the_111 technology_2 )_15 dell_3 computers_3 3_2 support_3 owes_2 a_60 me_15 couple_2 
+
+1
+no_12 complaints_0 with_34 their_7 desktop_0 ,_85 and_91 maybe_0 because_8 it_69 just_20 sits_0 on_15 your_5 you_31 do_11 n_8 '_38 t_10 carry_0 around_0 which_17 could_3 jar_0 the_112 $T$ or_20 mother_6 ##board_4 ._142 
+hard_9 drive_6 
+0
+no_13 complaints_1 with_35 their_8 desktop_1 ,_86 and_92 maybe_1 because_9 it_70 just_21 sits_1 on_16 your_6 you_32 do_12 n_9 '_39 t_11 carry_1 around_1 which_18 could_4 jar_1 the_113 hard_10 drive_7 or_21 $T$ ._143 
+mother_7 ##board_5 
+0
+yes_3 ,_87 they_14 cost_3 more_8 but_14 than_8 make_6 up_16 for_27 it_71 in_28 $T$ construction_0 quality_5 and_93 longevity_0 ._144 
+speed_7 
+1
+yes_4 ,_88 they_15 cost_4 more_9 but_15 than_9 make_7 up_17 for_28 it_72 in_29 speed_8 $T$ and_94 longevity_1 ._145 
+construction_1 quality_6 
+1
+yes_5 ,_89 they_16 cost_5 more_10 but_16 than_10 make_8 up_18 for_29 it_73 in_30 speed_9 construction_2 quality_7 and_95 $T$ ._146 
+longevity_2 
+1
+since_6 i_66 $T$ over_12 100_2 w_0 ##pm_0 ,_90 look_1 for_30 a_61 unit_2 that_21 has_13 comfort_0 ##ble_0 (_16 no_14 keys_2 sticking_0 or_22 la_0 ##gging_0 strange_0 configuration_0 of_43 `_7 extra_0 key_2 '_40 etc_2 ._147 
+keyboard_3 
+1
+since_7 i_67 keyboard_4 over_13 100_3 w_1 ##pm_1 ,_91 look_2 for_31 a_62 unit_3 that_22 has_14 comfort_1 ##ble_1 (_17 no_15 $T$ sticking_1 or_23 la_1 ##gging_1 strange_1 configuration_1 of_44 `_8 extra_1 key_3 '_41 etc_3 ._148 
+keys_3 
+1
+since_8 i_68 keyboard_5 over_14 100_4 w_2 ##pm_2 ,_92 look_3 for_32 a_63 unit_4 that_23 has_15 comfort_2 ##ble_2 (_18 no_16 keys_4 sticking_2 or_24 la_2 ##gging_2 strange_2 configuration_2 of_45 `_9 extra_2 key_4 '_42 etc_4 ._149 
+
+1
+)_16 i_69 also_13 tried_0 the_114 $T$ and_96 compared_0 it_74 to_69 other_1 net_3 ##books_2 in_31 store_0 ._150 
+touch_6 pad_0 
+0
+it_75 absolutely_4 is_42 more_11 expensive_2 than_11 most_4 pc_2 laptop_11 ##s_9 ,_93 but_17 the_115 ease_4 of_46 $T$ security_0 and_97 minimal_0 problems_2 that_24 have_21 arise_0 ##n_0 make_9 well_1 worth_0 price_2 ##tag_0 ._151 
+use_20 
+1
+it_76 absolutely_5 is_43 more_12 expensive_3 than_12 most_5 pc_3 laptop_12 ##s_10 ,_94 but_18 the_116 ease_5 of_47 use_21 $T$ and_98 minimal_1 problems_3 that_25 have_22 arise_1 ##n_1 make_10 well_2 worth_1 price_3 ##tag_1 ._152 
+security_1 
+1
+it_77 gets_0 stuck_0 all_12 of_48 the_117 time_2 you_33 $T$ ,_95 and_99 have_23 to_70 keep_4 tapping_0 on_17 get_3 work_2 ._153 
+use_22 
+-1
+it_78 gets_1 stuck_1 all_13 of_49 the_118 time_3 you_34 use_23 ,_96 and_100 have_24 to_71 keep_5 tapping_1 on_18 get_4 $T$ ._154 
+work_3 
+-1
+lots_4 of_50 $T$ ._155 
+pre_2 ##loaded_2 software_8 
+1
+i_70 wish_0 it_79 had_15 a_64 $T$ though_0 ,_97 then_7 would_9 be_11 perfect_6 !_15 
+web_8 ##cam_2 
+-1
+my_22 favorite_0 part_0 of_51 this_11 computer_9 is_44 that_26 it_80 has_16 a_65 $T$ so_19 i_71 can_13 connect_2 to_72 bigger_0 screen_7 ._156 
+v_2 ##ga_0 port_0 
+1
+my_23 favorite_1 part_1 of_52 this_12 computer_10 is_45 that_27 it_81 has_17 a_66 v_3 ##ga_1 port_1 so_20 i_72 can_14 connect_3 to_73 bigger_1 $T$ ._157 
+screen_8 
+0
+another_0 thing_8 i_73 might_0 add_0 is_46 the_119 $T$ excellent_0 ._158 
+battery_14 life_10 
+1
+one_10 draw_0 ##back_0 ,_98 i_74 wish_1 the_120 $T$ were_3 back_5 ##lit_0 ._159 
+keys_5 
+-1
+ace_1 ##r_4 was_16 no_17 help_2 and_101 ga_0 ##rmin_0 could_5 not_26 determine_0 the_121 problem_7 (_19 after_16 spending_0 about_7 2_6 hours_8 with_36 me_16 )_17 ,_99 so_21 i_75 returned_0 it_82 purchased_2 a_67 to_74 ##shi_4 ##ba_4 r_0 ##70_0 ##0_0 that_28 seems_1 even_5 nice_0 able_5 load_0 all_14 of_53 my_24 $T$ ._160 
+software_9 
+1
+i_76 wish_2 the_122 $T$ could_6 be_12 louder_0 and_102 mouse_5 didn_0 ##t_1 break_2 after_17 only_1 a_68 month_2 ._161 
+volume_0 
+-1
+i_77 wish_3 the_123 volume_1 could_7 be_13 louder_1 and_103 $T$ didn_1 ##t_2 break_3 after_18 only_2 a_69 month_3 ._162 
+mouse_6 
+-1
+i_78 play_0 a_70 lot_7 of_54 casual_0 games_1 online_0 ,_100 and_104 the_124 $T$ is_47 very_15 responsive_0 ._163 
+touch_7 ##pad_2 
+1
+granted_0 ,_101 it_83 '_43 s_13 still_2 a_71 very_16 new_4 laptop_13 but_19 in_32 comparison_2 to_75 my_25 previous_0 ##s_11 and_105 desktop_2 mac_14 $T$ noticeably_0 quicker_0 ._164 
+boots_0 up_19 
+1
+it_84 caught_0 a_72 virus_3 that_29 completely_1 wiped_0 out_7 my_26 $T$ in_33 matter_0 of_55 hours_9 ._165 
+hard_11 drive_8 
+-1
+it_85 is_48 everything_5 i_79 '_44 d_0 hoped_0 would_10 be_14 from_10 a_73 $T$ ,_102 but_20 somehow_0 bit_0 more_13 sturdy_0 ._166 
+look_4 and_106 feel_0 stand_0 ##point_0 
+1
+the_125 only_3 fact_4 i_80 don_0 ##t_3 like_9 about_8 apples_0 is_49 they_17 generally_0 use_24 $T$ and_107 but_21 after_19 install_0 mo_0 ##zzi_0 ##lla_0 fir_0 ##fo_0 ##x_0 love_6 every_2 single_0 bit_1 it_86 ._167 
+safari_0 
+-1
+the_126 only_4 fact_5 i_81 don_1 ##t_4 like_10 about_9 apples_1 is_50 they_18 generally_1 use_25 $T$ and_108 but_22 after_20 install_1 mo_1 ##zzi_1 ##lla_1 fir_1 ##fo_1 ##x_1 love_7 every_3 single_1 bit_2 it_87 ._168 
+safari_1 
+-1
+the_127 only_5 fact_6 i_82 don_2 ##t_5 like_11 about_10 apples_2 is_51 they_19 generally_2 use_26 safari_2 and_109 but_23 after_21 install_2 $T$ love_8 every_4 single_2 bit_3 it_88 ._169 
+mo_2 ##zzi_2 ##lla_2 fir_2 ##fo_2 ##x_2 
+1
+the_128 $T$ was_17 not_27 there_12 at_10 all_15 ,_103 and_110 finger_0 ##print_0 reader_0 driver_0 would_11 be_15 but_24 software_10 hang_0 after_22 installation_0 1_3 /_0 2_7 way_4 done_0 ._170 
+blue_2 ##tooth_1 
+-1
+the_129 blue_3 ##tooth_2 was_18 not_28 there_13 at_11 all_16 ,_104 and_111 $T$ would_12 be_16 but_25 software_11 hang_1 after_23 installation_1 1_4 /_1 2_8 way_5 done_1 ._171 
+finger_1 ##print_1 reader_1 driver_1 
+-1
+the_130 blue_4 ##tooth_3 was_19 not_29 there_14 at_12 all_17 ,_105 and_112 finger_2 ##print_2 reader_2 driver_2 would_13 be_17 but_26 $T$ hang_2 after_24 installation_2 1_5 /_2 2_9 way_6 done_2 ._172 
+software_12 
+-1
+great_4 $T$ ,_106 speed_10 display_0 ._173 
+battery_15 
+1
+great_5 battery_16 ,_107 $T$ display_1 ._174 
+speed_11 
+1
+great_6 battery_17 ,_108 speed_12 $T$ ._175 
+display_2 
+1
+the_131 $T$ was_20 fast_1 ,_109 and_113 i_83 would_14 not_30 hesitate_0 to_76 purchase_3 this_13 laptop_14 again_2 ._176 
+delivery_0 
+1
+i_84 '_45 ve_0 been_1 impressed_0 with_37 the_132 $T$ and_114 performance_0 for_33 such_0 a_74 small_0 amount_0 of_56 memory_3 ._177 
+battery_18 life_11 
+1
+i_85 '_46 ve_1 been_2 impressed_1 with_38 the_133 battery_19 life_12 and_115 $T$ for_34 such_1 a_75 small_1 amount_1 of_57 memory_4 ._178 
+performance_1 
+1
+i_86 '_47 ve_2 been_3 impressed_2 with_39 the_134 battery_20 life_13 and_116 performance_2 for_35 such_2 a_76 small_2 amount_2 of_58 $T$ ._179 
+memory_5 
+-1
+it_89 '_48 s_14 $T$ are_11 terrific_0 ,_110 including_1 the_135 replacements_0 for_36 microsoft_7 office_8 ._180 
+applications_6 
+1
+it_90 '_49 s_15 applications_7 are_12 terrific_1 ,_111 including_2 the_136 replacements_1 for_37 $T$ ._181 
+microsoft_8 office_9 
+1
+they_20 improved_0 nothing_0 else_0 such_3 as_11 $T$ ,_112 appearance_0 cooling_2 system_19 graphics_0 card_3 etc_5 ._182 
+resolution_0 
+-1
+they_21 improved_1 nothing_1 else_1 such_4 as_12 resolution_1 ,_113 $T$ cooling_3 system_20 graphics_1 card_4 etc_6 ._183 
+appearance_1 
+-1
+they_22 improved_2 nothing_2 else_2 such_5 as_13 resolution_2 ,_114 appearance_2 $T$ graphics_2 card_5 etc_7 ._184 
+cooling_4 system_21 
+-1
+they_23 improved_3 nothing_3 else_3 such_6 as_14 resolution_3 ,_115 appearance_3 cooling_5 system_22 $T$ etc_8 ._185 
+graphics_3 card_6 
+-1
+i_87 got_8 it_91 back_6 and_117 my_27 $T$ mic_0 were_4 short_0 ##ing_11 out_8 anytime_0 touched_0 the_137 lid_0 ,_116 (_20 mind_0 you_35 this_14 was_21 means_0 of_59 communication_0 with_40 fiance_0 who_4 deployed_0 )_18 but_27 suffered_0 thru_0 would_15 con_2 ##stand_0 ##ly_0 have_25 to_77 reset_1 computer_11 be_18 able_6 use_27 cam_0 they_24 went_5 ._186 
+built_0 -_23 in_34 web_9 ##cam_3 
+-1
+i_88 got_9 it_92 back_7 and_118 my_28 built_1 -_24 in_35 web_10 ##cam_4 mic_1 were_5 short_1 ##ing_12 out_9 anytime_1 touched_1 the_138 lid_1 ,_117 (_21 mind_1 you_36 this_15 was_22 means_1 of_60 communication_1 with_41 fiance_1 who_5 deployed_1 )_19 but_28 suffered_1 thru_1 would_16 con_3 ##stand_1 ##ly_1 have_26 to_78 reset_2 computer_12 be_19 able_7 use_28 cam_1 they_25 went_6 ._187 
+
+-1
+i_89 got_10 it_93 back_8 and_119 my_29 built_2 -_25 in_36 web_11 $_4 t_12 mic_2 were_6 short_2 ##ing_13 out_10 anytime_2 touched_2 the_139 lid_2 ,_118 (_22 mind_2 you_37 this_16 was_23 means_2 of_61 communication_2 with_42 fiance_2 who_6 deployed_2 )_20 but_29 suffered_2 thru_2 would_17 con_4 ##stand_2 ##ly_2 have_27 to_79 reset_3 computer_13 be_20 able_8 use_29 $T$ they_26 went_7 ._188 
+cam_2 
+-1
+i_90 got_11 it_94 back_9 and_120 my_30 built_3 -_26 in_37 web_12 ##cam_5 $T$ were_7 short_3 ##ing_14 out_11 anytime_3 touched_3 the_140 lid_3 ,_119 (_23 mind_3 you_38 this_17 was_24 means_3 of_62 communication_3 with_43 fiance_3 who_7 deployed_3 )_21 but_30 suffered_3 thru_3 would_18 con_5 ##stand_3 ##ly_3 have_28 to_80 reset_4 computer_14 be_21 able_9 use_30 cam_3 they_27 went_8 ._189 
+mic_3 
+-1
+is_52 this_18 partially_0 due_0 to_81 the_141 fact_7 that_30 it_95 running_5 $T$ ?_0 
+windows_10 vista_2 
+0
+the_142 $T$ has_18 a_77 bad_0 connector_0 with_44 power_4 supply_0 and_121 shortly_0 after_25 warren_2 ##ty_2 ex_1 ##pire_0 ##s_12 will_6 start_1 having_4 issues_1 ._190 
+board_2 
+-1
+the_143 board_3 has_19 a_78 bad_1 $T$ with_45 power_5 supply_1 and_122 shortly_1 after_26 warren_3 ##ty_3 ex_2 ##pire_1 ##s_13 will_7 start_2 having_5 issues_2 ._191 
+connector_1 
+-1
+the_144 board_4 has_20 a_79 bad_2 connector_2 with_46 $T$ and_123 shortly_2 after_27 warren_4 ##ty_4 ex_3 ##pire_2 ##s_14 will_8 start_3 having_6 issues_3 ._192 
+power_6 supply_2 
+-1
+the_145 board_5 has_21 a_80 bad_3 connector_3 with_47 power_7 supply_3 and_124 shortly_3 after_28 $T$ ex_4 ##pire_3 ##s_15 will_9 start_4 having_7 issues_4 ._193 
+warren_5 ##ty_5 
+-1
+the_146 board_6 has_22 a_81 bad_4 connector_4 with_48 $T$ and_125 shortly_4 after_29 warren_6 ##ty_6 ex_5 ##pire_4 ##s_16 will_10 start_5 having_8 issues_5 ._194 
+power_8 supply_4 
+-1
+my_31 dad_0 has_23 one_11 of_63 the_147 very_17 first_0 to_82 ##shi_5 ##bas_0 ever_1 made_0 ,_120 yes_6 its_6 ab_0 ##it_0 slow_3 now_2 but_31 still_3 works_2 well_3 and_126 i_91 hooked_0 $T$ !_16 
+ethernet_0 
+1
+my_32 dad_1 has_24 one_12 of_64 the_148 very_18 first_1 to_83 ##shi_6 ##bas_1 ever_2 made_1 ,_121 yes_7 its_7 ab_1 ##it_1 slow_4 now_3 but_32 still_4 $T$ well_4 and_127 i_92 hooked_1 ethernet_1 !_17 
+works_3 
+1
+mostly_0 i_93 love_9 the_149 $T$ ._195 
+drag_0 and_128 drop_0 feature_0 
+1
+oh_1 yeah_1 ,_122 and_129 if_10 the_150 fancy_0 $T$ breaks_0 guess_0 who_8 you_39 have_29 to_84 send_0 it_96 get_5 fixed_0 ?_1 
+web_13 ##cam_6 
+-1
+i_94 ordered_0 through_4 mac_15 ##mal_0 ##l_0 ,_123 which_19 saved_0 me_17 the_151 $T$ would_19 have_30 incurred_0 buying_0 locally_0 ._196 
+sales_7 tax_0 
+1
+of_65 course_0 ,_124 i_95 also_14 have_31 several_1 great_7 $T$ that_31 came_1 for_38 free_1 including_3 ##work_0 garage_4 ##band_0 and_130 im_2 ##ov_0 ##ie_1 ._197 
+software_13 packages_0 
+1
+of_66 course_1 ,_125 i_96 also_15 have_32 several_2 great_8 software_14 packages_1 that_32 came_2 for_39 free_2 including_4 ##work_1 garage_5 ##band_1 and_131 im_3 ##ov_1 ##ie_2 ._198 
+
+1
+of_67 course_2 ,_126 i_97 also_16 have_33 several_3 great_9 software_15 packages_2 that_33 came_3 for_40 free_3 including_5 ##work_2 $T$ and_132 im_4 ##ov_2 ##ie_3 ._199 
+garage_6 ##band_2 
+1
+of_68 course_3 ,_127 i_98 also_17 have_34 several_4 great_10 software_16 packages_3 that_34 came_4 for_41 free_4 including_6 ##work_3 garage_7 ##band_3 and_133 $T$ ._200 
+im_5 ##ov_3 ##ie_4 
+1
+the_152 $T$ is_53 very_19 large_6 and_134 crystal_0 clear_0 with_49 amazing_1 colors_0 resolution_4 ._201 
+screen_9 
+1
+the_153 screen_10 is_54 very_20 large_7 and_135 crystal_1 clear_1 with_50 amazing_2 $T$ resolution_5 ._202 
+colors_1 
+1
+the_154 screen_11 is_55 very_21 large_8 and_136 crystal_2 clear_2 with_51 amazing_3 colors_2 $T$ ._203 
+resolution_6 
+1
+after_30 a_82 little_1 more_14 than_13 year_0 of_69 owning_0 my_33 mac_16 ##book_6 pro_3 ,_128 the_155 $T$ has_25 completely_2 died_1 ._204 
+monitor_2 
+-1
+the_156 brand_1 of_70 $T$ has_26 just_22 become_0 ing_0 ##rained_0 in_38 our_0 lexi_0 ##con_0 now_4 ,_129 but_33 keep_6 mind_4 that_35 apple_6 started_1 it_97 all_18 ._205 
+itunes_0 
+1
+$T$ :_0 i_99 know_2 13_0 is_56 small_3 (_24 especially_0 for_42 a_83 desktop_3 replacement_0 )_22 but_34 with_52 an_10 external_6 monitor_3 ,_130 who_9 cares_0 ._206 
+size_0 
+-1
+size_1 :_1 i_100 know_3 13_1 is_57 small_4 (_25 especially_1 for_43 a_84 desktop_4 replacement_1 )_23 but_35 with_53 an_11 $T$ ,_131 who_10 cares_1 ._207 
+external_7 monitor_4 
+0
+additional_0 cave_0 ##at_4 :_2 the_157 $T$ comes_1 with_54 some_3 to_85 ##shi_7 ##ba_5 -_27 specific_0 software_17 that_36 may_1 or_25 not_31 be_22 a_85 user_0 '_50 s_16 liking_0 ._208 
+base_0 installation_3 
+-1
+additional_1 cave_1 ##at_5 :_3 the_158 base_1 installation_4 comes_2 with_55 some_4 to_86 ##shi_8 ##ba_6 -_28 specific_1 $T$ that_37 may_2 or_26 not_32 be_23 a_86 user_1 '_51 s_17 liking_1 ._209 
+software_18 
+-1
+taking_2 it_98 back_10 to_87 best_5 buy_7 i_101 found_0 that_38 a_87 tiny_0 plastic_0 piece_0 inside_0 had_16 broken_0 (_26 $T$ issue_0 )_24 ._210 
+man_0 ##uf_0 
+-1
+the_159 $T$ is_58 incredibly_1 bright_0 ,_132 much_10 brighter_0 than_14 my_34 power_9 ##book_7 and_137 very_22 crisp_0 ._211 
+display_3 
+1
+the_160 $T$ seems_2 to_88 always_2 perform_3 so_22 much_11 better_1 than_15 intel_0 ._212 
+am_5 ##d_2 turin_0 processor_0 
+1
+the_161 am_6 ##d_3 turin_1 processor_1 seems_3 to_89 always_3 perform_4 so_23 much_12 better_2 than_16 $T$ ._213 
+intel_1 
+-1
+after_31 that_39 the_162 said_3 it_99 was_25 under_5 $T$ ._214 
+warrant_7 ##y_8 
+0
+the_163 $T$ is_59 not_33 easiest_0 thing_9 to_90 navigate_4 due_1 stack_0 ##ing_15 ._215 
+start_6 menu_0 
+-1
+the_164 start_7 menu_1 is_60 not_34 easiest_1 thing_10 to_91 $T$ due_2 stack_1 ##ing_16 ._216 
+navigate_5 
+-1
+only_6 thing_11 i_102 would_20 want_2 to_92 add_1 this_19 is_61 an_12 internal_0 $T$ ._217 
+blur_0 ##ay_0 read_0 /_3 write_0 drive_9 
+-1
+the_165 $T$ said_4 he_0 had_17 tried_1 to_93 duplicate_0 damage_0 and_138 was_26 n_10 '_52 t_13 able_10 rec_2 ##reate_0 it_100 therefore_0 be_24 their_9 defect_0 ._218 
+service_18 tech_4 
+-1
+the_166 $T$ i_103 purchased_3 this_20 from_11 sent_1 it_101 back_11 ,_133 eventually_2 got_12 a_88 new_5 or_27 repaired_1 machine_3 approximately_0 3_3 weeks_0 later_1 ._219 
+tech_5 store_1 
+-1
+really_5 like_12 the_167 texture_0 ##d_4 $T$ which_20 shows_0 no_18 fingerprints_0 ._220 
+surface_0 
+1
+the_168 $T$ is_62 bright_1 and_139 keyboard_6 nice_1 ;_2 
+screen_12 
+1
+the_169 screen_13 is_63 bright_2 and_140 $T$ nice_2 ;_3 
+keyboard_7 
+1
+but_36 the_170 machine_4 is_64 awesome_0 and_141 $T$ great_11 i_104 love_10 snow_0 leopard_0 x_0 ._221 
+il_0 ##ife_0 
+1

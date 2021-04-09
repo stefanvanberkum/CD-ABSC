@@ -1,0 +1,13 @@
+restaurant to book
+---
+Test data. Positive: 260, Neutral: 459, Negative: 85, Total: 804
+---
+LCR-Rot-Hop++. Test accuracy: 0.304726, Combined accuracy: 0.304726
+---
+Test results.
+Positive. Correct: 167, Incorrect: 93, Total: 260
+Neutral. Correct: 69, Incorrect: 390, Total: 459
+Negative. Correct: 9, Incorrect: 76, Total: 85
+---
+Runtime: 161.63681483268738 seconds.
+

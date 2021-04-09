@@ -1,0 +1,108 @@
+restaurant to book with book fine-tuning using 300 aspects
+---
+Train data. Positive: 96, Neutral: 175, Negative: 29, Total: 300
+Test data. Positive: 260, Neutral: 459, Negative: 85, Total: 804
+---
+LCR-Rot-Hop++. Train accuracy: 0.956667, Test accuracy: 0.733831, Combined accuracy: 0.733831
+Maximum. Test accuracy: 0.745025, Combined accuracy: 0.745025
+
+Test results.
+Positive. Correct: 189, Incorrect: 71, Total: 260
+Neutral. Correct: 387, Incorrect: 72, Total: 459
+Negative. Correct: 14, Incorrect: 71, Total: 85
+
+restaurant to book with book fine-tuning using 600 aspects
+---
+Train data. Positive: 172, Neutral: 362, Negative: 66, Total: 600
+Test data. Positive: 260, Neutral: 459, Negative: 85, Total: 804
+---
+LCR-Rot-Hop++. Train accuracy: 0.933333, Test accuracy: 0.740050, Combined accuracy: 0.740050
+Maximum. Test accuracy: 0.752488, Combined accuracy: 0.752488
+
+Test results.
+Positive. Correct: 199, Incorrect: 61, Total: 260
+Neutral. Correct: 379, Incorrect: 80, Total: 459
+Negative. Correct: 17, Incorrect: 68, Total: 85
+
+restaurant to book with book fine-tuning using 900 aspects
+---
+Train data. Positive: 245, Neutral: 550, Negative: 105, Total: 900
+Test data. Positive: 260, Neutral: 459, Negative: 85, Total: 804
+---
+LCR-Rot-Hop++. Train accuracy: 0.927778, Test accuracy: 0.720149, Combined accuracy: 0.720149
+Maximum. Test accuracy: 0.763682, Combined accuracy: 0.763682
+
+Test results.
+Positive. Correct: 211, Incorrect: 49, Total: 260
+Neutral. Correct: 353, Incorrect: 106, Total: 459
+Negative. Correct: 15, Incorrect: 70, Total: 85
+
+restaurant to book with book fine-tuning using 1200 aspects
+---
+Train data. Positive: 337, Neutral: 733, Negative: 130, Total: 1200
+Test data. Positive: 260, Neutral: 459, Negative: 85, Total: 804
+---
+LCR-Rot-Hop++. Train accuracy: 0.914167, Test accuracy: 0.730100, Combined accuracy: 0.730100
+Maximum. Test accuracy: 0.753731, Combined accuracy: 0.753731
+
+Test results.
+Positive. Correct: 213, Incorrect: 47, Total: 260
+Neutral. Correct: 358, Incorrect: 101, Total: 459
+Negative. Correct: 16, Incorrect: 69, Total: 85
+
+restaurant to book with book fine-tuning using 1500 aspects
+---
+Train data. Positive: 408, Neutral: 935, Negative: 157, Total: 1500
+Test data. Positive: 260, Neutral: 459, Negative: 85, Total: 804
+---
+LCR-Rot-Hop++. Train accuracy: 0.890000, Test accuracy: 0.730100, Combined accuracy: 0.730100
+Maximum. Test accuracy: 0.761194, Combined accuracy: 0.761194
+
+Test results.
+Positive. Correct: 219, Incorrect: 41, Total: 260
+Neutral. Correct: 350, Incorrect: 109, Total: 459
+Negative. Correct: 18, Incorrect: 67, Total: 85
+
+restaurant to book with book fine-tuning using 1800 aspects
+---
+Train data. Positive: 487, Neutral: 1118, Negative: 195, Total: 1800
+Test data. Positive: 260, Neutral: 459, Negative: 85, Total: 804
+---
+LCR-Rot-Hop++. Train accuracy: 0.884444, Test accuracy: 0.736318, Combined accuracy: 0.736318
+Maximum. Test accuracy: 0.767413, Combined accuracy: 0.767413
+
+Test results.
+Positive. Correct: 210, Incorrect: 50, Total: 260
+Neutral. Correct: 370, Incorrect: 89, Total: 459
+Negative. Correct: 12, Incorrect: 73, Total: 85
+
+restaurant to book with book fine-tuning using 2100 aspects
+---
+Train data. Positive: 556, Neutral: 1313, Negative: 231, Total: 2100
+Test data. Positive: 260, Neutral: 459, Negative: 85, Total: 804
+---
+LCR-Rot-Hop++. Train accuracy: 0.890476, Test accuracy: 0.732587, Combined accuracy: 0.732587
+Maximum. Test accuracy: 0.769900, Combined accuracy: 0.769900
+
+Test results.
+Positive. Correct: 202, Incorrect: 58, Total: 260
+Neutral. Correct: 362, Incorrect: 97, Total: 459
+Negative. Correct: 25, Incorrect: 60, Total: 85
+
+restaurant to book with book fine-tuning using 2400 aspects
+---
+Train data. Positive: 626, Neutral: 1503, Negative: 271, Total: 2400
+Test data. Positive: 260, Neutral: 459, Negative: 85, Total: 804
+---
+LCR-Rot-Hop++. Train accuracy: 0.885833, Test accuracy: 0.752488, Combined accuracy: 0.752488
+Maximum. Test accuracy: 0.777363, Combined accuracy: 0.777363
+
+Test results.
+Positive. Correct: 219, Incorrect: 41, Total: 260
+Neutral. Correct: 366, Incorrect: 93, Total: 459
+Negative. Correct: 20, Incorrect: 65, Total: 85
+
+restaurant to book with book fine-tuning using 2700 aspects
+---
+Train data. Positive: 696, Neutral: 1705, Negative: 299, Total: 2700
+Test data. Positive: 260, Neutral: 459, Negative: 85, Total: 804

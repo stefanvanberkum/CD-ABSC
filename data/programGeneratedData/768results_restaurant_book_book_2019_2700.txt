@@ -1,0 +1,15 @@
+restaurant to book with book fine-tuning using 2700 aspects
+---
+Train data. Positive: 696, Neutral: 1705, Negative: 299, Total: 2700
+Test data. Positive: 260, Neutral: 459, Negative: 85, Total: 804
+---
+LCR-Rot-Hop++. Train accuracy: 0.875185, Test accuracy: 0.748756, Combined accuracy: 0.748756
+Maximum. Test accuracy: 0.772388, Combined accuracy: 0.772388
+---
+Test results.
+Positive. Correct: 207, Incorrect: 53, Total: 260
+Neutral. Correct: 369, Incorrect: 90, Total: 459
+Negative. Correct: 26, Incorrect: 59, Total: 85
+---
+Runtime: 26833.069685459137 seconds.
+

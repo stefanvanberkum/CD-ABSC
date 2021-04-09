@@ -1,0 +1,13 @@
+restaurant to laptop with laptop fine-tuning using 2250 aspects
+---
+Train data. Positive: 961, Neutral: 445, Negative: 844, Total: 2250
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Train accuracy: 0.900889, Test accuracy: 0.733238, Combined accuracy: 0.733238
+Maximum. Test accuracy: 0.744650, Combined accuracy: 0.744650
+
+Test results.
+Positive. Correct: 332, Incorrect: 35, Total: 367
+Neutral. Correct: 73, Incorrect: 111, Total: 184
+Negative. Correct: 109, Incorrect: 41, Total: 150
+

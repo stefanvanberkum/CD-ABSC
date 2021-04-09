@@ -1,0 +1,15 @@
+restaurant to Camera with Camera fine-tuning using 62 aspects
+---
+Train data. Positive: 55, Neutral: 0, Negative: 7, Total: 62
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.905882, Combined accuracy: 0.905882
+Maximum. Test accuracy: 0.917647, Combined accuracy: 0.917647
+---
+Test results.
+Positive. Correct: 72, Incorrect: 1, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 5, Incorrect: 7, Total: 12
+---
+Runtime: 1015.6289231777191 seconds.
+

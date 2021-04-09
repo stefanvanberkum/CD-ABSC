@@ -1,0 +1,4 @@
+laptop to laptop using 2250 aspects
+---
+Train data. Positive: 961, Neutral: 445, Negative: 844, Total: 2250
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701

@@ -1,0 +1,13 @@
+restaurant to Camera
+---
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Test accuracy: 0.588235, Combined accuracy: 0.588235
+---
+Test results.
+Positive. Correct: 45, Incorrect: 28, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 5, Incorrect: 7, Total: 12
+---
+Runtime: 68.96173739433289 seconds.
+

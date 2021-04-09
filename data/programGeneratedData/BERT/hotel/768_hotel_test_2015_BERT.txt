@@ -1,0 +1,192 @@
+good_26 $T$ ,_96 poor_2 location_17 
+motel_3 
+1
+good_27 motel_4 ,_97 poor_3 $T$ 
+location_18 
+-1
+my_8 overall_7 sense_0 is_33 that_9 this_23 was_85 a_49 good_28 $T$ ,_98 comparatively_0 inexpensive_0 ._176 
+motel_5 
+1
+my_9 overall_8 sense_1 is_34 that_10 this_24 was_86 a_50 good_29 $T$ ,_99 comparatively_1 inexpensive_1 ._177 
+motel_6 
+1
+-_16 microwave_0 ,_100 refrigerator_0 coffee_0 maker_0 in_34 $T$ 
+room_25 
+1
+-_17 decent_2 (_12 but_35 repetitive_0 )_12 $T$ included_1 in_35 price_11 wa_0 ##fles_0 ,_101 scrambled_0 eggs_0 cereal_0 etc_1 ._178 
+breakfast_13 
+0
+-_18 decent_3 (_13 but_36 repetitive_1 )_13 $T$ included_2 in_36 price_12 wa_1 ##fles_1 ,_102 scrambled_1 eggs_1 cereal_1 etc_2 ._179 
+breakfast_14 
+-1
+-_19 decent_4 (_14 but_37 repetitive_2 )_14 $T$ included_3 in_37 price_13 wa_2 ##fles_2 ,_103 scrambled_2 eggs_2 cereal_2 etc_3 ._180 
+breakfast_15 
+1
+-_20 free_11 $T$ (_15 including_2 printing_1 )_15 from_9 lobby_4 
+internet_4 access_2 
+1
+-_21 free_12 internet_5 access_3 (_16 including_3 $T$ )_16 from_10 lobby_5 
+printing_2 
+1
+-_22 nice_19 $T$ 
+staff_19 
+1
+-_23 average_5 $T$ size_0 ._181 
+room_26 
+0
+-_24 very_36 limited_0 $T$ to_35 hang_0 clothes_0 
+space_1 
+-1
+my_10 biggest_0 problem_1 was_87 the_108 $T$ ._182 
+location_19 
+-1
+great_22 airport_7 $T$ 
+location_20 
+1
+very_37 clean_43 and_96 comfortable_12 $T$ ,_104 helpful_12 friendly_9 staff_20 ._183 
+room_27 
+1
+very_38 clean_44 and_97 comfortable_13 $T$ ,_105 helpful_13 friendly_10 staff_21 ._184 
+room_28 
+1
+very_39 clean_45 and_98 comfortable_14 room_29 ,_106 helpful_14 friendly_11 $T$ ._185 
+staff_22 
+1
+the_109 $T$ in_38 bar_4 and_99 grille_0 was_88 just_0 ok_0 ._186 
+food_15 
+0
+there_5 is_35 a_51 charge_2 for_31 $T$ in_39 the_110 room_30 but_38 it_27 works_0 great_23 ._187 
+internet_6 access_4 
+-1
+there_6 is_36 a_52 charge_3 for_32 $T$ in_40 the_111 room_31 but_39 it_28 works_1 great_24 ._188 
+internet_7 access_5 
+1
+you_17 can_3 print_0 boarding_1 passes_0 at_18 a_53 $T$ near_0 the_112 front_9 desk_13 but_40 it_29 be_7 busy_0 first_0 thing_0 in_41 morning_0 so_13 might_0 want_3 to_36 do_1 day_3 before_0 ._189 
+ki_0 ##os_0 ##k_0 
+0
+i_32 left_0 on_5 the_113 7_0 :_1 00_0 ##am_0 $T$ and_100 ride_0 to_37 airport_8 was_89 quick_0 has_5 ##sle_0 -_25 free_13 ._190 
+shuttle_7 
+1
+wow_0 !_9 what_0 a_54 great_25 $T$ 
+hotel_53 
+1
+were_23 clean_46 ,_107 easy_1 accessible_0 ._191 
+rooms_29 
+1
+$T$ were_24 clean_47 ,_108 easy_2 accessible_1 ._192 
+rooms_30 
+1
+$T$ were_25 so_14 comfortable_15 !_10 
+beds_5 
+1
+$T$ was_90 friendly_12 ._193 
+staff_23 
+1
+$T$ was_91 heated_5 ,_109 had_16 a_55 great_26 atmosphere_0 with_13 unlimited_0 bottled_0 water_3 available_0 while_0 swimming_2 /_8 laying_0 out_2 ._194 
+pool_19 
+1
+offered_0 food_16 and_101 drink_0 service_22 at_19 the_114 $T$ ._195 
+pool_20 
+1
+$T$ was_92 great_27 !_11 
+room_32 service_23 
+1
+prompt_0 delivery_0 and_102 wonderful_3 $T$ ._196 
+food_17 
+1
+prompt_1 $T$ and_103 wonderful_4 food_18 ._197 
+delivery_1 
+1
+i_33 had_17 the_115 $T$ -_26 it_30 was_93 one_6 of_16 best_11 salad_0 ##s_10 '_16 ve_8 ever_7 !_12 
+southwestern_2 ce_0 ##asa_0 ##r_0 
+1
+i_34 was_94 very_40 impressed_0 and_104 would_5 come_0 back_1 to_38 the_116 $T$ again_3 !_13 
+hilton_0 phoenix_0 airport_9 
+1
+all_14 4_2 lower_0 $T$ were_26 80_0 degrees_0 and_105 above_2 ._198 
+rooms_31 
+-1
+after_0 the_117 concert_0 we_6 had_18 to_39 change_0 4_3 of_17 $T$ twice_2 trying_0 find_0 cooler_0 floors_0 ._199 
+rooms_32 
+-1
+we_7 finally_1 gave_1 up_2 at_20 12_0 :_2 30_0 a_56 ._200 m_1 with_14 $T$ that_11 was_95 77_0 degrees_1 -_27 still_2 too_6 warm_0 
+room_33 
+-1
+and_106 the_118 $T$ did_3 not_17 even_7 have_2 a_57 shower_0 curtain_0 !_14 
+room_34 
+-1
+i_35 understand_1 they_3 are_9 going_1 through_0 renovations_0 ,_110 but_41 need_0 to_40 either_2 do_2 it_31 floor_0 by_2 and_107 close_2 that_12 or_5 the_119 entire_0 $T$ until_2 finished_0 ._201 
+hotel_54 
+-1
+the_120 only_5 nice_20 thing_1 was_96 free_14 $T$ to_41 america_0 west_0 arena_0 ._202 
+shuttle_8 
+1
+lots_1 of_18 $T$ promised_0 and_108 not_18 provided_0 ._203 
+services_0 
+-1
+the_121 $T$ was_97 n_7 '_17 t_9 running_0 ,_111 and_109 restaurant_16 closed_1 down_3 -_28 both_9 of_19 those_0 explained_0 to_42 me_6 with_15 because_2 business_9 is_37 low_0 right_1 now_0 around_0 holidays_0 ._204 
+shuttle_9 
+-1
+the_122 shuttle_10 was_98 n_8 '_18 t_10 running_1 ,_112 and_110 $T$ closed_2 down_4 -_29 both_10 of_20 those_1 explained_1 to_43 me_7 with_16 because_3 business_10 is_38 low_1 right_2 now_1 around_1 holidays_1 ._205 
+restaurant_17 
+-1
+the_123 $T$ has_6 been_1 taken_0 apart_0 -_30 front_10 desk_14 staff_24 did_4 not_19 know_0 if_3 it_32 was_99 going_2 to_44 be_8 back_2 ,_113 since_1 they_4 had_19 no_5 idea_0 and_111 were_27 quite_0 shocked_0 find_1 out_3 when_1 tried_0 let_0 me_8 in_42 use_2 ._206 
+business_11 center_6 
+-1
+the_124 business_12 center_7 has_7 been_2 taken_1 apart_1 -_31 $T$ did_5 not_20 know_1 if_4 it_33 was_100 going_3 to_45 be_9 back_3 ,_114 since_2 they_5 had_20 no_6 idea_1 and_112 were_28 quite_1 shocked_1 find_2 out_4 when_2 tried_1 let_1 me_9 in_43 use_3 ._207 
+front_11 desk_15 staff_25 
+-1
+$T$ were_29 out_5 of_21 everything_5 except_0 in_44 the_125 lobby_6 ._208 
+ve_9 ##nding_0 machines_0 
+-1
+$T$ was_101 very_41 friendly_13 and_113 a_58 bit_5 embarrassed_0 about_7 everything_6 that_13 n_9 '_19 t_11 available_1 ._209 
+staff_26 
+1
+the_126 $T$ itself_0 was_102 fine_0 ._210 
+room_35 
+1
+this_25 has_8 to_46 be_10 the_127 worst_1 $T$ i_36 have_3 ever_8 stayed_1 in_45 !_15 
+hotel_55 
+-1
+the_128 $T$ are_10 very_42 hard_0 ._211 
+beds_6 
+-1
+the_129 $T$ was_103 friendly_14 ._212 
+staff_27 
+1
+if_5 you_18 get_9 a_59 $T$ with_17 stove_0 don_0 ##t_4 except_1 dishes_0 ,_115 pots_0 and_114 pan_0 ##s_11 they_6 do_3 not_21 provide_0 them_0 have_4 to_47 buy_0 your_0 own_1 ._213 
+suite_3 
+-1
+great_28 $T$ ,_116 location_21 price_14 
+hotel_56 
+1
+great_29 hotel_57 ,_117 $T$ price_15 
+location_22 
+1
+great_30 $T$ ,_118 location_23 price_16 
+hotel_58 
+1
+i_37 had_21 a_60 great_31 time_4 at_21 this_26 $T$ and_115 did_6 not_22 experience_1 any_0 of_22 what_1 the_130 bad_0 reviews_0 are_11 about_8 ._214 
+hotel_59 
+1
+the_131 $T$ was_104 very_43 friendly_15 and_116 helpful_15 ,_119 rooms_33 were_30 large_16 comfortable_16 free_15 breakfast_16 great_32 location_24 downtown_3 excellent_4 ._215 
+staff_28 
+1
+the_132 staff_29 was_105 very_44 friendly_16 and_117 helpful_16 ,_120 $T$ were_31 large_17 comfortable_17 free_16 breakfast_17 great_33 location_25 downtown_4 excellent_5 ._216 
+rooms_34 
+1
+the_133 staff_30 was_106 very_45 friendly_17 and_118 helpful_17 ,_121 $T$ were_32 large_18 comfortable_18 free_17 breakfast_18 great_34 location_26 downtown_5 excellent_6 ._217 
+rooms_35 
+1
+the_134 staff_31 was_107 very_46 friendly_18 and_119 helpful_18 ,_122 rooms_36 were_33 large_19 comfortable_19 free_18 $T$ great_35 location_27 downtown_6 excellent_7 ._218 
+breakfast_19 
+1
+the_135 staff_32 was_108 very_47 friendly_19 and_120 helpful_19 ,_123 rooms_37 were_34 large_20 comfortable_20 free_19 $T$ great_36 location_28 downtown_7 excellent_8 ._219 
+breakfast_20 
+1
+the_136 staff_33 was_109 very_48 friendly_20 and_121 helpful_20 ,_124 rooms_38 were_35 large_21 comfortable_21 free_20 breakfast_21 great_37 $T$ downtown_8 excellent_9 ._220 
+location_29 
+1
+i_38 would_6 highly_4 recommend_5 this_27 $T$ to_48 anyone_1 wanting_0 stay_11 in_46 downtown_9 phoenix_1 ._221 
+hotel_60 
+1

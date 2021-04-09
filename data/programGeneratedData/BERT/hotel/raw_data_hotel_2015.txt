@@ -1,0 +1,792 @@
+$T$ was acceptable
+room
+0
+the $T$ was nice and the furnishings were comfortable .
+room
+1
+the room was nice and the $T$ were comfortable .
+furnishings
+1
+the $T$ from the restaurant was very good but pricey which was the standard for everything in this hotel .
+food
+1
+the $T$ from the restaurant was very good but pricey which was the standard for everything in this hotel .
+food
+-1
+the food from the restaurant was very good but pricey which was the standard for everything in this $T$ .
+hotel
+-1
+the $T$ from the room was $ 9.95 for a 24 hour period .
+internet access
+-1
+to check in for my flight using the $T$ cost me $ 4.59 which included three minutes use of the internet and printing seven pages for my boarding pass .
+business center
+-1
+$T$ was very pleasant and helpful .
+staff
+1
+$T$ was fast and courteous .
+check in
+1
+$T$ were clean , spacious and comforatable .
+rooms
+1
+$T$ were clean , spacious and comforatable .
+rooms
+1
+$T$ were clean , spacious and comforatable .
+rooms
+1
+$T$ was outstanding , for both the conference and on my own .
+food
+1
+$T$ was refreshing on the hot days .
+pool
+1
+overall for the price of this $T$ it can not be beat !
+hotel
+1
+overall for the price of this $T$ it can not be beat !
+hotel
+1
+good business $T$
+hotel
+1
+very nice $T$ for business travelers - very few kids .
+hotel
+1
+great $T$ with very comfortable beds .
+rooms
+1
+great rooms with very comfortable $T$ .
+beds
+1
+big $T$ , very good fitness center - nice lobby and common areas .
+pool area
+1
+big pool area , very good $T$ - nice lobby and common areas .
+fitness center
+1
+big pool area , very good fitness center - nice $T$ and common areas .
+lobby
+1
+big pool area , very good fitness center - nice lobby and $T$ .
+common areas
+1
+i had excellent $T$ .
+shuttle service
+1
+the sports bar had good $T$ with very reasonable prices .
+food
+1
+the sports bar had good $T$ with very reasonable prices .
+food
+1
+the only downside was a per minute charge to use the $T$ .
+business center computers
+-1
+the $T$ was friendly and helpful , they upgraded our room to queen beds without us asking .
+staff
+1
+the $T$ are lovely , and the hotel is quiet even though it is so close to the airport .
+rooms
+1
+the rooms are lovely , and the $T$ is quiet even though it is so close to the airport .
+hotel
+1
+the $T$ to the airport is very , very convenient and gets you there in about 4 minutes .
+24 hour shuttle
+1
+we ate at the restaurant and the $T$ was good hearty and the best avocado i 've ever had ... ..so all in all you ca n't beat the deal , the location , the clean rooms , and the service ... ..
+food
+1
+we ate at the restaurant and the food was good hearty and the best $T$ i 've ever had ... ..so all in all you ca n't beat the deal , the location , the clean rooms , and the service ... ..
+avocado
+1
+we ate at the restaurant and the food was good hearty and the best avocado i 've ever had ... ..so all in all you ca n't beat the deal , the $T$ , the clean rooms , and the service ... ..
+location
+1
+we ate at the restaurant and the food was good hearty and the best avocado i 've ever had ... ..so all in all you ca n't beat the deal , the location , the clean $T$ , and the service ... ..
+rooms
+1
+we ate at the restaurant and the food was good hearty and the best avocado i 've ever had ... ..so all in all you ca n't beat the deal , the location , the clean rooms , and the $T$ ... ..
+service
+1
+a great $T$
+hotel
+1
+our stay at this $T$ was wonderful .
+hotel
+1
+the $T$ was very courteous upon check-in .
+staff
+1
+our $T$ was perfectly spotless .
+room
+1
+no problems whatsoever , and i would recommend this $T$ to anybody .
+hotel
+1
+good $T$ but rude desk clerk
+service
+1
+good service but rude $T$
+desk clerk
+-1
+the same $T$ started to yell again stating that she had told me when i called that i could upgrade for a charge and that was her rules .
+desk clerk
+-1
+overall $T$ was great and the staff as a whole were very courteous and helpful .
+service
+1
+overall service was great and the $T$ as a whole were very courteous and helpful .
+staff
+1
+$T$ were friendly and helpful both with early check-in and an early check-out .
+front desk staff
+1
+$T$ was large and spacious , but rather bland .
+room
+1
+$T$ was large and spacious , but rather bland .
+room
+1
+$T$ was large and spacious , but rather bland .
+room
+-1
+ideal $T$ .
+location
+1
+the $T$ looked nice , as did their restaurant , but did n't try either one .
+pool
+1
+the pool looked nice , as did their $T$ , but did n't try either one .
+restaurant
+1
+$T$ are large but very plain , with furnishings and fixtures as cheap as possible .
+rooms
+1
+$T$ are large but very plain , with furnishings and fixtures as cheap as possible .
+rooms
+-1
+rooms are large but very plain , with furnishings and $T$ as cheap as possible .
+fixtures
+-1
+rooms are large but very plain , with $T$ and fixtures as cheap as possible .
+furnishings
+-1
+the $T$ shows its age and badly needs refurbishing .
+hotel
+-1
+$T$ was on a slight slant because it was pulling out of the wall .
+bathroom sink
+-1
+nothing is especially terrible or unacceptable about this $T$ .
+hotel
+0
+this $T$ is run down , dirty and loud .
+place
+-1
+this $T$ is run down , dirty and loud .
+place
+-1
+this $T$ is run down , dirty and loud .
+place
+-1
+great $T$
+restaurant
+1
+this $T$ has really improved since our last stay .
+property
+1
+$T$ was cool , clean and comfy .
+room
+1
+$T$ was cool , clean and comfy .
+room
+1
+$T$ was cool , clean and comfy .
+room
+1
+the $T$ downstairs is the best kept secret in the area !
+restaurant
+1
+the $T$ and service was outstanding ( try the sea$T$ platter ) .
+food
+1
+the food and $T$ was outstanding ( try the seafood platter ) .
+service
+1
+the food and service was outstanding ( try the $T$ ) .
+seafood platter
+1
+$T$ was courteous and efficient .
+staff
+1
+i 've been going to this place every year and i keep on coming back to this $T$ .
+hotel
+1
+the $T$ is excellent !
+breakfast
+1
+it is rare that hotels in this class serve hot $T$ , yet they do !
+meals
+1
+$T$ is fit for a king .
+breakfast
+1
+plus , the $T$ are always courteous and friendly .
+staff at the front desk
+1
+though the $T$ are a bit old , the beds are still cozy .
+bathrooms
+-1
+though the bathrooms are a bit old , the $T$ are still cozy .
+beds
+1
+and the $T$ is right in the middle of everywhere .
+hotel
+1
+above average $T$ for great price !
+hotel
+1
+above average $T$ for great price !
+hotel
+1
+the $T$ was perfect for me , the bed was one of the most comfortable i 've ever had in a hotel .
+room
+1
+the room was perfect for me , the $T$ was one of the most comfortable i 've ever had in a hotel .
+bed
+1
+very clean , great $T$ - they gave me a complimentary bottle of wine because i missed the hotel shuttle .
+service
+1
+good $T$ and bar attached .
+restaurant
+1
+good restaurant and $T$ attached .
+bar
+1
+$T$ was not helpful , but who cares ... for $ 69 you get a clean , fairly-large room , central air , refrig/micro , free ( but sparse ) breakfast buffet .
+front desk
+-1
+front desk was not helpful , but who cares ... for $ 69 you get a clean , fairly-large $T$ , central air , refrig/micro , free ( but sparse ) breakfast buffet .
+room
+1
+front desk was not helpful , but who cares ... for $ 69 you get a clean , fairly-large $T$ , central air , refrig/micro , free ( but sparse ) breakfast buffet .
+room
+1
+front desk was not helpful , but who cares ... for $ 69 you get a clean , fairly-large $T$ , central air , refrig/micro , free ( but sparse ) breakfast buffet .
+room
+1
+front desk was not helpful , but who cares ... for $ 69 you get a clean , fairly-large room , central air , refrig/micro , free ( but sparse ) $T$ .
+breakfast buffet
+1
+front desk was not helpful , but who cares ... for $ 69 you get a clean , fairly-large room , central air , refrig/micro , free ( but sparse ) $T$ .
+breakfast buffet
+-1
+friendly $T$
+staff
+1
+the $T$ was extremely helpful and friendly .
+staff
+1
+an $T$ was broken during our last stay and it was most annoying , but did not greatly impact the overall experience .
+elevator
+-1
+all in all it is a nice and affordable $T$ for sightseeing in the area .
+spot
+1
+all in all it is a nice and affordable $T$ for sightseeing in the area .
+spot
+1
+all in all it is a nice and affordable $T$ for sightseeing in the area .
+spot
+1
+the $T$ is an average place to stay ( though a bit far from downtown ) with a substandard management team .
+best western executive park hotel
+0
+the $T$ is an average place to stay ( though a bit far from downtown ) with a substandard management team .
+best western executive park hotel
+-1
+the best western executive park hotel is an average place to stay ( though a bit far from downtown ) with a substandard $T$ .
+management team
+-1
+there 's never anyone to talk to from $T$ and phone calls/e mails receive no response .
+management
+-1
+the $T$ was in a rude mood .
+desk person
+-1
+the $T$ was very loud .
+air conditioner
+-1
+nothing told us that there was a free breakfast - the $T$ looked like it was closed .
+restaurant
+-1
+all in all the price was way too high for such a poor $T$ .
+accomodations
+-1
+all in all the price was way too high for such a poor $T$ .
+accomodations
+-1
+excellent $T$ .
+service
+1
+the $T$ was friendly overall .
+staff
+1
+$T$ was convenient as i chose not to rent a car during this trip .
+airport shuttle service
+1
+no complaints about the $T$ , pretty clean .
+room
+1
+no complaints about the $T$ , pretty clean .
+room
+1
+i went to the $T$ twice and had a nice meal and again at very reasonable price .
+lunch buffet
+1
+i went to the $T$ twice and had a nice meal and again at very reasonable price .
+lunch buffet
+1
+the $T$ was great .
+conference/banquet room
+1
+not sure where the $T$ was in reference to tourist spots , etc ... .but for a local conference , it was perfect .
+location
+1
+nice hotel , nice $T$ for the valley
+location
+1
+nice $T$ , nice location for the valley
+hotel
+1
+i really liked the $T$ , it was very clean , the staff were fantastic and the rooms were great .
+hotel
+1
+i really liked the $T$ , it was very clean , the staff were fantastic and the rooms were great .
+hotel
+1
+i really liked the hotel , it was very clean , the $T$ were fantastic and the rooms were great .
+staff
+1
+i really liked the hotel , it was very clean , the staff were fantastic and the $T$ were great .
+rooms
+1
+i cant complain about this $T$ stay .
+hotel
+1
+the $T$ is in the central valley so getting to anywhere is easy with the easy access to the local freeways .
+location
+1
+the only drawback was that the $T$ this time of year didnt seem to get much sun during the day , but the water is heated so it didnt matter too much .
+pool area
+-1
+the only drawback was that the $T$ area this time of year didnt seem to get much sun during the day , but the water is heated so it didnt matter too much .
+pool
+1
+the only drawback was that the $T$ area this time of year didnt seem to get much sun during the day , but the water is heated so it didnt matter too much .
+pool
+1
+i expected it to be a dingy motel , but to my surprise , the $T$ were clean and even a little spacious .
+rooms
+1
+i expected it to be a dingy motel , but to my surprise , the $T$ were clean and even a little spacious .
+rooms
+1
+i expected it to be a dingy motel , but to my surprise , the $T$ were clean and even a little spacious .
+rooms
+1
+the $T$ was excellent .
+continental breakfast
+1
+if all you want is a clean $T$ to stay without the frills , and especially if you 're a business traveler , stay here .
+place
+1
+if all you want is a clean $T$ to stay without the frills , and especially if you 're a business traveler , stay here .
+place
+0
+if all you want is a clean $T$ to stay without the frills , and especially if you 're a business traveler , stay here .
+place
+1
+loved this $T$ overall
+hotel
+1
+we loved this $T$ .
+hotel
+1
+the $T$ was very friendly , the rooms were very clean , both times .
+hotel staff
+1
+the hotel staff was very friendly , the $T$ were very clean , both times .
+rooms
+1
+the $T$ were quiet .
+rooms
+1
+the $T$ was great and quiet both times , loved the lighted palm trees at night .
+pool
+1
+the $T$ was great and quiet both times , loved the lighted palm trees at night .
+pool
+1
+the $T$ was great and quiet both times , loved the lighted palm trees at night .
+pool
+1
+the $T$ was unbelievable , everything you could imagine and a wonderful lady taking care of it .
+breakfast buffet
+1
+the breakfast buffet was unbelievable , everything you could imagine and a wonderful $T$ taking care of it .
+lady
+1
+awesome $T$ , 2 bathrooms , sinks and showers seperated by french doors .
+suite
+1
+awesome $T$ , 2 bathrooms , sinks and showers seperated by french doors .
+suite
+1
+also 2 flat sceen tvs and lots of space in each $T$ .
+room
+1
+the only complaint i had is that our $T$ smelled like smoke and it was a non smoking $T$ .
+suite
+-1
+i would highly recommend the hotel , great $T$ , great service , good value .
+location
+1
+i would highly recommend the hotel , great location , great $T$ , good value .
+service
+1
+i would highly recommend the $T$ , great location , great service , good value .
+hotel
+1
+i would highly recommend the $T$ , great location , great service , good value .
+hotel
+1
+convienient comfortable business travel $T$
+hotel
+1
+convienient comfortable business travel $T$
+hotel
+1
+this was my third stay in two months and i have noticed a continuing trend of upgrades and $T$ .
+service
+1
+understand the $T$ is under new management and it really shows .
+property
+1
+clean , decent $T$
+hotel
+1
+clean , decent $T$
+hotel
+0
+the $T$ was clean , rooms were large and comfortable , nothing fancy .
+hotel
+1
+the hotel was clean , $T$ were large and comfortable , nothing fancy .
+rooms
+1
+the hotel was clean , $T$ were large and comfortable , nothing fancy .
+rooms
+1
+no noise , though $T$ was half empty i 'm extremely sensitive to noise at $T$s and was not disturbed both evenings or in the mornings .
+hotel
+1
+is an older $T$ but appeared to be well maintained .
+building
+1
+$T$ clean and well lit .
+interior corridors
+1
+$T$ clean and well lit .
+interior corridors
+1
+$T$ well kept .
+exterior grounds
+1
+has elevators on both sides of the $T$ .
+building
+1
+has a nice $T$ and very hot jaquizzi , was clean .
+pool
+1
+has a nice pool and very hot $T$ , was clean .
+jaquizzi
+1
+the $T$ was well heated so swimming was possible in the winter climate , even at night .
+pool
+1
+the $T$ was well heated so swimming was possible in the winter climate , even at night .
+pool
+1
+$T$ provides free pass to golds gym , a five minute walk from front door .
+hotel
+1
+$T$ was freindly and professional for the most part .
+staff
+1
+has good $T$ , ten minutes unless heavy traffic , then at worst 20 minutes .
+airport shuttle
+1
+nice $T$ , safe .
+neghborhood
+1
+good $T$ too , set up well .
+conference facilities
+1
+`` best '' $T$
+best western
+1
+this hotel is the best $T$ i have stayed in .
+best western
+1
+not especially attractive $T$ or surrounding area but convenient location and walk to small strip malls c eateries .
+outside
+-1
+not especially attractive outside or $T$ but convenient location and walk to small strip malls c eateries .
+surrounding area
+-1
+not especially attractive outside or surrounding area but convenient $T$ and walk to small strip malls c eateries .
+location
+1
+inside $T$ is cool and southwestern .
+hotel
+1
+inside $T$ is cool and southwestern .
+hotel
+0
+$T$ was friendly .
+hotel desk staff
+1
+there is a complimentary $T$ that goes anywhere in 5 mi area , including airport , and runs early am until about 10 pm .
+shuttle
+1
+there is a complimentary $T$ that goes anywhere in 5 mi area , including airport , and runs early am until about 10 pm .
+shuttle
+1
+free high speed $T$ .
+internet
+1
+free high speed $T$ .
+internet
+1
+very comfortable $T$ .
+room
+1
+$T$ clean but not very attractive .
+pool area
+1
+$T$ clean but not very attractive .
+pool area
+-1
+two dificulties i had were : one , the $T$ was terrible !
+restaurant service
+-1
+it opens at 6 am which was great for the sightseeing tours and my $T$ were all free , but once had to finally open the kitchen door and ask to be seated .
+breakfasts
+1
+the $T$ was pretty good .
+food selection
+1
+one time the $T$ stopped to pick up dirty plates as he led me to my seat !
+employee
+-1
+the other problem was the $T$ - a young woman apparently somewhat new at her job .
+hotel manager
+-1
+good $T$ , poor location
+motel
+1
+good motel , poor $T$
+location
+-1
+my overall sense is that this was a good $T$ , comparatively inexpensive .
+motel
+1
+my overall sense is that this was a good $T$ , comparatively inexpensive .
+motel
+1
+- microwave , refrigerator , coffee maker in $T$
+room
+1
+- decent ( but repetitive ) $T$ included in price ( wafles , scrambled eggs , cereal , etc . )
+breakfast
+0
+- decent ( but repetitive ) $T$ included in price ( wafles , scrambled eggs , cereal , etc . )
+breakfast
+-1
+- decent ( but repetitive ) $T$ included in price ( wafles , scrambled eggs , cereal , etc . )
+breakfast
+1
+- free $T$ ( including printing ) from lobby
+internet access
+1
+- free internet access ( including $T$ ) from lobby
+printing
+1
+- nice $T$
+staff
+1
+- average $T$ size .
+room
+0
+- very limited $T$ to hang clothes
+space
+-1
+my biggest problem was the $T$ .
+location
+-1
+great airport $T$
+location
+1
+very clean and comfortable $T$ , helpful and friendly staff .
+room
+1
+very clean and comfortable $T$ , helpful and friendly staff .
+room
+1
+very clean and comfortable room , helpful and friendly $T$ .
+staff
+1
+the $T$ in the bar and grille was just ok .
+food
+0
+there is a charge for $T$ in the room but it works great .
+internet access
+-1
+there is a charge for $T$ in the room but it works great .
+internet access
+1
+you can print boarding passes at a $T$ near the front desk but it can be busy first thing in the morning so you might want to do it the day before .
+kiosk
+0
+i left on the 7:00am $T$ and the ride to the airport was quick and hassle-free .
+shuttle
+1
+wow ! what a great $T$ !
+hotel
+1
+$T$ were clean , easy accessible .
+rooms
+1
+$T$ were clean , easy accessible .
+rooms
+1
+$T$ were so comfortable !
+beds
+1
+$T$ was friendly .
+staff
+1
+$T$ was heated , had a great atmosphere with unlimited bottled water available while swimming/laying out .
+pool
+1
+offered food and drink service at the $T$ .
+pool
+1
+$T$ was great !
+room service
+1
+prompt delivery and wonderful $T$ .
+food
+1
+prompt $T$ and wonderful food .
+delivery
+1
+i had the $T$ - it was one of the best salads i 've ever had !
+southwestern ceasar
+1
+i was very impressed and would come back to the $T$ again !
+hilton phoenix airport
+1
+all 4 lower $T$ were 80 degrees and above .
+rooms
+-1
+after the concert we had to change 4 of the $T$ twice trying to find cooler floors .
+rooms
+-1
+we finally gave up at 12:30 a.m. with a $T$ that was 77 degrees - still too warm .
+room
+-1
+and the $T$ did not even have a shower curtain !
+room
+-1
+i understand they are going through renovations , but they need to either do it floor by floor and close that floor or close the entire $T$ until finished .
+hotel
+-1
+the only nice thing was the free $T$ to america west arena .
+shuttle
+1
+lots of $T$ promised and not provided .
+services
+-1
+the $T$ was n't running , and the restaurant was closed down - both of those explained to me with because business is low right now around the holidays .
+shuttle
+-1
+the shuttle was n't running , and the $T$ was closed down - both of those explained to me with because business is low right now around the holidays .
+restaurant
+-1
+the $T$ has been taken apart - the front desk staff did not know if it was going to be back , since they had no idea it had been taken apart and were quite shocked to find out , when they tried to let me in to use it .
+business center
+-1
+the business center has been taken apart - the $T$ did not know if it was going to be back , since they had no idea it had been taken apart and were quite shocked to find out , when they tried to let me in to use it .
+front desk staff
+-1
+$T$ were out of everything except in the lobby .
+vending machines
+-1
+$T$ was very friendly and a bit embarrassed about everything that was n't available .
+staff
+1
+the $T$ itself was fine .
+room
+1
+this has to be the worst $T$ i have ever stayed in !
+hotel
+-1
+the $T$ are very hard .
+beds
+-1
+the $T$ was friendly .
+staff
+1
+if you get a $T$ with a stove dont except dishes , pots and pans they do not provide them you have to buy your own .
+suite
+-1
+great $T$ , great location , great price
+hotel
+1
+great hotel , great $T$ , great price
+location
+1
+great $T$ , great location , great price
+hotel
+1
+i had a great time at this $T$ and did not experience any of what the bad reviews are about .
+hotel
+1
+the $T$ was very friendly and helpful , the rooms were large and comfortable , the free breakfast was great , and the location downtown was excellent .
+staff
+1
+the staff was very friendly and helpful , the $T$ were large and comfortable , the free breakfast was great , and the location downtown was excellent .
+rooms
+1
+the staff was very friendly and helpful , the $T$ were large and comfortable , the free breakfast was great , and the location downtown was excellent .
+rooms
+1
+the staff was very friendly and helpful , the rooms were large and comfortable , the free $T$ was great , and the location downtown was excellent .
+breakfast
+1
+the staff was very friendly and helpful , the rooms were large and comfortable , the free $T$ was great , and the location downtown was excellent .
+breakfast
+1
+the staff was very friendly and helpful , the rooms were large and comfortable , the free breakfast was great , and the $T$ downtown was excellent .
+location
+1
+i would highly recommend this $T$ to anyone wanting to stay in downtown phoenix .
+hotel
+1

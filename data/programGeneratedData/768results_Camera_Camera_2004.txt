@@ -1,0 +1,150 @@
+Camera to Camera using 31 aspects
+---
+Train data. Positive: 27, Neutral: 0, Negative: 4, Total: 31
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.870588, Combined accuracy: 0.870588
+Maximum. Test accuracy: 0.870588, Combined accuracy: 0.870588
+---
+Test results.
+Positive. Correct: 73, Incorrect: 0, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 1, Incorrect: 11, Total: 12
+---
+Runtime: 1159.588655948639 seconds.
+
+Camera to Camera using 62 aspects
+---
+Train data. Positive: 55, Neutral: 0, Negative: 7, Total: 62
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.870588, Combined accuracy: 0.870588
+Maximum. Test accuracy: 0.882353, Combined accuracy: 0.882353
+---
+Test results.
+Positive. Correct: 73, Incorrect: 0, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 1, Incorrect: 11, Total: 12
+---
+Runtime: 1725.3709063529968 seconds.
+
+Camera to Camera using 93 aspects
+---
+Train data. Positive: 79, Neutral: 0, Negative: 14, Total: 93
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.894118, Combined accuracy: 0.894118
+Maximum. Test accuracy: 0.894118, Combined accuracy: 0.894118
+---
+Test results.
+Positive. Correct: 73, Incorrect: 0, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 3, Incorrect: 9, Total: 12
+---
+Runtime: 2244.512002468109 seconds.
+
+Camera to Camera using 124 aspects
+---
+Train data. Positive: 101, Neutral: 0, Negative: 23, Total: 124
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.894118, Combined accuracy: 0.894118
+Maximum. Test accuracy: 0.905882, Combined accuracy: 0.905882
+---
+Test results.
+Positive. Correct: 73, Incorrect: 0, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 3, Incorrect: 9, Total: 12
+---
+Runtime: 2860.668138027191 seconds.
+
+Camera to Camera using 155 aspects
+---
+Train data. Positive: 123, Neutral: 0, Negative: 32, Total: 155
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.917647, Combined accuracy: 0.917647
+Maximum. Test accuracy: 0.929412, Combined accuracy: 0.929412
+---
+Test results.
+Positive. Correct: 72, Incorrect: 1, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 6, Incorrect: 6, Total: 12
+---
+Runtime: 3499.5423781871796 seconds.
+
+Camera to Camera using 186 aspects
+---
+Train data. Positive: 145, Neutral: 0, Negative: 41, Total: 186
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 0.994624, Test accuracy: 0.882353, Combined accuracy: 0.882353
+Maximum. Test accuracy: 0.929412, Combined accuracy: 0.929412
+---
+Test results.
+Positive. Correct: 71, Incorrect: 2, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 4, Incorrect: 8, Total: 12
+---
+Runtime: 4102.579972267151 seconds.
+
+Camera to Camera using 217 aspects
+---
+Train data. Positive: 171, Neutral: 0, Negative: 46, Total: 217
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 0.995392, Test accuracy: 0.882353, Combined accuracy: 0.882353
+Maximum. Test accuracy: 0.905882, Combined accuracy: 0.905882
+---
+Test results.
+Positive. Correct: 69, Incorrect: 4, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 6, Incorrect: 6, Total: 12
+---
+Runtime: 4501.3477482795715 seconds.
+
+Camera to Camera using 248 aspects
+---
+Train data. Positive: 201, Neutral: 0, Negative: 47, Total: 248
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.905882, Combined accuracy: 0.905882
+Maximum. Test accuracy: 0.917647, Combined accuracy: 0.917647
+---
+Test results.
+Positive. Correct: 72, Incorrect: 1, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 5, Incorrect: 7, Total: 12
+---
+Runtime: 5364.851455450058 seconds.
+
+Camera to Camera using 279 aspects
+---
+Train data. Positive: 218, Neutral: 0, Negative: 61, Total: 279
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.929412, Combined accuracy: 0.929412
+Maximum. Test accuracy: 0.941176, Combined accuracy: 0.941176
+---
+Test results.
+Positive. Correct: 73, Incorrect: 0, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 6, Incorrect: 6, Total: 12
+---
+Runtime: 5573.787938594818 seconds.
+
+Camera to Camera using 310 aspects
+---
+Train data. Positive: 248, Neutral: 0, Negative: 62, Total: 310
+Test data. Positive: 73, Neutral: 0, Negative: 12, Total: 85
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.917647, Combined accuracy: 0.917647
+Maximum. Test accuracy: 0.929412, Combined accuracy: 0.929412
+---
+Test results.
+Positive. Correct: 72, Incorrect: 1, Total: 73
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 6, Incorrect: 6, Total: 12
+---
+Runtime: 6132.079092025757 seconds.
+

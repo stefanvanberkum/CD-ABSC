@@ -1,0 +1,60 @@
+$T$ was_0 acceptable_0 
+room_0 
+0
+the_0 $T$ was_1 nice_0 and_0 furnishings_0 were_0 comfortable_0 ._0 
+room_1 
+1
+the_1 room_2 was_2 nice_1 and_1 $T$ were_1 comfortable_1 ._1 
+furnishings_1 
+1
+the_2 $T$ from_0 restaurant_0 was_3 very_0 good_0 but_0 price_0 ##y_0 which_0 standard_0 for_0 everything_0 in_0 this_0 hotel_0 ._2 
+food_0 
+1
+the_3 $T$ from_1 restaurant_1 was_4 very_1 good_1 but_1 price_1 ##y_1 which_1 standard_1 for_1 everything_1 in_1 this_1 hotel_1 ._3 
+food_1 
+-1
+the_4 food_2 from_2 restaurant_2 was_5 very_2 good_2 but_2 price_2 ##y_2 which_2 standard_2 for_2 everything_2 in_2 this_2 $T$ ._4 
+hotel_2 
+-1
+the_5 $T$ from_3 room_3 was_6 $_0 9_0 ._5 95_0 for_3 a_0 24_0 hour_0 period_0 
+internet_0 access_0 
+-1
+to_0 check_0 in_3 for_4 my_0 flight_0 using_0 the_6 $T$ cost_0 me_0 $_1 4_0 ._6 59_0 which_3 included_0 three_0 minutes_0 use_0 of_0 internet_1 and_2 printing_0 seven_0 pages_0 boarding_0 pass_0 
+business_0 center_0 
+-1
+$T$ was_7 very_3 pleasant_0 and_3 helpful_0 ._7 
+staff_0 
+1
+$T$ was_8 fast_0 and_4 court_0 ##eous_0 ._8 
+check_1 in_4 
+1
+$T$ were_2 clean_0 ,_0 spacious_0 and_5 com_0 ##for_0 ##atable_0 ._9 
+rooms_0 
+1
+$T$ were_3 clean_1 ,_1 spacious_1 and_6 com_1 ##for_1 ##atable_1 ._10 
+rooms_1 
+1
+$T$ were_4 clean_2 ,_2 spacious_2 and_7 com_2 ##for_2 ##atable_2 ._11 
+rooms_2 
+1
+$T$ was_9 outstanding_0 ,_3 for_5 both_0 the_7 conference_0 and_8 on_0 my_1 own_0 ._12 
+food_3 
+1
+$T$ was_10 refreshing_0 on_1 the_8 hot_0 days_0 ._13 
+pool_0 
+1
+overall_0 for_6 the_9 price_3 of_1 this_3 $T$ it_0 can_0 not_0 be_0 beat_0 !_0 
+hotel_3 
+1
+overall_1 for_7 the_10 price_4 of_2 this_4 $T$ it_1 can_1 not_1 be_1 beat_1 !_1 
+hotel_4 
+1
+good_3 business_1 $T$ 
+hotel_5 
+1
+very_4 nice_2 $T$ for_8 business_2 travelers_0 -_0 few_0 kids_0 ._14 
+hotel_6 
+1
+great_0 $T$ with_0 very_5 comfortable_2 beds_0 ._15 
+rooms_3 
+1

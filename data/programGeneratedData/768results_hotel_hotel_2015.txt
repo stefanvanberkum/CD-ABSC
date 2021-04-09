@@ -1,0 +1,150 @@
+hotel to hotel using 20 aspects
+---
+Train data. Positive: 15, Neutral: 1, Negative: 4, Total: 20
+Test data. Positive: 41, Neutral: 4, Negative: 19, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.546875, Combined accuracy: 0.546875
+Maximum. Test accuracy: 0.671875, Combined accuracy: 0.671875
+---
+Test results.
+Positive. Correct: 23, Incorrect: 18, Total: 41
+Neutral. Correct: 0, Incorrect: 4, Total: 4
+Negative. Correct: 12, Incorrect: 7, Total: 19
+---
+Runtime: 586.1120040416718 seconds.
+
+hotel to hotel using 40 aspects
+---
+Train data. Positive: 34, Neutral: 1, Negative: 5, Total: 40
+Test data. Positive: 41, Neutral: 4, Negative: 19, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.975000, Test accuracy: 0.609375, Combined accuracy: 0.609375
+Maximum. Test accuracy: 0.656250, Combined accuracy: 0.656250
+---
+Test results.
+Positive. Correct: 38, Incorrect: 3, Total: 41
+Neutral. Correct: 0, Incorrect: 4, Total: 4
+Negative. Correct: 1, Incorrect: 18, Total: 19
+---
+Runtime: 965.1024026870728 seconds.
+
+hotel to hotel using 60 aspects
+---
+Train data. Positive: 47, Neutral: 1, Negative: 12, Total: 60
+Test data. Positive: 41, Neutral: 4, Negative: 19, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.950000, Test accuracy: 0.640625, Combined accuracy: 0.640625
+Maximum. Test accuracy: 0.703125, Combined accuracy: 0.703125
+---
+Test results.
+Positive. Correct: 40, Incorrect: 1, Total: 41
+Neutral. Correct: 0, Incorrect: 4, Total: 4
+Negative. Correct: 1, Incorrect: 18, Total: 19
+---
+Runtime: 1233.1792023181915 seconds.
+
+hotel to hotel using 80 aspects
+---
+Train data. Positive: 62, Neutral: 2, Negative: 16, Total: 80
+Test data. Positive: 41, Neutral: 4, Negative: 19, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.950000, Test accuracy: 0.640625, Combined accuracy: 0.640625
+Maximum. Test accuracy: 0.796875, Combined accuracy: 0.796875
+---
+Test results.
+Positive. Correct: 40, Incorrect: 1, Total: 41
+Neutral. Correct: 0, Incorrect: 4, Total: 4
+Negative. Correct: 1, Incorrect: 18, Total: 19
+---
+Runtime: 1553.4211275577545 seconds.
+
+hotel to hotel using 100 aspects
+---
+Train data. Positive: 78, Neutral: 2, Negative: 20, Total: 100
+Test data. Positive: 41, Neutral: 4, Negative: 19, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.940000, Test accuracy: 0.687500, Combined accuracy: 0.687500
+Maximum. Test accuracy: 0.781250, Combined accuracy: 0.781250
+---
+Test results.
+Positive. Correct: 33, Incorrect: 8, Total: 41
+Neutral. Correct: 0, Incorrect: 4, Total: 4
+Negative. Correct: 11, Incorrect: 8, Total: 19
+---
+Runtime: 1859.5579788684845 seconds.
+
+hotel to hotel using 120 aspects
+---
+Train data. Positive: 89, Neutral: 3, Negative: 28, Total: 120
+Test data. Positive: 41, Neutral: 4, Negative: 19, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.975000, Test accuracy: 0.625000, Combined accuracy: 0.625000
+Maximum. Test accuracy: 0.734375, Combined accuracy: 0.734375
+---
+Test results.
+Positive. Correct: 38, Incorrect: 3, Total: 41
+Neutral. Correct: 0, Incorrect: 4, Total: 4
+Negative. Correct: 2, Incorrect: 17, Total: 19
+---
+Runtime: 2212.786129951477 seconds.
+
+hotel to hotel using 140 aspects
+---
+Train data. Positive: 107, Neutral: 4, Negative: 29, Total: 140
+Test data. Positive: 41, Neutral: 4, Negative: 19, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.942857, Test accuracy: 0.656250, Combined accuracy: 0.656250
+Maximum. Test accuracy: 0.703125, Combined accuracy: 0.703125
+---
+Test results.
+Positive. Correct: 41, Incorrect: 0, Total: 41
+Neutral. Correct: 0, Incorrect: 4, Total: 4
+Negative. Correct: 1, Incorrect: 18, Total: 19
+---
+Runtime: 2503.395129919052 seconds.
+
+hotel to hotel using 160 aspects
+---
+Train data. Positive: 126, Neutral: 4, Negative: 30, Total: 160
+Test data. Positive: 41, Neutral: 4, Negative: 19, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.962500, Test accuracy: 0.656250, Combined accuracy: 0.656250
+Maximum. Test accuracy: 0.750000, Combined accuracy: 0.750000
+---
+Test results.
+Positive. Correct: 36, Incorrect: 5, Total: 41
+Neutral. Correct: 0, Incorrect: 4, Total: 4
+Negative. Correct: 6, Incorrect: 13, Total: 19
+---
+Runtime: 2923.234691619873 seconds.
+
+hotel to hotel using 180 aspects
+---
+Train data. Positive: 145, Neutral: 5, Negative: 30, Total: 180
+Test data. Positive: 41, Neutral: 4, Negative: 19, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.955556, Test accuracy: 0.640625, Combined accuracy: 0.640625
+Maximum. Test accuracy: 0.671875, Combined accuracy: 0.671875
+---
+Test results.
+Positive. Correct: 41, Incorrect: 0, Total: 41
+Neutral. Correct: 0, Incorrect: 4, Total: 4
+Negative. Correct: 0, Incorrect: 19, Total: 19
+---
+Runtime: 3016.539829492569 seconds.
+
+hotel to hotel using 200 aspects
+---
+Train data. Positive: 158, Neutral: 6, Negative: 36, Total: 200
+Test data. Positive: 41, Neutral: 4, Negative: 19, Total: 64
+---
+LCR-Rot-Hop++. Train accuracy: 0.945000, Test accuracy: 0.640625, Combined accuracy: 0.640625
+Maximum. Test accuracy: 0.734375, Combined accuracy: 0.734375
+---
+Test results.
+Positive. Correct: 41, Incorrect: 0, Total: 41
+Neutral. Correct: 0, Incorrect: 4, Total: 4
+Negative. Correct: 0, Incorrect: 19, Total: 19
+---
+Runtime: 3211.408091068268 seconds.
+

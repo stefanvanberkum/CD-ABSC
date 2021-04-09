@@ -1,0 +1,150 @@
+restaurant to Apex with Apex fine-tuning using 25 aspects
+---
+Train data. Positive: 18, Neutral: 0, Negative: 7, Total: 25
+Test data. Positive: 36, Neutral: 0, Negative: 27, Total: 63
+---
+LCR-Rot-Hop++. Train accuracy: 0.960000, Test accuracy: 0.746032, Combined accuracy: 0.746032
+Maximum. Test accuracy: 0.793651, Combined accuracy: 0.793651
+---
+Test results.
+Positive. Correct: 28, Incorrect: 8, Total: 36
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 19, Incorrect: 8, Total: 27
+---
+Runtime: 565.0759150981903 seconds.
+
+restaurant to Apex with Apex fine-tuning using 50 aspects
+---
+Train data. Positive: 27, Neutral: 0, Negative: 23, Total: 50
+Test data. Positive: 36, Neutral: 0, Negative: 27, Total: 63
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.761905, Combined accuracy: 0.761905
+Maximum. Test accuracy: 0.809524, Combined accuracy: 0.809524
+---
+Test results.
+Positive. Correct: 28, Incorrect: 8, Total: 36
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 20, Incorrect: 7, Total: 27
+---
+Runtime: 724.7293796539307 seconds.
+
+restaurant to Apex with Apex fine-tuning using 75 aspects
+---
+Train data. Positive: 30, Neutral: 0, Negative: 45, Total: 75
+Test data. Positive: 36, Neutral: 0, Negative: 27, Total: 63
+---
+LCR-Rot-Hop++. Train accuracy: 0.986667, Test accuracy: 0.809524, Combined accuracy: 0.809524
+Maximum. Test accuracy: 0.825397, Combined accuracy: 0.825397
+---
+Test results.
+Positive. Correct: 28, Incorrect: 8, Total: 36
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 23, Incorrect: 4, Total: 27
+---
+Runtime: 954.9851386547089 seconds.
+
+restaurant to Apex with Apex fine-tuning using 100 aspects
+---
+Train data. Positive: 38, Neutral: 0, Negative: 62, Total: 100
+Test data. Positive: 36, Neutral: 0, Negative: 27, Total: 63
+---
+LCR-Rot-Hop++. Train accuracy: 0.990000, Test accuracy: 0.777778, Combined accuracy: 0.777778
+Maximum. Test accuracy: 0.793651, Combined accuracy: 0.793651
+---
+Test results.
+Positive. Correct: 26, Incorrect: 10, Total: 36
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 23, Incorrect: 4, Total: 27
+---
+Runtime: 1124.1526458263397 seconds.
+
+restaurant to Apex with Apex fine-tuning using 125 aspects
+---
+Train data. Positive: 52, Neutral: 0, Negative: 73, Total: 125
+Test data. Positive: 36, Neutral: 0, Negative: 27, Total: 63
+---
+LCR-Rot-Hop++. Train accuracy: 0.952000, Test accuracy: 0.841270, Combined accuracy: 0.841270
+Maximum. Test accuracy: 0.841270, Combined accuracy: 0.841270
+---
+Test results.
+Positive. Correct: 31, Incorrect: 5, Total: 36
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 22, Incorrect: 5, Total: 27
+---
+Runtime: 1340.8335764408112 seconds.
+
+restaurant to Apex with Apex fine-tuning using 150 aspects
+---
+Train data. Positive: 62, Neutral: 0, Negative: 88, Total: 150
+Test data. Positive: 36, Neutral: 0, Negative: 27, Total: 63
+---
+LCR-Rot-Hop++. Train accuracy: 0.966667, Test accuracy: 0.809524, Combined accuracy: 0.809524
+Maximum. Test accuracy: 0.825397, Combined accuracy: 0.825397
+---
+Test results.
+Positive. Correct: 29, Incorrect: 7, Total: 36
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 22, Incorrect: 5, Total: 27
+---
+Runtime: 1549.6308052539825 seconds.
+
+restaurant to Apex with Apex fine-tuning using 175 aspects
+---
+Train data. Positive: 72, Neutral: 0, Negative: 103, Total: 175
+Test data. Positive: 36, Neutral: 0, Negative: 27, Total: 63
+---
+LCR-Rot-Hop++. Train accuracy: 0.965714, Test accuracy: 0.730159, Combined accuracy: 0.730159
+Maximum. Test accuracy: 0.793651, Combined accuracy: 0.793651
+---
+Test results.
+Positive. Correct: 22, Incorrect: 14, Total: 36
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 24, Incorrect: 3, Total: 27
+---
+Runtime: 1710.9748933315277 seconds.
+
+restaurant to Apex with Apex fine-tuning using 200 aspects
+---
+Train data. Positive: 88, Neutral: 0, Negative: 112, Total: 200
+Test data. Positive: 36, Neutral: 0, Negative: 27, Total: 63
+---
+LCR-Rot-Hop++. Train accuracy: 0.970000, Test accuracy: 0.777778, Combined accuracy: 0.777778
+Maximum. Test accuracy: 0.825397, Combined accuracy: 0.825397
+---
+Test results.
+Positive. Correct: 31, Incorrect: 5, Total: 36
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 18, Incorrect: 9, Total: 27
+---
+Runtime: 1876.0985012054443 seconds.
+
+restaurant to Apex with Apex fine-tuning using 225 aspects
+---
+Train data. Positive: 97, Neutral: 0, Negative: 128, Total: 225
+Test data. Positive: 36, Neutral: 0, Negative: 27, Total: 63
+---
+LCR-Rot-Hop++. Train accuracy: 0.955556, Test accuracy: 0.809524, Combined accuracy: 0.809524
+Maximum. Test accuracy: 0.809524, Combined accuracy: 0.809524
+---
+Test results.
+Positive. Correct: 29, Incorrect: 7, Total: 36
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 22, Incorrect: 5, Total: 27
+---
+Runtime: 2104.889111995697 seconds.
+
+restaurant to Apex with Apex fine-tuning using 250 aspects
+---
+Train data. Positive: 105, Neutral: 0, Negative: 145, Total: 250
+Test data. Positive: 36, Neutral: 0, Negative: 27, Total: 63
+---
+LCR-Rot-Hop++. Train accuracy: 0.932000, Test accuracy: 0.777778, Combined accuracy: 0.777778
+Maximum. Test accuracy: 0.825397, Combined accuracy: 0.825397
+---
+Test results.
+Positive. Correct: 29, Incorrect: 7, Total: 36
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 20, Incorrect: 7, Total: 27
+---
+Runtime: 2275.093245983124 seconds.
+

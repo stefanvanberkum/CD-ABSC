@@ -1,0 +1,105 @@
+Creative to Creative using 216 aspects
+---
+Train data. Positive: 145, Neutral: 0, Negative: 71, Total: 216
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.698529, Combined accuracy: 0.698529
+Maximum. Test accuracy: 0.801471, Combined accuracy: 0.801471
+---
+Test results.
+Positive. Correct: 67, Incorrect: 9, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 28, Incorrect: 32, Total: 60
+---
+Runtime: 5591.666304826736 seconds.
+
+Creative to Creative using 270 aspects
+---
+Train data. Positive: 186, Neutral: 0, Negative: 84, Total: 270
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.750000, Combined accuracy: 0.750000
+Maximum. Test accuracy: 0.801471, Combined accuracy: 0.801471
+---
+Test results.
+Positive. Correct: 66, Incorrect: 10, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 36, Incorrect: 24, Total: 60
+---
+Runtime: 5726.496453046799 seconds.
+
+Creative to Creative using 324 aspects
+---
+Train data. Positive: 217, Neutral: 0, Negative: 107, Total: 324
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.990741, Test accuracy: 0.808824, Combined accuracy: 0.808824
+Maximum. Test accuracy: 0.823529, Combined accuracy: 0.823529
+---
+Test results.
+Positive. Correct: 58, Incorrect: 18, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 52, Incorrect: 8, Total: 60
+---
+Runtime: 6347.3540053367615 seconds.
+
+Creative to Creative using 378 aspects
+---
+Train data. Positive: 246, Neutral: 0, Negative: 132, Total: 378
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.750000, Combined accuracy: 0.750000
+Maximum. Test accuracy: 0.845588, Combined accuracy: 0.845588
+---
+Test results.
+Positive. Correct: 73, Incorrect: 3, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 29, Incorrect: 31, Total: 60
+---
+Runtime: 7157.595173358917 seconds.
+
+Creative to Creative using 432 aspects
+---
+Train data. Positive: 278, Neutral: 0, Negative: 154, Total: 432
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 1.000000, Test accuracy: 0.830882, Combined accuracy: 0.830882
+Maximum. Test accuracy: 0.867647, Combined accuracy: 0.867647
+---
+Test results.
+Positive. Correct: 68, Incorrect: 8, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 45, Incorrect: 15, Total: 60
+---
+Runtime: 8337.865231275558 seconds.
+
+Creative to Creative using 486 aspects
+---
+Train data. Positive: 304, Neutral: 0, Negative: 182, Total: 486
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.967078, Test accuracy: 0.698529, Combined accuracy: 0.698529
+Maximum. Test accuracy: 0.882353, Combined accuracy: 0.882353
+---
+Test results.
+Positive. Correct: 75, Incorrect: 1, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 20, Incorrect: 40, Total: 60
+---
+Runtime: 9488.03678560257 seconds.
+
+Creative to Creative using 540 aspects
+---
+Train data. Positive: 338, Neutral: 0, Negative: 202, Total: 540
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.996296, Test accuracy: 0.786765, Combined accuracy: 0.786765
+Maximum. Test accuracy: 0.882353, Combined accuracy: 0.882353
+---
+Test results.
+Positive. Correct: 74, Incorrect: 2, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 33, Incorrect: 27, Total: 60
+---
+Runtime: 11518.906007766724 seconds.
+

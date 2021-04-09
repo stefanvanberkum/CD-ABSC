@@ -1,0 +1,150 @@
+restaurant to Creative with Creative fine-tuning using 54 aspects
+---
+Train data. Positive: 42, Neutral: 0, Negative: 12, Total: 54
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.907407, Test accuracy: 0.772059, Combined accuracy: 0.772059
+Maximum. Test accuracy: 0.823529, Combined accuracy: 0.823529
+---
+Test results.
+Positive. Correct: 72, Incorrect: 4, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 33, Incorrect: 27, Total: 60
+---
+Runtime: 1138.5592081546783 seconds.
+
+restaurant to Creative with Creative fine-tuning using 108 aspects
+---
+Train data. Positive: 77, Neutral: 0, Negative: 31, Total: 108
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.898148, Test accuracy: 0.772059, Combined accuracy: 0.772059
+Maximum. Test accuracy: 0.830882, Combined accuracy: 0.830882
+---
+Test results.
+Positive. Correct: 72, Incorrect: 4, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 33, Incorrect: 27, Total: 60
+---
+Runtime: 1538.5807621479034 seconds.
+
+restaurant to Creative with Creative fine-tuning using 162 aspects
+---
+Train data. Positive: 114, Neutral: 0, Negative: 48, Total: 162
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.876543, Test accuracy: 0.757353, Combined accuracy: 0.757353
+Maximum. Test accuracy: 0.816176, Combined accuracy: 0.816176
+---
+Test results.
+Positive. Correct: 68, Incorrect: 8, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 35, Incorrect: 25, Total: 60
+---
+Runtime: 1959.391666650772 seconds.
+
+restaurant to Creative with Creative fine-tuning using 216 aspects
+---
+Train data. Positive: 145, Neutral: 0, Negative: 71, Total: 216
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.828704, Test accuracy: 0.750000, Combined accuracy: 0.750000
+Maximum. Test accuracy: 0.823529, Combined accuracy: 0.823529
+---
+Test results.
+Positive. Correct: 65, Incorrect: 11, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 37, Incorrect: 23, Total: 60
+---
+Runtime: 2339.5038125514984 seconds.
+
+restaurant to Creative with Creative fine-tuning using 270 aspects
+---
+Train data. Positive: 186, Neutral: 0, Negative: 84, Total: 270
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.788889, Test accuracy: 0.772059, Combined accuracy: 0.772059
+Maximum. Test accuracy: 0.823529, Combined accuracy: 0.823529
+---
+Test results.
+Positive. Correct: 62, Incorrect: 14, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 43, Incorrect: 17, Total: 60
+---
+Runtime: 2853.411292076111 seconds.
+
+restaurant to Creative with Creative fine-tuning using 324 aspects
+---
+Train data. Positive: 217, Neutral: 0, Negative: 107, Total: 324
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.811728, Test accuracy: 0.764706, Combined accuracy: 0.764706
+Maximum. Test accuracy: 0.823529, Combined accuracy: 0.823529
+---
+Test results.
+Positive. Correct: 71, Incorrect: 5, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 33, Incorrect: 27, Total: 60
+---
+Runtime: 3143.9603209495544 seconds.
+
+restaurant to Creative with Creative fine-tuning using 378 aspects
+---
+Train data. Positive: 246, Neutral: 0, Negative: 132, Total: 378
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.809524, Test accuracy: 0.735294, Combined accuracy: 0.735294
+Maximum. Test accuracy: 0.823529, Combined accuracy: 0.823529
+---
+Test results.
+Positive. Correct: 72, Incorrect: 4, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 28, Incorrect: 32, Total: 60
+---
+Runtime: 3531.774616956711 seconds.
+
+restaurant to Creative with Creative fine-tuning using 432 aspects
+---
+Train data. Positive: 278, Neutral: 0, Negative: 154, Total: 432
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.763889, Test accuracy: 0.779412, Combined accuracy: 0.779412
+Maximum. Test accuracy: 0.830882, Combined accuracy: 0.830882
+---
+Test results.
+Positive. Correct: 68, Incorrect: 8, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 38, Incorrect: 22, Total: 60
+---
+Runtime: 4004.5156841278076 seconds.
+
+restaurant to Creative with Creative fine-tuning using 486 aspects
+---
+Train data. Positive: 304, Neutral: 0, Negative: 182, Total: 486
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.753086, Test accuracy: 0.823529, Combined accuracy: 0.823529
+Maximum. Test accuracy: 0.838235, Combined accuracy: 0.838235
+---
+Test results.
+Positive. Correct: 67, Incorrect: 9, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 45, Incorrect: 15, Total: 60
+---
+Runtime: 4484.2591116428375 seconds.
+
+restaurant to Creative with Creative fine-tuning using 540 aspects
+---
+Train data. Positive: 338, Neutral: 0, Negative: 202, Total: 540
+Test data. Positive: 76, Neutral: 0, Negative: 60, Total: 136
+---
+LCR-Rot-Hop++. Train accuracy: 0.766667, Test accuracy: 0.794118, Combined accuracy: 0.794118
+Maximum. Test accuracy: 0.838235, Combined accuracy: 0.838235
+---
+Test results.
+Positive. Correct: 67, Incorrect: 9, Total: 76
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 41, Incorrect: 19, Total: 60
+---
+Runtime: 4882.287092447281 seconds.
+

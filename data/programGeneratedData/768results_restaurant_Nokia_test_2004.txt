@@ -1,0 +1,13 @@
+restaurant to Nokia
+---
+Test data. Positive: 52, Neutral: 0, Negative: 12, Total: 64
+---
+LCR-Rot-Hop++. Test accuracy: 0.671875, Combined accuracy: 0.671875
+---
+Test results.
+Positive. Correct: 40, Incorrect: 12, Total: 52
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 3, Incorrect: 9, Total: 12
+---
+Runtime: 70.00432014465332 seconds.
+

@@ -1,0 +1,13 @@
+restaurant to Apex
+---
+Test data. Positive: 36, Neutral: 0, Negative: 27, Total: 63
+---
+LCR-Rot-Hop++. Test accuracy: 0.492063, Combined accuracy: 0.492063
+---
+Test results.
+Positive. Correct: 27, Incorrect: 9, Total: 36
+Neutral. Correct: 0, Incorrect: 0, Total: 0
+Negative. Correct: 4, Incorrect: 23, Total: 27
+---
+Runtime: 70.23882746696472 seconds.
+

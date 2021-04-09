@@ -1,0 +1,21 @@
+restaurant to laptop
+---
+Train data. Positive: 2164, Neutral: 633, Negative: 805, Total: 3602
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Train accuracy: 0.964464, Test accuracy: 0.310984, Combined accuracy: 0.310984
+Maximum. Test accuracy: 0.346648, Combined accuracy: 0.346648
+---
+Test results.
+Positive. Correct: 68, Incorrect: 299, Total: 367
+Neutral. Correct: 112, Incorrect: 72, Total: 184
+Negative. Correct: 38, Incorrect: 112, Total: 150
+
+Test data. Positive: 367, Neutral: 184, Negative: 150, Total: 701
+---
+LCR-Rot-Hop++. Test accuracy: 0.310984, Combined accuracy: 0.310984
+Test results.
+Positive. Correct: 68, Incorrect: 299, Total: 367
+Neutral. Correct: 112, Incorrect: 72, Total: 184
+
+Negative. Correct: 38, Incorrect: 112, Total: 150
