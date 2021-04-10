@@ -96,8 +96,7 @@ tf.app.flags.DEFINE_string("test_data",
                            "test data path")
 
 tf.app.flags.DEFINE_string('method', 'AE', 'model type: AE, AT or AEAT')
-tf.app.flags.DEFINE_string('prob_file', 'prob1.txt', 'prob')
-tf.app.flags.DEFINE_string('saver_file', 'prob1.txt', 'prob')
+tf.app.flags.DEFINE_string('prob_file', 'prob', 'prob')
 
 # Test results.
 tf.app.flags.DEFINE_string("results_file", "data/programGeneratedData/" + str(

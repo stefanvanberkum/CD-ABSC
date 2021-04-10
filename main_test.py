@@ -17,7 +17,6 @@ from load_data import *
 nltk.download('punkt')
 
 
-# Main function.
 def main(_):
     # After running: back-up results file and model in case of running the model to be saved.
     # It is recommended to turn on logging of the output and to back that up as well.
@@ -27,17 +26,17 @@ def main(_):
     lapt_lapt = False
     book_book = False
     small_small = False
-    rest_lapt_lapt = False
+    rest_lapt_lapt = True
     rest_book_book = False
     rest_small_small = False
-    write_result = True
-    n_iter = 200
-    temp = True
+    write_result = False
+    n_iter = 1
+    temp = False
 
     FLAGS.n_iter = n_iter
 
     if rest_rest:
-        # Run and save restaurant-laptop.
+        # Run and save restaurant-restaurant.
         run_regular(source_domain="restaurant", target_domain="restaurant", year=2014, learning_rate=0.001,
                     keep_prob=0.7,
                     momentum=0.85, l2_reg=0.00001, write_result=write_result, savable=True)

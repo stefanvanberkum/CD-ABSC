@@ -6,7 +6,7 @@ from collections import Counter
 import nltk
 
 
-def window(iterable, size):  # stack overflow solution for sliding window
+def window(iterable, size):  # Stack overflow solution for sliding window.
     i = iter(iterable)
     win = []
     for e in range(0, size):
