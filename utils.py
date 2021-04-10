@@ -61,7 +61,7 @@ def change_y_to_onehot(y, pos_neu_neg=True):
         with open(FLAGS.results_file, "a") as results:
             results.write("Positive: " + str(count['1']) + ", Neutral: " + str(
                 count['0']) + ", Negative: " + str(count['-1']) + ", Total: " + str(sum(count.values())) + "\n")
-    print("Polarity count:", Counter(y))
+    print("Polarity count:", count)
     if pos_neu_neg:
         class_set = {'1', '0', '-1'}
     else:
@@ -84,7 +84,7 @@ def change_y_to_onehot_keep(y, y_onehot_mapping, pos_neu_neg=True):
         with open(FLAGS.results_file, "a") as results:
             results.write("Positive: " + str(count['1']) + ", Neutral: " + str(
                 count['0']) + ", Negative: " + str(count['-1']) + ", Total: " + str(sum(count.values())) + "\n")
-    print("Polarity count:", Counter(y))
+    print("Polarity count:", count)
     if pos_neu_neg:
         class_set = {'1', '0', '-1'}
     else:
