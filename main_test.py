@@ -1,16 +1,8 @@
-# https://github.com/ganeshjawahar/mem_absa
-# https://github.com/Humanity123/MemNet_ABSA
-# https://github.com/pcgreat/mem_absa
-# https://github.com/NUSTM/ABSC
-# https://github.com/ofwallaart/HAABSA
-# https://github.com/mtrusca/HAABSA_PLUS_PLUS
-
 import time
 
 import nltk
 
-import lcr_model
-from HAABSA import lcr_fine_tune, lcr_test
+from HAABSA import lcr_model, lcr_fine_tune, lcr_test
 from config import *
 from load_data import *
 
@@ -26,12 +18,11 @@ def main(_):
     lapt_lapt = False
     book_book = False
     small_small = False
-    rest_lapt_lapt = True
+    rest_lapt_lapt = False
     rest_book_book = False
     rest_small_small = False
-    write_result = False
-    n_iter = 1
-    temp = False
+    write_result = True
+    n_iter = 200
 
     FLAGS.n_iter = n_iter
 
@@ -122,35 +113,13 @@ def main(_):
                           year=domain[1], splits=10, split_size=domain[2], learning_rate=domain[3][0],
                           keep_prob=domain[3][1], momentum=domain[3][2], l2_reg=domain[3][3], write_result=write_result)
 
-    if temp:
-        # Run laptop-laptop for all splits.
-        run_temp(source_domain="laptop", target_domain="laptop", year=2014, splits=9, split_size=250,
-                 learning_rate=0.07, keep_prob=0.7, momentum=0.85, l2_reg=0.0001, write_result=write_result)
-
     print('Finished program successfully.')
 
 
 # Run base model which can be saved for fine-tuning.
 def run_regular(source_domain, target_domain, year, learning_rate, keep_prob, momentum, l2_reg, write_result, savable):
-    # Hyper parameters.
-    FLAGS.learning_rate = learning_rate
-    FLAGS.keep_prob1 = keep_prob
-    FLAGS.keep_prob2 = keep_prob
-    FLAGS.momentum = momentum
-    FLAGS.l2_reg = l2_reg
-
-    # Other flags.
-    FLAGS.source_domain = source_domain
-    FLAGS.target_domain = target_domain
-    FLAGS.year = year
-    FLAGS.train_path = "data/programGeneratedData/BERT/" + FLAGS.source_domain + "/" + str(
-        FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(FLAGS.year) + "_BERT.txt"
-    FLAGS.test_path = "data/programGeneratedData/BERT/" + FLAGS.target_domain + "/" + str(
-        FLAGS.embedding_dim) + "_" + FLAGS.target_domain + "_test_" + str(FLAGS.year) + "_BERT.txt"
-    FLAGS.train_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.source_domain + "_" + str(
-        FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt"
-    FLAGS.test_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.target_domain + "_" + str(
-        FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt"
+    set_hyper_flags(learning_rate=learning_rate, keep_prob=keep_prob, momentum=momentum, l2_reg=l2_reg)
+    set_other_flags(source_domain=source_domain, source_year=year, target_domain=target_domain, target_year=year)
 
     if write_result:
         with open(FLAGS.results_file, "w") as results:
@@ -159,7 +128,7 @@ def run_regular(source_domain, target_domain, year, learning_rate, keep_prob, mo
 
     start_time = time.time()
 
-    # Run main method.
+    # Run LCR-Rot-hop++.
     if savable:
         FLAGS.savable = 1
     train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
@@ -179,23 +148,8 @@ def run_regular(source_domain, target_domain, year, learning_rate, keep_prob, mo
 # Runs LCR-Rot-hop++ for multiple training splits.
 def run_split(source_domain, target_domain, year, splits, split_size, learning_rate, keep_prob, momentum, l2_reg,
               write_result):
-    # Hyper parameters.
-    FLAGS.learning_rate = learning_rate
-    FLAGS.keep_prob1 = keep_prob
-    FLAGS.keep_prob2 = keep_prob
-    FLAGS.momentum = momentum
-    FLAGS.l2_reg = l2_reg
-
-    # Other flags.
-    FLAGS.source_domain = source_domain
-    FLAGS.target_domain = target_domain
-    FLAGS.year = year
-    FLAGS.test_path = "data/programGeneratedData/BERT/" + FLAGS.target_domain + "/" + str(
-        FLAGS.embedding_dim) + "_" + FLAGS.target_domain + "_test_" + str(FLAGS.year) + "_BERT.txt"
-    FLAGS.train_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.source_domain + "_" + str(
-        FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt"
-    FLAGS.test_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.target_domain + "_" + str(
-        FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt"
+    set_hyper_flags(learning_rate=learning_rate, keep_prob=keep_prob, momentum=momentum, l2_reg=l2_reg)
+    set_other_flags(source_domain=source_domain, source_year=year, target_domain=target_domain, target_year=year)
 
     if write_result:
         FLAGS.results_file = "data/programGeneratedData/" + str(
@@ -205,18 +159,21 @@ def run_split(source_domain, target_domain, year, splits, split_size, learning_r
             results.write("")
         FLAGS.writable = 1
 
-    # Run main method.
     for i in range(1, splits + 1):
         start_time = time.time()
         print("Running " + FLAGS.source_domain + " to " + FLAGS.target_domain + " using " + str(
             split_size * i) + " aspects...")
+
         if FLAGS.writable == 1:
             with open(FLAGS.results_file, "a") as results:
                 results.write(FLAGS.source_domain + " to " + FLAGS.target_domain + " using " + str(
                     split_size * i) + " aspects\n---\n")
+
         FLAGS.train_path = "data/programGeneratedData/BERT/" + FLAGS.source_domain + "/" + str(
             FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(FLAGS.year) + "_BERT_" + str(
             split_size * i) + ".txt"
+
+        # Run LCR-Rot-hop++.
         train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
         _, pred2, fw2, bw2, tl2, tr2 = lcr_model.main(FLAGS.train_path, FLAGS.test_path, 1.0,
                                                       test_size, test_size, FLAGS.learning_rate,
@@ -234,23 +191,8 @@ def run_split(source_domain, target_domain, year, splits, split_size, learning_r
 # Fine-tune method must be slightly adapted to work on original domains other than restaurant.
 def run_fine_tune(original_domain, source_domain, target_domain, year, splits, split_size, learning_rate, keep_prob,
                   momentum, l2_reg, write_result, split=True):
-    # Hyper parameters.
-    FLAGS.learning_rate = learning_rate
-    FLAGS.keep_prob1 = keep_prob
-    FLAGS.keep_prob2 = keep_prob
-    FLAGS.momentum = momentum
-    FLAGS.l2_reg = l2_reg
-
-    # Other flags.
-    FLAGS.source_domain = source_domain
-    FLAGS.target_domain = target_domain
-    FLAGS.year = year
-    FLAGS.test_path = "data/programGeneratedData/BERT/" + FLAGS.target_domain + "/" + str(
-        FLAGS.embedding_dim) + "_" + FLAGS.target_domain + "_test_" + str(FLAGS.year) + "_BERT.txt"
-    FLAGS.train_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.source_domain + "_" + str(
-        FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt"
-    FLAGS.test_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.target_domain + "_" + str(
-        FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt"
+    set_hyper_flags(learning_rate=learning_rate, keep_prob=keep_prob, momentum=momentum, l2_reg=l2_reg)
+    set_other_flags(source_domain=source_domain, source_year=year, target_domain=target_domain, target_year=year)
 
     if write_result:
         FLAGS.results_file = "data/programGeneratedData/" + str(
@@ -266,14 +208,18 @@ def run_fine_tune(original_domain, source_domain, target_domain, year, splits, s
             print(
                 "Running " + original_domain + " model with " + FLAGS.source_domain + " fine-tuning to " + FLAGS.target_domain + " using " + str(
                     split_size * i) + " aspects...")
+
             if FLAGS.writable == 1:
                 with open(FLAGS.results_file, "a") as results:
                     results.write(
                         original_domain + " to " + FLAGS.target_domain + " with " + FLAGS.source_domain + " fine-tuning using " + str(
                             split_size * i) + " aspects\n---\n")
+
             FLAGS.train_path = "data/programGeneratedData/BERT/" + source_domain + "/" + str(
                 FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(FLAGS.year) + "_BERT_" + str(
                 split_size * i) + ".txt"
+
+            # Run fine-tuning method.
             train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
             _, pred2, fw2, bw2, tl2, tr2 = lcr_fine_tune.main(FLAGS.train_path, FLAGS.test_path, 1.0,
                                                               test_size, test_size,
@@ -293,10 +239,13 @@ def run_fine_tune(original_domain, source_domain, target_domain, year, splits, s
             FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(FLAGS.year) + "_BERT.txt"
         print(
             "Running " + original_domain + " model with " + FLAGS.source_domain + " fine-tuning to " + FLAGS.target_domain + "...")
+
         if FLAGS.writable == 1:
             with open(FLAGS.results_file, "a") as results:
                 results.write(
                     original_domain + " to " + FLAGS.target_domain + " with " + FLAGS.source_domain + " fine-tuning\n---\n")
+
+        # Run fine-tuning method.
         train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
         _, pred2, fw2, bw2, tl2, tr2 = lcr_fine_tune.main(FLAGS.train_path, FLAGS.test_path, 1.0,
                                                           test_size, test_size, FLAGS.learning_rate,
@@ -313,18 +262,8 @@ def run_fine_tune(original_domain, source_domain, target_domain, year, splits, s
 
 # Runs the test data through the model from the original domain.
 def run_test(source_domain, source_year, target_domain, target_year, write_result):
-    # Other flags.
-    FLAGS.source_domain = source_domain
-    FLAGS.target_domain = target_domain
-    FLAGS.year = target_year
-    FLAGS.train_path = "data/programGeneratedData/BERT/" + FLAGS.source_domain + "/" + str(
-        FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(source_year) + "_BERT.txt"
-    FLAGS.test_path = "data/programGeneratedData/BERT/" + FLAGS.target_domain + "/" + str(
-        FLAGS.embedding_dim) + "_" + FLAGS.target_domain + "_test_" + str(FLAGS.year) + "_BERT.txt"
-    FLAGS.train_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.source_domain + "_" + str(
-        source_year) + "_" + str(FLAGS.embedding_dim) + ".txt"
-    FLAGS.test_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.target_domain + "_" + str(
-        FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt"
+    set_other_flags(source_domain=source_domain, source_year=source_year, target_domain=target_domain,
+                    target_year=target_year)
 
     if write_result:
         FLAGS.results_file = "data/programGeneratedData/" + str(
@@ -336,7 +275,7 @@ def run_test(source_domain, source_year, target_domain, target_year, write_resul
 
     start_time = time.time()
 
-    # Run main method.
+    # Run test method.
     train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
     _, pred2, fw2, bw2, tl2, tr2 = lcr_test.main(FLAGS.test_path, 1.0, test_size, test_size)
     tf.reset_default_graph()
@@ -348,58 +287,26 @@ def run_test(source_domain, source_year, target_domain, target_year, write_resul
             results.write("Runtime: " + str(run_time) + " seconds.\n\n")
 
 
-# Runs LCR-Rot-hop++ for multiple training splits.
-def run_temp(source_domain, target_domain, year, splits, split_size, learning_rate, keep_prob, momentum, l2_reg,
-             write_result):
-    # Hyper parameters.
+def set_hyper_flags(learning_rate, keep_prob, momentum, l2_reg):
     FLAGS.learning_rate = learning_rate
     FLAGS.keep_prob1 = keep_prob
     FLAGS.keep_prob2 = keep_prob
     FLAGS.momentum = momentum
     FLAGS.l2_reg = l2_reg
 
-    # Other flags.
+
+def set_other_flags(source_domain, source_year, target_domain, target_year):
     FLAGS.source_domain = source_domain
     FLAGS.target_domain = target_domain
-    FLAGS.year = year
+    FLAGS.year = target_year
+    FLAGS.train_path = "data/programGeneratedData/BERT/" + FLAGS.source_domain + "/" + str(
+        FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(source_year) + "_BERT.txt"
     FLAGS.test_path = "data/programGeneratedData/BERT/" + FLAGS.target_domain + "/" + str(
         FLAGS.embedding_dim) + "_" + FLAGS.target_domain + "_test_" + str(FLAGS.year) + "_BERT.txt"
     FLAGS.train_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.source_domain + "_" + str(
-        FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt"
+        source_year) + "_" + str(FLAGS.embedding_dim) + ".txt"
     FLAGS.test_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.target_domain + "_" + str(
         FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt"
-
-    if write_result:
-        FLAGS.results_file = "data/programGeneratedData/" + str(
-            FLAGS.embedding_dim) + "results_" + FLAGS.source_domain + "_" + FLAGS.target_domain + "_" + str(
-            FLAGS.year) + "_2250_re.txt"
-        with open(FLAGS.results_file, "w") as results:
-            results.write("")
-        FLAGS.writable = 1
-
-    # Run main method.
-    for i in range(9, splits + 1):
-        start_time = time.time()
-        print("Running " + FLAGS.source_domain + " to " + FLAGS.target_domain + " using " + str(
-            split_size * i) + " aspects...")
-        if FLAGS.writable == 1:
-            with open(FLAGS.results_file, "a") as results:
-                results.write(FLAGS.source_domain + " to " + FLAGS.target_domain + " using " + str(
-                    split_size * i) + " aspects\n---\n")
-        FLAGS.train_path = "data/programGeneratedData/BERT/" + FLAGS.source_domain + "/" + str(
-            FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(FLAGS.year) + "_BERT_" + str(
-            split_size * i) + ".txt"
-        train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
-        _, pred2, fw2, bw2, tl2, tr2 = lcr_model.main(FLAGS.train_path, FLAGS.test_path, 1.0,
-                                                      test_size, test_size, FLAGS.learning_rate,
-                                                      FLAGS.keep_prob1, FLAGS.momentum, FLAGS.l2_reg)
-        tf.reset_default_graph()
-
-        end_time = time.time()
-        run_time = end_time - start_time
-        if write_result:
-            with open(FLAGS.results_file, "a") as results:
-                results.write("Runtime: " + str(run_time) + " seconds.\n\n")
 
 
 if __name__ == '__main__':

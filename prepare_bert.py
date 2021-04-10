@@ -1,13 +1,8 @@
-'''
-This Program makes the BERT embedding matrix and test-/traindata, using the tokenisation for BERT
-First 'getBERTusingColab' should be used to compile the embeddings.
-The new test-/traindata files contain original data, with every word unique and corresponding to vector in emb_matrix
-'''
 from config import *
 
 # <editor-fold desc="Combining embedding files, retrieved with 'getBERTusingColab">
 
-# Get raw data and BERT embedding first.
+# Get raw data and BERT embedding first from raw_data and getBERT (jupyter notebook files).
 
 # Domain is one of the following: restaurant (2014), laptop (2014), book (2019), hotel (2015), Apex (2004),
 # Camera (2004), Creative (2004), Nokia (2004).
@@ -68,10 +63,8 @@ with open(temp_path + "temp/BERT_base_" + str(FLAGS.year) + "embedding_withCLS_S
                     unique_words.append(word)
                     unique_words_index.append(0)
                 vocaBERT.append(word)
-# print(vocaBERT)          #list excl SEP
-print("vocaBERT: " + str(len(vocaBERT)))  # 44638
-# print(vocaBERT_SEP)      #list incl SEP
-print("vocaBERT_SEP: " + str(len(vocaBERT_SEP)))  # 47168
+print("vocaBERT: " + str(len(vocaBERT)))
+print("vocaBERT_SEP: " + str(len(vocaBERT_SEP)))
 # </editor-fold>
 
 # <editor-fold desc="make embedding matrix with unique words, prints counter">
@@ -83,9 +76,8 @@ with open(temp_path + "temp/BERT_base_" + str(FLAGS.year) + "embedding.txt") as 
         for line in BERTemb:
             word = line.split(" ")[0]
             counter += 1
-            # print(counter)
             weights = line.split(" ")[1:]
-            index = unique_words.index(word)  # get index in unique words table
+            index = unique_words.index(word)  # Get index in unique words table.
             word_count = unique_words_index[index]
             unique_words_index[index] += 1
             item = str(word) + '_' + str(word_count)
@@ -96,7 +88,7 @@ with open(temp_path + "temp/BERT_base_" + str(FLAGS.year) + "embedding.txt") as 
                 outfile.write("%s " % weight)
             outfile.write("%s" % weights[-1])
 # </editor-fold>,
-# BERT_Large_2016.1024.txt is now the embedding matrix with all the unique words. Shape = (44638,768)
+# We now have the embedding matrix with all the unique words.
 
 # <editor-fold desc="make uniqueBERT_SEP variable">
 uniqueVocaBERT_SEP = []
@@ -107,12 +99,9 @@ for i in range(0, len(vocaBERT_SEP)):
     else:
         uniqueVocaBERT_SEP.append(uniqueVocaBERT[counti])
         counti += 1
-# print(vocaBERT_SEP)             # list incl SEP
-print("vocaBERT_SEP: " + str(len(vocaBERT_SEP)))  # 47168
-# print(uniqueVocaBERT)           # data as unique words, excl SEP
-print("uniqueVocaBERT: " + str(len(uniqueVocaBERT)))  # 44638
-# print(uniqueVocaBERT_SEP)       # data as unique words, incl SEP
-print("uniqueVocaBERT_SEP: " + str(len(uniqueVocaBERT_SEP)))  # 47168
+print("vocaBERT_SEP: " + str(len(vocaBERT_SEP)))
+print("uniqueVocaBERT: " + str(len(uniqueVocaBERT)))
+print("uniqueVocaBERT_SEP: " + str(len(uniqueVocaBERT_SEP)))
 # </editor-fold
 
 # <editor-fold desc="make a matrix (three vectors) containing for each word in bert-tokeniser style:
@@ -153,10 +142,6 @@ for i in range(0, len(vocaBERT_SEP)):
             x_targ[i - k] = 1
     else:
         x_targ.append(0)
-# print(x_word)
-# print(x_sent)
-# print(x_targ)
-# print(x_tlen)
 # </editor-fold>
 
 # <editor-fold desc="print to BERT data to text file">
@@ -221,20 +206,18 @@ for filenr in range(1, 8):
                 x_targ[i - k] = 1
         else:
             x_targ.append(0)
-    # print(x_word)
-    # print(x_sent)
-    # print(x_targ)
-    # print(x_tlen)
 
 # <editor-fold desc="Combine words, this is needed for different tokenisation for target phrase">
+# Different files for different extra target lengths, e.g. file 2 contains target phrases that are 1 word longer in the
+# BERT embedding than the original target phrase
 lines_1 = open(temp_path + "temp/" + "unique" + str(
-    FLAGS.year) + "_BERT_Data_1.txt").readlines()  # different files for different extra target lengths
+    FLAGS.year) + "_BERT_Data_1.txt").readlines()
 lines_2 = open(temp_path + "temp/" + "unique" + str(
-    FLAGS.year) + "_BERT_Data_2.txt").readlines()  # e.g., file 2 contains target phrases
+    FLAGS.year) + "_BERT_Data_2.txt").readlines()
 lines_3 = open(
-    temp_path + "temp/" + "unique" + str(FLAGS.year) + "_BERT_Data_3.txt").readlines()  # that are 1 word longer in BERT
+    temp_path + "temp/" + "unique" + str(FLAGS.year) + "_BERT_Data_3.txt").readlines()
 lines_4 = open(temp_path + "temp/" + "unique" + str(
-    FLAGS.year) + "_BERT_Data_4.txt").readlines()  # embedding than the original target phrase
+    FLAGS.year) + "_BERT_Data_4.txt").readlines()
 lines_5 = open(temp_path + "temp/" + "unique" + str(FLAGS.year) + "_BERT_Data_5.txt").readlines()
 lines_6 = open(temp_path + "temp/" + "unique" + str(FLAGS.year) + "_BERT_Data_6.txt").readlines()
 lines_7 = open(temp_path + "temp/" + "unique" + str(FLAGS.year) + "_BERT_Data_7.txt").readlines()

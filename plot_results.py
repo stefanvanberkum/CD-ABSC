@@ -3,6 +3,8 @@ import pandas as pd
 import statsmodels.formula.api as sm
 from plotnine import aes, geom_point, ggplot, stat_smooth
 
+global embedding_dim, rest_path, target_path, ft_path, save_path
+
 
 def main():
     global embedding_dim
@@ -80,7 +82,6 @@ def get_results(domain, year, splits, split_size):
     with open(target_path + str(embedding_dim) + "results_" + domain + "_" + domain + "_" + str(year) + ".txt",
               'r') as results:
         lines = results.readlines()
-        target_acc = []
         for i in range(5, len(lines), 15):
             acc_line = lines[i].split(" ")
             acc = acc_line[6][:len(acc_line[3]) - 1]  # Remove trailing comma too.
@@ -93,7 +94,6 @@ def get_results(domain, year, splits, split_size):
     with open(ft_path + str(embedding_dim) + "results_restaurant_" + domain + "_" + domain + "_" + str(year) + ".txt",
               'r') as results:
         lines = results.readlines()
-        ft_acc = []
         for i in range(5, len(lines), 15):
             acc_line = lines[i].split(" ")
             acc = acc_line[6][:len(acc_line[3]) - 1]  # Remove trailing comma too.
