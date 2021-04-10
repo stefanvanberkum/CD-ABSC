@@ -108,6 +108,9 @@ tf.app.flags.DEFINE_integer("savable", 0, "one if savable")
 
 
 def print_config():
+    """
+    Method from Trusca et al. (2020), no docstring provided.
+    """
     FLAGS(sys.argv)
     print('\nParameters:')
     for k, v in sorted(tf.app.flags.FLAGS.flag_values_dict().items()):
@@ -115,26 +118,45 @@ def print_config():
 
 
 def loss_func(y, prob):
+    """
+    Method from Trusca et al. (2020), no docstring provided.
+
+    :param y:
+    :param prob:
+    :return:
+    """
     reg_loss = tf.get_collection(tf.GraphKeys.REGULARIZATION_LOSSES)
     loss = - tf.reduce_mean(y * tf.log(prob)) + sum(reg_loss)
     return loss
 
 
 def acc_func(y, prob):
+    """
+    Method from Trusca et al. (2020), no docstring provided.
+
+    :param y:
+    :param prob:
+    :return:
+    """
     correct_pred = tf.equal(tf.argmax(prob, 1), tf.argmax(y, 1))
     acc_num = tf.reduce_sum(tf.cast(correct_pred, tf.int32))
     acc_prob = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
     return acc_num, acc_prob
 
 
-def train_func(loss, r, global_step, optimizer=None):
-    if optimizer:
-        return optimizer(learning_rate=r).minimize(loss, global_step=global_step)
-    else:
-        return tf.train.AdamOptimizer(learning_rate=r).minimize(loss, global_step=global_step)
-
-
 def summary_func(loss, acc, test_loss, test_acc, _dir, title, sess):
+    """
+    Method from Trusca et al. (2020), no docstring provided. NOTE. Not used in current adaptation.
+
+    :param loss:
+    :param acc:
+    :param test_loss:
+    :param test_acc:
+    :param _dir:
+    :param title:
+    :param sess:
+    :return:
+    """
     summary_loss = tf.summary.scalar('loss' + title, loss)
     summary_acc = tf.summary.scalar('acc' + title, acc)
     test_summary_loss = tf.summary.scalar('loss' + title, test_loss)
@@ -150,6 +172,12 @@ def summary_func(loss, acc, test_loss, test_acc, _dir, title, sess):
 
 
 def saver_func(_dir):
+    """
+    Method from Trusca et al. (2020), no docstring provided.
+
+    :param _dir:
+    :return:
+    """
     saver = tf.train.Saver(write_version=tf.train.SaverDef.V2, max_to_keep=1000)
     import os
     if not os.path.exists(_dir):

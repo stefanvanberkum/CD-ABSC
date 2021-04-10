@@ -6,7 +6,14 @@ from collections import Counter
 import nltk
 
 
-def window(iterable, size):  # stack overflow solution for sliding window
+def window(iterable, size):  # Stack overflow solution for sliding window.
+    """
+    Method from Trusca et al. (2020), no docstring provided.
+
+    :param iterable:
+    :param size:
+    :return:
+    """
     i = iter(iterable)
     win = []
     for e in range(0, size):
@@ -18,6 +25,14 @@ def window(iterable, size):  # stack overflow solution for sliding window
 
 
 def _get_data_tuple(sptoks, asp_term_in, label):
+    """
+    Method from Trusca et al. (2020), no docstring provided.
+
+    :param sptoks:
+    :param asp_term_in:
+    :param label:
+    :return:
+    """
     # Find the ids of aspect term.
     aspect_is = []
     asp_term = ' '.join(sp for sp in asp_term_in).lower()
