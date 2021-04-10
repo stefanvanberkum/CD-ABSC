@@ -107,7 +107,7 @@ def lcr_rot(input_fw, input_bw, sen_len_fw, sen_len_bw, target, sen_len_tr, keep
     return prob, att_l, att_r, att_t_l, att_t_r
 
 
-def main(train_path, test_path, accuracyOnt, test_size, remaining_size, learning_rate=0.09, keep_prob=0.3,
+def main(train_path, test_path, accuracy_ont, test_size, remaining_size, learning_rate=0.09, keep_prob=0.3,
          momentum=0.85, l2=0.00001):
     print_config()
     with tf.device('/gpu:1'):
@@ -201,7 +201,8 @@ def main(train_path, test_path, accuracyOnt, test_size, remaining_size, learning
             pos_neu_neg=True
         )
 
-        def get_batch_data(x_f, sen_len_f, x_b, sen_len_b, yi, target, tl, batch_size, kp1, kp2, is_shuffle=True):
+        def get_batch_data(x_f, sen_len_f, x_b, sen_len_b, yi, batch_target, batch_tl, batch_size, kp1, kp2,
+                           is_shuffle=True):
             for index in batch_index(len(yi), batch_size, 1, is_shuffle):
                 feed_dict = {
                     x: x_f[index],
@@ -209,8 +210,8 @@ def main(train_path, test_path, accuracyOnt, test_size, remaining_size, learning
                     y: yi[index],
                     sen_len: sen_len_f[index],
                     sen_len_bw: sen_len_b[index],
-                    target_words: target[index],
-                    tar_len: tl[index],
+                    target_words: batch_target[index],
+                    tar_len: batch_tl[index],
                     keep_prob1: kp1,
                     keep_prob2: kp2,
                 }
@@ -258,7 +259,7 @@ def main(train_path, test_path, accuracyOnt, test_size, remaining_size, learning
             print('Total samples={}, correct predictions={}'.format(cnt, acc))
             trainacc = trainacc / traincnt
             acc = acc / cnt
-            totalacc = ((acc * remaining_size) + (accuracyOnt * (test_size - remaining_size))) / test_size
+            totalacc = ((acc * remaining_size) + (accuracy_ont * (test_size - remaining_size))) / test_size
             cost = cost / cnt
             print('Iter {}: mini-batch loss={:.6f}, train acc={:.6f}, test acc={:.6f}, combined acc={:.6f}'.format(i,
                                                                                                                    cost,
@@ -273,7 +274,7 @@ def main(train_path, test_path, accuracyOnt, test_size, remaining_size, learning
                 results.write(
                     "---\nLCR-Rot-Hop++. Train accuracy: {:.6f}, Test accuracy: {:.6f}, Combined accuracy: {:.6f}\n".format(
                         trainacc, acc, totalacc))
-                maxtotalacc = ((max_acc * remaining_size) + (accuracyOnt * (test_size - remaining_size))) / test_size
+                maxtotalacc = ((max_acc * remaining_size) + (accuracy_ont * (test_size - remaining_size))) / test_size
                 results.write("Maximum. Test accuracy: {:.6f}, Combined accuracy: {:.6f}\n---\n".format(max_acc,
                                                                                                         maxtotalacc))
 
