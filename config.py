@@ -114,6 +114,7 @@ def print_config():
     print('\nParameters:')
     for k, v in sorted(tf.app.flags.FLAGS.flag_values_dict().items()):
         print('{}={}'.format(k, v))
+    print()
 
 
 def loss_func(y, prob):
