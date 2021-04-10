@@ -162,7 +162,7 @@ def run_regular(source_domain, target_domain, year, learning_rate, keep_prob, mo
     # Run main method.
     if savable:
         FLAGS.savable = 1
-    train_size, test_size, train_polarity_vector, test_polarity_vector = loadDataAndEmbeddings(FLAGS, False)
+    train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
     _, pred2, fw2, bw2, tl2, tr2 = lcr_model.main(FLAGS.train_path, FLAGS.test_path, 1.0, test_size,
                                                   test_size, FLAGS.learning_rate, FLAGS.keep_prob1,
                                                   FLAGS.momentum, FLAGS.l2_reg)
@@ -217,7 +217,7 @@ def run_split(source_domain, target_domain, year, splits, split_size, learning_r
         FLAGS.train_path = "data/programGeneratedData/BERT/" + FLAGS.source_domain + "/" + str(
             FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(FLAGS.year) + "_BERT_" + str(
             split_size * i) + ".txt"
-        train_size, test_size, train_polarity_vector, test_polarity_vector = loadDataAndEmbeddings(FLAGS, False)
+        train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
         _, pred2, fw2, bw2, tl2, tr2 = lcr_model.main(FLAGS.train_path, FLAGS.test_path, 1.0,
                                                       test_size, test_size, FLAGS.learning_rate,
                                                       FLAGS.keep_prob1, FLAGS.momentum, FLAGS.l2_reg)
@@ -274,7 +274,7 @@ def run_fine_tune(original_domain, source_domain, target_domain, year, splits, s
             FLAGS.train_path = "data/programGeneratedData/BERT/" + source_domain + "/" + str(
                 FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(FLAGS.year) + "_BERT_" + str(
                 split_size * i) + ".txt"
-            train_size, test_size, train_polarity_vector, test_polarity_vector = loadDataAndEmbeddings(FLAGS, False)
+            train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
             _, pred2, fw2, bw2, tl2, tr2 = lcr_fine_tune.main(FLAGS.train_path, FLAGS.test_path, 1.0,
                                                               test_size, test_size,
                                                               FLAGS.learning_rate,
@@ -297,7 +297,7 @@ def run_fine_tune(original_domain, source_domain, target_domain, year, splits, s
             with open(FLAGS.results_file, "a") as results:
                 results.write(
                     original_domain + " to " + FLAGS.target_domain + " with " + FLAGS.source_domain + " fine-tuning\n---\n")
-        train_size, test_size, train_polarity_vector, test_polarity_vector = loadDataAndEmbeddings(FLAGS, False)
+        train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
         _, pred2, fw2, bw2, tl2, tr2 = lcr_fine_tune.main(FLAGS.train_path, FLAGS.test_path, 1.0,
                                                           test_size, test_size, FLAGS.learning_rate,
                                                           FLAGS.keep_prob1, FLAGS.momentum,
@@ -337,7 +337,7 @@ def run_test(source_domain, source_year, target_domain, target_year, write_resul
     start_time = time.time()
 
     # Run main method.
-    train_size, test_size, train_polarity_vector, test_polarity_vector = loadDataAndEmbeddings(FLAGS, False)
+    train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
     _, pred2, fw2, bw2, tl2, tr2 = lcr_test.main(FLAGS.test_path, 1.0, test_size, test_size)
     tf.reset_default_graph()
 
@@ -389,7 +389,7 @@ def run_temp(source_domain, target_domain, year, splits, split_size, learning_ra
         FLAGS.train_path = "data/programGeneratedData/BERT/" + FLAGS.source_domain + "/" + str(
             FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(FLAGS.year) + "_BERT_" + str(
             split_size * i) + ".txt"
-        train_size, test_size, train_polarity_vector, test_polarity_vector = loadDataAndEmbeddings(FLAGS, False)
+        train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
         _, pred2, fw2, bw2, tl2, tr2 = lcr_model.main(FLAGS.train_path, FLAGS.test_path, 1.0,
                                                       test_size, test_size, FLAGS.learning_rate,
                                                       FLAGS.keep_prob1, FLAGS.momentum, FLAGS.l2_reg)

@@ -62,7 +62,7 @@ def run_hyper(domain, year, size, fine_tune, runs, n_iter):
     FLAGS.test_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.target_domain + "_" + str(
         FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt"
 
-    train_size, test_size, train_polarity_vector, test_polarity_vector = loadHyperData(FLAGS, True)
+    train_size, test_size, train_polarity_vector, test_polarity_vector = load_hyper_data(FLAGS, True)
 
     # Was 248, 0.87
     remaining_size = test_size
