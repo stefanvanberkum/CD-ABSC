@@ -58,8 +58,8 @@ def main(_):
 
     if lapt_lapt:
         # Run laptop-laptop for all splits.
-        run_split(domain="laptop", year=2014, splits=9, split_size=250, learning_rate=0.001, keep_prob=0.7,
-                  momentum=0.85, l2_reg=0.00001, write_result=write_result)
+        run_split(domain="laptop", year=2014, splits=9, split_size=250, learning_rate=0.07, keep_prob=0.7,
+                  momentum=0.85, l2_reg=0.0001, write_result=write_result)
 
     if book_book:
         # Run book-book for all splits.

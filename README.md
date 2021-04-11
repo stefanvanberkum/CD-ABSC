@@ -45,9 +45,11 @@ Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop
       how to run).
 - Prepare BERT train and test file and BERT embedding:
     - Run prepare_bert.py for your required domains.
+- Tune hyperparameters to your specific task using main_hyper.py or use hyperparameters as pre-set in main_test.py.
 - Select tests to run and run main_test.py (running all tests will take a long time, 2-4 minutes per iteration). Make
   sure write_result is set to True if you want the results to be saved to a text file.
-- Run plot_result.py to obtain graphs containing all three tests for each of your required domains.
+- Run plot_result.py to obtain graphs containing all three tests for each of your required domains (requires
+  write_result in previous step).
 
 NOTE. Avoid residual batches of size one in the training set, the code cannot handle such cases and will raise an error.
 Can be solved by manually changing the size of the train set such that train_size % batch size != 1.
