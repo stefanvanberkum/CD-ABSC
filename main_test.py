@@ -10,27 +10,32 @@ nltk.download('punkt')
 
 
 def main(_):
-    # After running: back-up results file and model in case of running the model to be saved.
-    # It is recommended to turn on logging of the output and to back that up as well.
+    """
+    Runs all specified tests.
 
-    rest_rest = False
-    rest_test = False
-    lapt_lapt = False
-    book_book = False
-    small_small = False
-    rest_lapt_lapt = False
-    rest_book_book = False
-    rest_small_small = False
-    write_result = True
-    n_iter = 200
+    :param _:
+    :return:
+    """
+    # After running: back-up results file and model in case of running the model to be saved.
+    # It is recommended to turn on logging of the output and to back that up as well for debugging purposes.
+
+    rest_rest = False  # Run and save LCR-Rot-hop++ restaurant model.
+    rest_test = False  # Test all domains on the off-the-shelf restaurant model.
+    lapt_lapt = False  # Run LCR-Rot-hop++ laptop model.
+    book_book = False  # Run LCR-Rot-hop++ book model.
+    small_small = False  # Run LCR-Rot-hop++ for hotel and electronics models.
+    rest_lapt_lapt = True  # Run fine-tuning on restaurant model for laptop domain.
+    rest_book_book = False  # Run fine-tuning on restaurant model for book domain.
+    rest_small_small = False  # Run fine-tuning on restaurant model for hotel and electronics domains.
+    write_result = False  # Write results to text file.
+    n_iter = 1
 
     FLAGS.n_iter = n_iter
 
     if rest_rest:
         # Run and save restaurant-restaurant.
-        run_regular(source_domain="restaurant", target_domain="restaurant", year=2014, learning_rate=0.001,
-                    keep_prob=0.7,
-                    momentum=0.85, l2_reg=0.00001, write_result=write_result, savable=True)
+        run_regular(domain="restaurant", year=2014, learning_rate=0.001, keep_prob=0.7, momentum=0.85, l2_reg=0.00001,
+                    write_result=write_result, savable=True)
 
     if rest_test:
         laptop_domain = ["laptop", 2014]
@@ -49,13 +54,13 @@ def main(_):
 
     if lapt_lapt:
         # Run laptop-laptop for all splits.
-        run_split(source_domain="laptop", target_domain="laptop", year=2014, splits=9, split_size=250,
-                  learning_rate=0.001, keep_prob=0.7, momentum=0.85, l2_reg=0.00001, write_result=write_result)
+        run_split(domain="laptop", year=2014, splits=9, split_size=250, learning_rate=0.001, keep_prob=0.7,
+                  momentum=0.85, l2_reg=0.00001, write_result=write_result)
 
     if book_book:
         # Run book-book for all splits.
-        run_split(source_domain="book", target_domain="book", year=2019, splits=9, split_size=300,
-                  learning_rate=0.001, keep_prob=0.7, momentum=0.85, l2_reg=0.00001, write_result=write_result)
+        run_split(domain="book", year=2019, splits=9, split_size=300, learning_rate=0.001, keep_prob=0.7, momentum=0.85,
+                  l2_reg=0.00001, write_result=write_result)
 
     if small_small:
         # Hyper parameters (learning_rate, keep_prob, momentum, l2_reg).
@@ -75,21 +80,18 @@ def main(_):
 
         # Run all single run models.
         for domain in domains:
-            run_split(source_domain=domain[0], target_domain=domain[0], year=domain[1], splits=10, split_size=domain[2],
-                      learning_rate=domain[3][0], keep_prob=domain[3][1], momentum=domain[3][2], l2_reg=domain[3][3],
-                      write_result=write_result)
+            run_split(domain=domain[0], year=domain[1], splits=10, split_size=domain[2], learning_rate=domain[3][0],
+                      keep_prob=domain[3][1], momentum=domain[3][2], l2_reg=domain[3][3], write_result=write_result)
 
     if rest_lapt_lapt:
         # Run laptop-laptop fine-tuning on restaurant model.
-        run_fine_tune(original_domain="restaurant", source_domain="laptop", target_domain="laptop", year=2014, splits=9,
-                      split_size=250, learning_rate=0.02, keep_prob=0.6, momentum=0.85, l2_reg=0.00001,
-                      write_result=write_result)
+        run_fine_tune(original_domain="restaurant", target_domain="laptop", year=2014, splits=9, split_size=250,
+                      learning_rate=0.02, keep_prob=0.6, momentum=0.85, l2_reg=0.00001, write_result=write_result)
 
     if rest_book_book:
         # Run book-book fine-tuning on restaurant model.
-        run_fine_tune(original_domain="restaurant", source_domain="book", target_domain="book", year=2019, splits=9,
-                      split_size=300, learning_rate=0.01, keep_prob=0.6, momentum=0.85, l2_reg=0.001,
-                      write_result=write_result)
+        run_fine_tune(original_domain="restaurant", target_domain="book", year=2019, splits=9, split_size=300,
+                      learning_rate=0.01, keep_prob=0.6, momentum=0.85, l2_reg=0.001, write_result=write_result)
 
     if rest_small_small:
         # Hyper parameters (learning_rate, keep_prob, momentum, l2_reg).
@@ -109,17 +111,29 @@ def main(_):
 
         # Run fine-tuning on restaurant model for all single run models.
         for domain in domains:
-            run_fine_tune(original_domain="restaurant", source_domain=domain[0], target_domain=domain[0],
-                          year=domain[1], splits=10, split_size=domain[2], learning_rate=domain[3][0],
-                          keep_prob=domain[3][1], momentum=domain[3][2], l2_reg=domain[3][3], write_result=write_result)
+            run_fine_tune(original_domain="restaurant", target_domain=domain[0], year=domain[1], splits=10,
+                          split_size=domain[2], learning_rate=domain[3][0], keep_prob=domain[3][1],
+                          momentum=domain[3][2], l2_reg=domain[3][3], write_result=write_result)
 
     print('Finished program successfully.')
 
 
-# Run base model which can be saved for fine-tuning.
-def run_regular(source_domain, target_domain, year, learning_rate, keep_prob, momentum, l2_reg, write_result, savable):
+def run_regular(domain, year, learning_rate, keep_prob, momentum, l2_reg, write_result, savable):
+    """
+    Run regular LCR-Rot-hop++ model which can be saved for fine-tuning.
+
+    :param domain: train and test set domain
+    :param year: train and test set year
+    :param learning_rate: learning rate hyperparameter
+    :param keep_prob: keep probability hyperparameter
+    :param momentum: momentum hyperparameter
+    :param l2_reg: l2 regularization hyperparameter
+    :param write_result: True if results are to be saved to a text file
+    :param savable: True if the model weights and biases are to be saved
+    :return:
+    """
     set_hyper_flags(learning_rate=learning_rate, keep_prob=keep_prob, momentum=momentum, l2_reg=l2_reg)
-    set_other_flags(source_domain=source_domain, source_year=year, target_domain=target_domain, target_year=year)
+    set_other_flags(source_domain=domain, source_year=year, target_domain=domain, target_year=year)
 
     if write_result:
         with open(FLAGS.results_file, "w") as results:
@@ -145,11 +159,60 @@ def run_regular(source_domain, target_domain, year, learning_rate, keep_prob, mo
             results.write("Runtime: " + str(run_time) + " seconds.\n\n")
 
 
-# Runs LCR-Rot-hop++ for multiple training splits.
-def run_split(source_domain, target_domain, year, splits, split_size, learning_rate, keep_prob, momentum, l2_reg,
+def run_test(source_domain, source_year, target_domain, target_year, write_result):
+    """
+    Run the test data through the pre-trained model from the original domain.
+
+    :param source_domain: the domain of the pre-trained model (always restaurant for this adaptation)
+    :param source_year: the year of the pre-trained model domain dataset
+    :param target_domain: the target domain
+    :param target_year: the year of the target domain dataset
+    :param write_result: True if results are to be saved to a text file
+    :return:
+    """
+    set_other_flags(source_domain=source_domain, source_year=source_year, target_domain=target_domain,
+                    target_year=target_year)
+
+    if write_result:
+        FLAGS.results_file = "data/programGeneratedData/" + str(
+            FLAGS.embedding_dim) + "results_" + source_domain + "_" + FLAGS.target_domain + "_test_" + str(
+            FLAGS.year) + ".txt"
+        with open(FLAGS.results_file, "w") as results:
+            results.write(source_domain + " to " + FLAGS.target_domain + "\n---\n")
+        FLAGS.writable = 1
+
+    start_time = time.time()
+
+    # Run test method.
+    train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
+    _, pred2, fw2, bw2, tl2, tr2 = lcr_test.main(FLAGS.test_path, 1.0, test_size, test_size)
+    tf.reset_default_graph()
+
+    end_time = time.time()
+    run_time = end_time - start_time
+    if write_result:
+        with open(FLAGS.results_file, "a") as results:
+            results.write("Runtime: " + str(run_time) + " seconds.\n\n")
+
+
+def run_split(domain, year, splits, split_size, learning_rate, keep_prob, momentum, l2_reg,
               write_result):
+    """
+    Runs regular LCR-Rot-hop++ for multiple cumulative training splits.
+
+    :param domain: the domain
+    :param year: the year of the domain dataset
+    :param splits: the number of cumulative training splits
+    :param split_size: the incremental size for each training split
+    :param learning_rate: learning rate hyperparameter
+    :param keep_prob: keep probability hyperparameter
+    :param momentum: momentum hyperparameter
+    :param l2_reg: l2 regularization hyperparameter
+    :param write_result: True if results are to be saved to a text file
+    :return:
+    """
     set_hyper_flags(learning_rate=learning_rate, keep_prob=keep_prob, momentum=momentum, l2_reg=l2_reg)
-    set_other_flags(source_domain=source_domain, source_year=year, target_domain=target_domain, target_year=year)
+    set_other_flags(source_domain=domain, source_year=year, target_domain=domain, target_year=year)
 
     if write_result:
         FLAGS.results_file = "data/programGeneratedData/" + str(
@@ -187,12 +250,27 @@ def run_split(source_domain, target_domain, year, splits, split_size, learning_r
                 results.write("Runtime: " + str(run_time) + " seconds.\n\n")
 
 
-# Runs fine-tuning on a model originally trained on another domain to adapt for cross-domain use.
 # Fine-tune method must be slightly adapted to work on original domains other than restaurant.
-def run_fine_tune(original_domain, source_domain, target_domain, year, splits, split_size, learning_rate, keep_prob,
+def run_fine_tune(original_domain, target_domain, year, splits, split_size, learning_rate, keep_prob,
                   momentum, l2_reg, write_result, split=True):
+    """
+    Runs fine-tuning on a model originally trained on another domain to adapt for cross-domain use.
+
+    :param original_domain: the domain of the pre-trained model (always restaurant for this adaptation)
+    :param target_domain: the target domain
+    :param year: the year of the target domain dataset
+    :param splits: the number of cumulative training splits
+    :param split_size: the incremental size for each training split
+    :param learning_rate: learning rate hyperparameter
+    :param keep_prob: keep probability hyperparameter
+    :param momentum: momentum hyperparameter
+    :param l2_reg: l2 regularization hyperparameter
+    :param write_result: True if results are to be saved to a text file
+    :param split: True if the dataset is split in multiple cumulative training splits
+    :return:
+    """
     set_hyper_flags(learning_rate=learning_rate, keep_prob=keep_prob, momentum=momentum, l2_reg=l2_reg)
-    set_other_flags(source_domain=source_domain, source_year=year, target_domain=target_domain, target_year=year)
+    set_other_flags(source_domain=target_domain, source_year=year, target_domain=target_domain, target_year=year)
 
     if write_result:
         FLAGS.results_file = "data/programGeneratedData/" + str(
@@ -215,7 +293,7 @@ def run_fine_tune(original_domain, source_domain, target_domain, year, splits, s
                         original_domain + " to " + FLAGS.target_domain + " with " + FLAGS.source_domain + " fine-tuning using " + str(
                             split_size * i) + " aspects\n---\n")
 
-            FLAGS.train_path = "data/programGeneratedData/BERT/" + source_domain + "/" + str(
+            FLAGS.train_path = "data/programGeneratedData/BERT/" + FLAGS.source_domain + "/" + str(
                 FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(FLAGS.year) + "_BERT_" + str(
                 split_size * i) + ".txt"
 
@@ -260,34 +338,16 @@ def run_fine_tune(original_domain, source_domain, target_domain, year, splits, s
                 results.write("Runtime: " + str(run_time) + " seconds.\n\n")
 
 
-# Runs the test data through the model from the original domain.
-def run_test(source_domain, source_year, target_domain, target_year, write_result):
-    set_other_flags(source_domain=source_domain, source_year=source_year, target_domain=target_domain,
-                    target_year=target_year)
-
-    if write_result:
-        FLAGS.results_file = "data/programGeneratedData/" + str(
-            FLAGS.embedding_dim) + "results_" + source_domain + "_" + FLAGS.target_domain + "_test_" + str(
-            FLAGS.year) + ".txt"
-        with open(FLAGS.results_file, "w") as results:
-            results.write(source_domain + " to " + FLAGS.target_domain + "\n---\n")
-        FLAGS.writable = 1
-
-    start_time = time.time()
-
-    # Run test method.
-    train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
-    _, pred2, fw2, bw2, tl2, tr2 = lcr_test.main(FLAGS.test_path, 1.0, test_size, test_size)
-    tf.reset_default_graph()
-
-    end_time = time.time()
-    run_time = end_time - start_time
-    if write_result:
-        with open(FLAGS.results_file, "a") as results:
-            results.write("Runtime: " + str(run_time) + " seconds.\n\n")
-
-
 def set_hyper_flags(learning_rate, keep_prob, momentum, l2_reg):
+    """
+    Sets hyperparameter flags.
+
+    :param learning_rate: learning rate hyperparameter
+    :param keep_prob: keep probability hyperparameter
+    :param momentum: momentum hyperparameter
+    :param l2_reg: l2 regularization hyperparameter
+    :return:
+    """
     FLAGS.learning_rate = learning_rate
     FLAGS.keep_prob1 = keep_prob
     FLAGS.keep_prob2 = keep_prob
@@ -296,6 +356,15 @@ def set_hyper_flags(learning_rate, keep_prob, momentum, l2_reg):
 
 
 def set_other_flags(source_domain, source_year, target_domain, target_year):
+    """
+    Set other flags.
+
+    :param source_domain: the source domain
+    :param source_year: the year of the source domain dataset
+    :param target_domain: the target domain
+    :param target_year: the year of the target domain dataset
+    :return:
+    """
     FLAGS.source_domain = source_domain
     FLAGS.target_domain = target_domain
     FLAGS.year = target_year

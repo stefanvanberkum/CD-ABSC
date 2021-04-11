@@ -19,7 +19,7 @@ import tensorflow as tf
 
 def softmax_with_len(inputs, length, max_len):
     """
-    Method from Trusca et al. (2020), no docstring provided.
+    Method obtained from Trusca et al. (2020), no original docstring provided.
 
     :param inputs:
     :param length:
@@ -38,7 +38,7 @@ def softmax_with_len(inputs, length, max_len):
 
 def bilinear_attention_layer(inputs, attend, length, n_hidden, l2_reg, random_base, layer_id=1):
     """
-    Method from Trusca et al. (2020).
+    Method obtained from Trusca et al. (2020), original docstring below.
 
     :param inputs: batch * max_len * n_hidden
     :param attend: batch * n_hidden
@@ -66,7 +66,7 @@ def bilinear_attention_layer(inputs, attend, length, n_hidden, l2_reg, random_ba
 
 def dot_produce_attention_layer(inputs, length, n_hidden, l2_reg, random_base, layer_id=1):
     """
-    Method from Trusca et al. (2020).
+    Method obtained from Trusca et al. (2020), original docstring below.
 
     :param inputs: batch * max_len * n_hidden
     :param length: batch * 1

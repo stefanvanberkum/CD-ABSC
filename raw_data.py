@@ -3,6 +3,11 @@ from HAABSA.data_rest_lapt import read_rest_lapt
 
 
 def main():
+    """
+    Gets the raw data for the specified domain.
+
+    :return:
+    """
     # Domain is one of the following: restaurant (2014), laptop (2014), book (2019), hotel (2015).
 
     domain = "hotel"

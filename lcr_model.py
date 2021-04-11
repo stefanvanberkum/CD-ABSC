@@ -18,6 +18,21 @@ tf.set_random_seed(1)
 
 
 def lcr_rot(input_fw, input_bw, sen_len_fw, sen_len_bw, target, sen_len_tr, keep_prob1, keep_prob2, l2, _id='all'):
+    """
+    Structure of LCR-Rot-hop++ neural network. Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param input_fw:
+    :param input_bw:
+    :param sen_len_fw:
+    :param sen_len_bw:
+    :param target:
+    :param sen_len_tr:
+    :param keep_prob1:
+    :param keep_prob2:
+    :param l2:
+    :param _id:
+    :return:
+    """
     print('I am lcr_rot_hop_plusplus.')
     cell = tf.contrib.rnn.LSTMCell
     # Left Bi-LSTM.
@@ -109,6 +124,20 @@ def lcr_rot(input_fw, input_bw, sen_len_fw, sen_len_bw, target, sen_len_tr, keep
 
 def main(train_path, test_path, accuracy_ont, test_size, remaining_size, learning_rate=0.09, keep_prob=0.3,
          momentum=0.85, l2=0.00001):
+    """
+    Runs the regular LCR-Rot-hop++ method. Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param train_path: path for train data (.txt with BERT embeddings in case of BERT)
+    :param test_path: path for test data (.txt with BERT embeddings in case of BERT)
+    :param accuracy_ont: accuracy of the ontology step
+    :param test_size: size of the test set
+    :param remaining_size: remaining size of the test set after ontology
+    :param learning_rate: learning rate hyperparameter, defaults to 0.09 (domain tuning highly recommended)
+    :param keep_prob: keep probability hyperparameter, defaults to 0.3 (domain tuning highly recommended)
+    :param momentum: momentum hyperparameter, defaults to 0.85 (domain tuning highly recommended)
+    :param l2: l2 regularization hyperparameter, defaults to 0.00001 (domain tuning highly recommended)
+    :return:
+    """
     print_config()
     with tf.device('/gpu:1'):
         # Separate train and test embeddings for cross-domain classification.
@@ -189,6 +218,22 @@ def main(train_path, test_path, accuracy_ont, test_size, remaining_size, learnin
 
         def get_batch_data(x_f, sen_len_f, x_b, sen_len_b, yi, batch_target, batch_tl, batch_size, kp1, kp2,
                            is_shuffle=True):
+            """
+            Method obtained from Trusca et al. (2020), no original docstring provided.
+
+            :param x_f:
+            :param sen_len_f:
+            :param x_b:
+            :param sen_len_b:
+            :param yi:
+            :param batch_target:
+            :param batch_tl:
+            :param batch_size:
+            :param kp1:
+            :param kp2:
+            :param is_shuffle:
+            :return:
+            """
             for index in batch_index(len(yi), batch_size, 1, is_shuffle):
                 feed_dict = {
                     x: x_f[index],

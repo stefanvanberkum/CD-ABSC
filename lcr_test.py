@@ -2,6 +2,8 @@
 # encoding: utf-8
 
 # Model is not trained.
+# NOTE. At the time of writing, this method only works for the pre-trained restaurant model. For other domain
+# adaptation, manually change the save directory and polarity mapping in the main.
 
 import os
 
@@ -18,6 +20,21 @@ tf.set_random_seed(1)
 
 
 def lcr_rot(input_fw, input_bw, sen_len_fw, sen_len_bw, target, sen_len_tr, keep_prob1, keep_prob2, l2, _id='all'):
+    """
+    Structure of LCR-Rot-hop++ neural network. Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param input_fw:
+    :param input_bw:
+    :param sen_len_fw:
+    :param sen_len_bw:
+    :param target:
+    :param sen_len_tr:
+    :param keep_prob1:
+    :param keep_prob2:
+    :param l2:
+    :param _id:
+    :return:
+    """
     print('I am lcr_rot_hop_plusplus tester.')
     cell = tf.contrib.rnn.LSTMCell
     # Left Bi-LSTM.
@@ -107,8 +124,18 @@ def lcr_rot(input_fw, input_bw, sen_len_fw, sen_len_bw, target, sen_len_tr, keep
     return prob, att_l, att_r, att_t_l, att_t_r
 
 
-def main(test_path, accuracy_ont, test_size, remaining_size, learning_rate=0.09, keep_prob=0.3,
-         momentum=0.85, l2=0.00001):
+def main(test_path, accuracy_ont, test_size, remaining_size, l2=0.00001):
+    """
+    Runs test data through pre-trained restaurant model. Method adapted from Trusca et al. (2020), no original
+    docstring provided.
+
+    :param test_path: path for test data (.txt with BERT embeddings in case of BERT)
+    :param accuracy_ont: accuracy of the ontology step
+    :param test_size: size of the test set
+    :param remaining_size: remaining size of the test set after ontology
+    :param l2: l2 regularization hyperparameter, defaults to 0.00001 (domain tuning not required)
+    :return:
+    """
     print_config()
     with tf.device('/gpu:1'):
         # Separate train and test embeddings for cross-domain classification.
@@ -180,6 +207,22 @@ def main(test_path, accuracy_ont, test_size, remaining_size, learning_rate=0.09,
 
         def get_batch_data(x_f, sen_len_f, x_b, sen_len_b, yi, batch_target, batch_tl, batch_size, kp1, kp2,
                            is_shuffle=True):
+            """
+            Method obtained from Trusca et al. (2020), no original docstring provided.
+
+            :param x_f:
+            :param sen_len_f:
+            :param x_b:
+            :param sen_len_b:
+            :param yi:
+            :param batch_target:
+            :param batch_tl:
+            :param batch_size:
+            :param kp1:
+            :param kp2:
+            :param is_shuffle:
+            :return:
+            """
             for index in batch_index(len(yi), batch_size, 1, is_shuffle):
                 feed_dict = {
                     x: x_f[index],

@@ -14,6 +14,11 @@ global eval_num, best_loss, best_hyperparams
 
 
 def main():
+    """
+    Runs hyperparameter tuning for each domain specified in domains.
+
+    :return:
+    """
     fine_tune = False
     runs = 10
     n_iter = 15
@@ -27,6 +32,7 @@ def main():
     camera_domain = ["Camera", 2004, 310]
     creative_domain = ["Creative", 2004, 540]
     nokia_domain = ["Nokia", 2004, 220]
+
     domains = [restaurant_domain, laptop_domain, book_domain, hotel_domain, apex_domain, camera_domain, creative_domain,
                nokia_domain]
 
@@ -35,6 +41,17 @@ def main():
 
 
 def run_hyper(domain, year, size, fine_tune, runs, n_iter):
+    """
+    Runs hyperparameter tuning for the specified domain.
+
+    :param domain: the domain
+    :param year: the year of the dataset
+    :param size: the size of the training set (None if the dataset is not split)
+    :param fine_tune: True if hyperparameter tuning is run for fine-tuning, False for regular LCR-Rot-hop++
+    :param runs: the number of hyperparameter tuning runs
+    :param n_iter: the number of iterations for each hyperparameter tuning run
+    :return:
+    """
     if fine_tune:
         path = "hyper_results/lcr_fine_tune/" + domain + "/" + str(n_iter) + "/"
     else:
@@ -62,10 +79,6 @@ def run_hyper(domain, year, size, fine_tune, runs, n_iter):
 
     train_size, test_size, train_polarity_vector, test_polarity_vector = load_hyper_data(FLAGS, True)
 
-    # No ontology is used for hyperparameter tuning.
-    remaining_size = test_size
-    accuracy_ont = 1.00
-
     # Define variable spaces for hyperparameter optimization to run over.
     global eval_num, best_loss, best_hyperparams
     eval_num = 0
@@ -87,19 +100,27 @@ def run_hyper(domain, year, size, fine_tune, runs, n_iter):
 
     for i in range(runs):
         print("Optimizing New Model\n")
-        run_a_trial(test_size, remaining_size, accuracy_ont, lcr_space, fine_tune_space, path, fine_tune)
+        run_a_trial(test_size, lcr_space, fine_tune_space, path, fine_tune)
         plot_best_model(path)
 
 
-def lcr_objective(hyperparams, accuracy_ont, test_size, remaining_size, path):
+def lcr_objective(hyperparams, test_size, path):
+    """
+    Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param hyperparams: hyperparameters (learning rate, keep probability, momentum and L2 regularization)
+    :param test_size: size of the test set
+    :param path: save path
+    :return:
+    """
     global eval_num, best_loss, best_hyperparams
 
     eval_num += 1
     (learning_rate, keep_prob, momentum, l2) = hyperparams
     print("Current hyperparameters: " + str(hyperparams))
 
-    l, pred1, fw1, bw1, tl1, tr1 = lcr_model.main(FLAGS.hyper_train_path, FLAGS.hyper_eval_path, accuracy_ont,
-                                                  test_size, remaining_size, learning_rate, keep_prob, momentum, l2)
+    l, pred1, fw1, bw1, tl1, tr1 = lcr_model.main(FLAGS.hyper_train_path, FLAGS.hyper_eval_path, 1.0,
+                                                  test_size, test_size, learning_rate, keep_prob, momentum, l2)
     tf.reset_default_graph()
 
     if best_loss is None or -l < best_loss:
@@ -117,15 +138,23 @@ def lcr_objective(hyperparams, accuracy_ont, test_size, remaining_size, path):
     return result
 
 
-def fine_tune_objective(hyperparams, accuracy_ont, test_size, remaining_size, path):
+def fine_tune_objective(hyperparams, test_size, path):
+    """
+    Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param hyperparams: hyperparameters (learning rate, keep probability, momentum and L2 regularization)
+    :param test_size: size of the test set
+    :param path: save path
+    :return:
+    """
     global eval_num, best_loss, best_hyperparams
 
     eval_num += 1
     (learning_rate, keep_prob, momentum, l2) = hyperparams
     print("Current hyperparameters: " + str(hyperparams))
 
-    l, pred1, fw1, bw1, tl1, tr1 = lcr_fine_tune.main(FLAGS.hyper_train_path, FLAGS.hyper_eval_path, accuracy_ont,
-                                                      test_size, remaining_size, learning_rate, keep_prob, momentum, l2)
+    l, pred1, fw1, bw1, tl1, tr1 = lcr_fine_tune.main(FLAGS.hyper_train_path, FLAGS.hyper_eval_path, 1.0,
+                                                      test_size, test_size, learning_rate, keep_prob, momentum, l2)
     tf.reset_default_graph()
 
     if best_loss is None or -l < best_loss:
@@ -144,7 +173,17 @@ def fine_tune_objective(hyperparams, accuracy_ont, test_size, remaining_size, pa
 
 
 # Run a hyperparameter optimization trial.
-def run_a_trial(test_size, remaining_size, accuracy_ont, lcr_space, fine_tune_space, path, fine_tune):
+def run_a_trial(test_size, lcr_space, fine_tune_space, path, fine_tune):
+    """
+    Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param test_size: size of the test set
+    :param lcr_space: tuning space for LCR-Rot-hop++ method
+    :param fine_tune_space: tuning space for fine-tuning method
+    :param path: save path
+    :param fine_tune: True if hyperparameter tuning is run for fine-tuning, False for regular LCR-Rot-hop++
+    :return:
+    """
     max_evals = nb_evals = 1
 
     print("Attempt to resume a past training if it exists:")
@@ -161,21 +200,18 @@ def run_a_trial(test_size, remaining_size, accuracy_ont, lcr_space, fine_tune_sp
 
     if fine_tune:
         objective = fine_tune_objective
-        partial_objective = partial(objective, accuracy_ont=accuracy_ont, test_size=test_size,
-                                    remaining_size=remaining_size, path=path)
+        partial_objective = partial(objective, test_size=test_size, path=path)
         space = fine_tune_space
     else:
         objective = lcr_objective
-        partial_objective = partial(objective, accuracy_ont=accuracy_ont, test_size=test_size,
-                                    remaining_size=remaining_size, path=path)
+        partial_objective = partial(objective, test_size=test_size, path=path)
         space = lcr_space
 
     best = fmin(
-        # Insert the method objective function
         # lcr_altv4_objective/lcr_fine_tune_objective.
         fn=partial_objective,
-        # Define the methods hyper parameter space
-        space=space,  # lcrspace/finetunespace.
+        # lcrspace/finetunespace.
+        space=space,
         algo=tpe.suggest,
         trials=trials,
         max_evals=max_evals
@@ -186,6 +222,12 @@ def run_a_trial(test_size, remaining_size, accuracy_ont, lcr_space, fine_tune_sp
 
 
 def print_json(result):
+    """
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+
+    :param result:
+    :return:
+    """
     """Pretty-print a jsonable structure (e.g.: result)."""
     print(json.dumps(
         result,
@@ -195,7 +237,14 @@ def print_json(result):
 
 
 def save_json_result(model_name, result, path):
-    """Save json to a directory and a filename."""
+    """
+    Save json to a directory and a filename. Method obtained from Trusca et al. (2020).
+
+    :param model_name:
+    :param result:
+    :param path:
+    :return:
+    """
     result_name = '{}.txt.json'.format(model_name)
     if not os.path.exists(path):
         os.makedirs(path)
@@ -208,7 +257,13 @@ def save_json_result(model_name, result, path):
 
 
 def load_json_result(best_result_name, path):
-    """Load json from a path (directory + filename)."""
+    """
+    Load json from a path (directory + filename). Method obtained from Trusca et al. (2020).
+
+    :param best_result_name:
+    :param path:
+    :return:
+    """
     result_path = os.path.join(path, best_result_name)
     with open(result_path, 'r') as f:
         return json.JSONDecoder().decode(
@@ -217,6 +272,12 @@ def load_json_result(best_result_name, path):
 
 
 def load_best_hyperspace(path):
+    """
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+
+    :param path:
+    :return:
+    """
     results = [
         f for f in list(sorted(os.listdir(path))) if 'json' in f
     ]
@@ -228,7 +289,12 @@ def load_best_hyperspace(path):
 
 
 def plot_best_model(path):
-    """Plot the best model found yet."""
+    """
+    Plot the best model found yet. Method obtained from Trusca et al. (2020).
+
+    :param path:
+    :return:
+    """
     space_best_model = load_best_hyperspace(path)
     if space_best_model is None:
         print("No best model to plot. Continuing...")

@@ -7,6 +7,15 @@ from config import *
 
 
 def batch_index(length, batch_size, n_iter=100, is_shuffle=True):
+    """
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+
+    :param length:
+    :param batch_size:
+    :param n_iter:
+    :param is_shuffle:
+    :return:
+    """
     index = list(range(length))
     for j in range(n_iter):
         if is_shuffle:
@@ -17,6 +26,8 @@ def batch_index(length, batch_size, n_iter=100, is_shuffle=True):
 
 def load_word_id_mapping(word_id_file, encoding='utf8'):
     """
+    Method obtained from Trusca et al. (2020), original docstring below.
+
     :param word_id_file: word-id mapping file path
     :param encoding: file's encoding, for changing to unicode
     :return: word-id mapping, like hello=5
@@ -30,6 +41,14 @@ def load_word_id_mapping(word_id_file, encoding='utf8'):
 
 
 def load_w2v(w2v_file, embedding_dim, is_skip=False):
+    """
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+
+    :param w2v_file:
+    :param embedding_dim:
+    :param is_skip:
+    :return:
+    """
     fp = open(w2v_file)
     if is_skip:
         fp.readline()
@@ -55,6 +74,13 @@ def load_w2v(w2v_file, embedding_dim, is_skip=False):
 
 
 def change_y_to_onehot(y, pos_neu_neg=True):
+    """
+    Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param y: vector of polarities
+    :param pos_neu_neg: True if three possible polarities (positive, neutral and negative)
+    :return:
+    """
     from collections import Counter
     count = Counter(y)
     if FLAGS.writable == 1:
@@ -78,6 +104,14 @@ def change_y_to_onehot(y, pos_neu_neg=True):
 
 
 def change_y_to_onehot_keep(y, y_onehot_mapping, pos_neu_neg=True):
+    """
+    Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param y: vector of polarities
+    :param y_onehot_mapping: one-hot mapping to keep
+    :param pos_neu_neg: True if three possible polarities (positive, neutral and negative)
+    :return:
+    """
     from collections import Counter
     count = Counter(y)
     if FLAGS.writable == 1:
@@ -101,6 +135,19 @@ def change_y_to_onehot_keep(y, y_onehot_mapping, pos_neu_neg=True):
 
 def load_inputs_twitter(input_file, word_id_file, sentence_len, type_='', is_r=True, target_len=10, encoding='utf8',
                         pos_neu_neg=True):
+    """
+    Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param input_file:
+    :param word_id_file:
+    :param sentence_len:
+    :param type_:
+    :param is_r:
+    :param target_len:
+    :param encoding:
+    :param pos_neu_neg: True if three possible polarities (positive, neutral and negative)
+    :return:
+    """
     if type(word_id_file) is str:
         word_to_id = load_word_id_mapping(word_id_file)
     else:
@@ -179,6 +226,20 @@ def load_inputs_twitter(input_file, word_id_file, sentence_len, type_='', is_r=T
 
 def load_inputs_twitter_keep(input_file, y_onehot_mapping, word_id_file, sentence_len, type_='', is_r=True,
                              target_len=10, encoding='utf8', pos_neu_neg=True):
+    """
+    Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param input_file:
+    :param y_onehot_mapping: one-hot mapping to keep
+    :param word_id_file:
+    :param sentence_len:
+    :param type_:
+    :param is_r:
+    :param target_len:
+    :param encoding:
+    :param pos_neu_neg: True if three possible polarities (positive, neutral and negative)
+    :return:
+    """
     if type(word_id_file) is str:
         word_to_id = load_word_id_mapping(word_id_file)
     else:
@@ -256,8 +317,20 @@ def load_inputs_twitter_keep(input_file, y_onehot_mapping, word_id_file, sentenc
         return np.asarray(x), np.asarray(sen_len), np.asarray(y)
 
 
-# NOT USED.
 def load_inputs_cabasc(input_file, word_id_file, sentence_len, type_='', is_r=True, target_len=10, encoding='utf8'):
+    """
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+    NOTE. Not used in current adaptation.
+
+    :param input_file:
+    :param word_id_file:
+    :param sentence_len:
+    :param type_:
+    :param is_r:
+    :param target_len:
+    :param encoding:
+    :return:
+    """
     if type(word_id_file) is str:
         word_to_id = load_word_id_mapping(word_id_file)
     else:

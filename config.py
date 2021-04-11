@@ -108,7 +108,7 @@ tf.app.flags.DEFINE_integer("savable", 0, "one if savable")
 
 def print_config():
     """
-    Method from Trusca et al. (2020), no docstring provided.
+    Method obtained from Trusca et al. (2020), no original docstring provided.
     """
     FLAGS(sys.argv)
     print('\nParameters:')
@@ -119,7 +119,7 @@ def print_config():
 
 def loss_func(y, prob):
     """
-    Method from Trusca et al. (2020), no docstring provided.
+    Method obtained from Trusca et al. (2020), no original docstring provided.
 
     :param y:
     :param prob:
@@ -132,7 +132,7 @@ def loss_func(y, prob):
 
 def acc_func(y, prob):
     """
-    Method from Trusca et al. (2020), no docstring provided.
+    Method obtained from Trusca et al. (2020), no original docstring provided.
 
     :param y:
     :param prob:
@@ -146,7 +146,8 @@ def acc_func(y, prob):
 
 def summary_func(loss, acc, test_loss, test_acc, _dir, title, sess):
     """
-    Method from Trusca et al. (2020), no docstring provided. NOTE. Not used in current adaptation.
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+    NOTE. Not used in current adaptation.
 
     :param loss:
     :param acc:
@@ -173,7 +174,7 @@ def summary_func(loss, acc, test_loss, test_acc, _dir, title, sess):
 
 def saver_func(_dir):
     """
-    Method from Trusca et al. (2020), no docstring provided.
+    Method obtained from Trusca et al. (2020), no original docstring provided.
 
     :param _dir:
     :return:

@@ -5,8 +5,20 @@ import numpy as np
 import tensorflow as tf
 
 
-# NOT USED (CABASC)
 def dynamic_rnn(cell, inputs, n_hidden, length, max_len, scope_name, out_type='last'):
+    """
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+    NOTE. Not used in current adaptation (for CABASC model).
+
+    :param cell:
+    :param inputs:
+    :param n_hidden:
+    :param length:
+    :param max_len:
+    :param scope_name:
+    :param out_type:
+    :return:
+    """
     outputs, state = tf.nn.dynamic_rnn(
         cell(n_hidden),
         inputs=inputs,
@@ -26,6 +38,18 @@ def dynamic_rnn(cell, inputs, n_hidden, length, max_len, scope_name, out_type='l
 
 
 def bi_dynamic_rnn(cell, inputs, n_hidden, length, max_len, scope_name, out_type='last'):
+    """
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+
+    :param cell:
+    :param inputs:
+    :param n_hidden:
+    :param length:
+    :param max_len:
+    :param scope_name:
+    :param out_type:
+    :return:
+    """
     outputs, state = tf.nn.bidirectional_dynamic_rnn(
         cell_fw=cell(n_hidden),
         cell_bw=cell(n_hidden),
@@ -51,6 +75,8 @@ def bi_dynamic_rnn(cell, inputs, n_hidden, length, max_len, scope_name, out_type
 
 def reduce_mean_with_len(inputs, length):
     """
+    Method obtained from Trusca et al. (2020), original docstring below.
+
     :param inputs: 3-D tensor
     :param length: the length of dim [1]
     :return: 2-D tensor
@@ -61,6 +87,18 @@ def reduce_mean_with_len(inputs, length):
 
 
 def softmax_layer(inputs, n_hidden, random_base, keep_prob, l2_reg, n_class, scope_name='1'):
+    """
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+
+    :param inputs:
+    :param n_hidden:
+    :param random_base:
+    :param keep_prob:
+    :param l2_reg:
+    :param n_class:
+    :param scope_name:
+    :return:
+    """
     w = tf.get_variable(
         name='softmax_w' + scope_name,
         shape=[n_hidden, n_class],

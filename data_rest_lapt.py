@@ -7,6 +7,13 @@ import nltk
 
 
 def window(iterable, size):  # Stack overflow solution for sliding window.
+    """
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+
+    :param iterable:
+    :param size:
+    :return:
+    """
     i = iter(iterable)
     win = []
     for e in range(0, size):
@@ -18,6 +25,14 @@ def window(iterable, size):  # Stack overflow solution for sliding window.
 
 
 def _get_data_tuple(sptoks, asp_termIn, label):
+    """
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+
+    :param sptoks:
+    :param asp_termIn:
+    :param label:
+    :return:
+    """
     # Find the ids of aspect term.
     aspect_is = []
     asp_term = ' '.join(sp for sp in asp_termIn).lower()
@@ -48,7 +63,7 @@ def _get_data_tuple(sptoks, asp_termIn, label):
 
 def read_rest_lapt(in_file, source_count, source_word2idx, target_count, target_phrase2idx, out_file):
     """
-    Reads data for the 2014 restaurant and laptop dataset.
+    Reads data for the 2014 restaurant and laptop dataset. Method adapted from Trusca et al. (2020).
 
     :param in_file: xml data file location
     :param source_count: list that contains list [<pad>, 0] at the first position [empty input] and all the unique words with number of occurences as tuples [empty input]

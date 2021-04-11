@@ -8,7 +8,7 @@ import nltk
 
 def window(iterable, size):  # Stack overflow solution for sliding window.
     """
-    Method from Trusca et al. (2020), no docstring provided.
+    Method obtained from Trusca et al. (2020), no original docstring provided.
 
     :param iterable:
     :param size:
@@ -26,7 +26,7 @@ def window(iterable, size):  # Stack overflow solution for sliding window.
 
 def _get_data_tuple(sptoks, asp_term_in, label):
     """
-    Method from Trusca et al. (2020), no docstring provided.
+    Method obtained from Trusca et al. (2020), no original docstring provided.
 
     :param sptoks:
     :param asp_term_in:
@@ -63,7 +63,7 @@ def _get_data_tuple(sptoks, asp_term_in, label):
 
 def read_book_hotel(in_file, source_count, source_word2idx, target_count, target_phrase2idx, out_file):
     """
-    Reads data for the 2019 book and 2015 hotel dataset.
+    Reads data for the 2019 book and 2015 hotel dataset. Method adapted from Trusca et al. (2020).
 
     :param in_file: xml data file location
     :param source_count: list that contains list [<pad>, 0] at the first position [empty input] and all the unique words with number of occurences as tuples [empty input]

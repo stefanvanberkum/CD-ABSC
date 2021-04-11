@@ -7,6 +7,11 @@ global embedding_dim, rest_path, target_path, ft_path, save_path
 
 
 def main():
+    """
+    Plots the obtained results for all domains specified in domains. Plots are saved to the specified save path.
+
+    :return:
+    """
     global embedding_dim
     embedding_dim = 768
 
@@ -64,6 +69,15 @@ def main():
 
 
 def get_results(domain, year, splits, split_size):
+    """
+    Get the results from the program generated text files.
+
+    :param domain: the domain
+    :param year: the year of the domain dataset
+    :param splits: the number of cumulative training data splits
+    :param split_size: the incremental size of each training data split
+    :return:
+    """
     # Extract restaurant results.
     with open(rest_path + str(embedding_dim) + "results_restaurant_" + domain + "_test_" + str(year) + ".txt",
               'r') as results:

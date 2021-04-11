@@ -22,7 +22,14 @@ owlready2.JAVA_EXE = java_path
 
 
 class OntReasoner:
+    """
+    Ontology reasoner. Class obtained from Trusca et al. (2020), no original docstring provided.
+    """
+
     def __init__(self):
+        """
+        Method obtained from Trusca et al. (2020), no original docstring provided.
+        """
         onto_path.append("data/externalData")  # Path to ontology.
         self.onto = get_ontology("LaptopManualOntology.owl")  # Name of ontology.
         self.onto = self.onto.load()
@@ -45,6 +52,20 @@ class OntReasoner:
             self.my_dict[onto_class] = onto_class.lex
 
     def predict_sentiment(self, sentence, target, onto, use_cabasc, use_svm, posinfo, types1, types2, types3):
+        """
+        Method obtained from Trusca et al. (2020), no original docstring provided.
+
+        :param sentence:
+        :param target:
+        :param onto:
+        :param use_cabasc:
+        :param use_svm:
+        :param posinfo:
+        :param types1:
+        :param types2:
+        :param types3:
+        :return:
+        """
         words_in_sentence = sentence.split()
         self.sencount += 1
 
@@ -113,6 +134,13 @@ class OntReasoner:
             self.majority_count.append(1)
 
     def get_class_of_words(self, words_in_sentence, target):
+        """
+        Method obtained from Trusca et al. (2020), no original docstring provided.
+
+        :param words_in_sentence:
+        :param target:
+        :return:
+        """
         self.classes = []
         words_with_classes = []
         lemma_of_words_with_classes = []
@@ -146,6 +174,13 @@ class OntReasoner:
         return lemma_of_words_with_classes, words_with_classes, self.classes, target_class
 
     def is_negated(self, word, words_in_sentence):
+        """
+        Method obtained from Trusca et al. (2020), no original docstring provided.
+
+        :param word:
+        :param words_in_sentence:
+        :return:
+        """
         # Negation check with window and dependency graph.
         path_to_jar = "C:/Users/Stefan van Berkum/anaconda3/envs/HAABSA_py35/stanford-parser-full-2018-02-27/stanford-parser.jar"
         path_to_models_jar = "C:/Users/Stefan van Berkum/anaconda3/envs/HAABSA_py35/stanford-english-corenlp-2018-02-27-models.jar"
@@ -177,6 +212,16 @@ class OntReasoner:
         return negated
 
     def get_sentiment_of_class(self, positive_class, negative_class, onto_class, negated, type3):
+        """
+        Method obtained from Trusca et al. (2020), no original docstring provided.
+
+        :param positive_class:
+        :param negative_class:
+        :param onto_class:
+        :param negated:
+        :param type3:
+        :return:
+        """
         found_positive = False
         found_negative = False
 
@@ -200,6 +245,13 @@ class OntReasoner:
         return found_positive, found_negative
 
     def category_matches(self, target_class, onto_class):
+        """
+        Method obtained from Trusca et al. (2020), no original docstring provided.
+
+        :param target_class:
+        :param onto_class:
+        :return:
+        """
         if target_class is None:
             return False
 
@@ -224,12 +276,25 @@ class OntReasoner:
             return False
 
     def add_subclass(self, onto_class, target_class):  # Add new subclass to ontology.
+        """
+        Method obtained from Trusca et al. (2020), no original docstring provided.
+
+        :param onto_class:
+        :param target_class:
+        :return:
+        """
         onto_name = onto_class.__name__
         target_name = target_class.__name__
         new_class = types.new_class(onto_name + target_name, (onto_class, target_class))
         return new_class
 
     def get_majority_class(self, polarity_vector):
+        """
+        Method obtained from Trusca et al. (2020), no original docstring provided.
+
+        :param polarity_vector:
+        :return:
+        """
         total = polarity_vector.sum(0)
         index = np.argmax(total)
         if index == 0:
@@ -240,6 +305,11 @@ class OntReasoner:
             return [0, 0, 1]
 
     def create_types(self):
+        """
+        Method obtained from Trusca et al. (2020), no original docstring provided.
+
+        :return:
+        """
         types1 = set()
         types2 = set()
         types3 = set()
@@ -273,6 +343,16 @@ class OntReasoner:
         return types1, types2, types3
 
     def run(self, use_backup, path, use_svm, cross_val=False, j=0):
+        """
+        Method obtained from Trusca et al. (2020), no original docstring provided.
+
+        :param use_backup:
+        :param path:
+        :param use_svm:
+        :param cross_val:
+        :param j:
+        :return:
+        """
         types1, types2, types3 = self.create_types()
 
         punctuation_and_numbers = ['– ', '(', ')', '?', ':', ';', ',', '.', '!', '/', '"', '\'', '’', '*', '$', '0',

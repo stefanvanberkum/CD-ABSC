@@ -7,6 +7,13 @@ from data_rest_lapt import read_rest_lapt
 
 
 def load_data_and_embeddings(config, load_data):
+    """
+    Loads data. Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param config: configuration
+    :param load_data: False for BERT embeddings
+    :return:
+    """
     flags = config
 
     if load_data:
@@ -52,6 +59,12 @@ def load_data_and_embeddings(config, load_data):
 
 
 def get_stats_from_file(path):
+    """
+    Method obtained from Trusca et al. (2020), no original docstring provided.
+
+    :param path: file path
+    :return:
+    """
     polarity_vector = []
     with open(path, "r") as fd:
         lines = fd.read().splitlines()
@@ -63,6 +76,14 @@ def get_stats_from_file(path):
 
 
 def load_hyper_data(config, load_data, percentage=0.8):
+    """
+    Method adapted from Trusca et al. (2020), no original docstring provided.
+
+    :param config: configuration
+    :param load_data: True if train data need to be split for hyperparameter tuning
+    :param percentage: percentage to go to train file
+    :return:
+    """
     flags = config
 
     if load_data:
@@ -92,8 +113,16 @@ def load_hyper_data(config, load_data, percentage=0.8):
     return train_size, test_size, train_polarity_vector, test_polarity_vector
 
 
-# NOT USED
 def load_cross_validation(config, split_size, load=True):
+    """
+    Method adapted from Trusca et al. (2020), no original docstring provided.
+    NOTE. Not used in current adaptation.
+
+    :param config: configuration
+    :param split_size: size of each cross-validation set
+    :param load: True if data needs to be split into cross-validation sets (defaults to True)
+    :return:
+    """
     flags = config
     if load:
         # words, sent = [], []
