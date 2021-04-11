@@ -1,3 +1,7 @@
+# Results plotter.
+#
+# https://github.com/stefanvanberkum/CD-ABSC
+
 import numpy as np
 import pandas as pd
 import statsmodels.formula.api as sm

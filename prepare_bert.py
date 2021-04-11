@@ -1,8 +1,19 @@
+# Prepares BERT train and test files with embeddings. Get raw data and BERT embedding first from raw_data and getBERT
+# (jupyter notebook files).
+#
+# https://github.com/stefanvanberkum/CD-ABSC
+#
+# Adapted from Trusca, Wassenberg, Frasincar and Dekker (2020).
+# https://github.com/mtrusca/HAABSA_PLUS_PLUS
+#
+# Truşcǎ M.M., Wassenberg D., Frasincar F., Dekker R. (2020) A Hybrid Approach for Aspect-Based Sentiment Analysis Using
+# Deep Contextual Word Embeddings and Hierarchical Attention. In: Bielikova M., Mikkonen T., Pautasso C. (eds) Web
+# Engineering. ICWE 2020. Lecture Notes in Computer Science, vol 12128. Springer, Cham.
+# https://doi.org/10.1007/978-3-030-50578-3_25
+
 from config import *
 
-# <editor-fold desc="Combining embedding files, retrieved with 'getBERTusingColab">
-
-# Get raw data and BERT embedding first from raw_data and getBERT (jupyter notebook files).
+# <editor-fold desc="Combining embedding files, retrieved with 'getBERT">
 
 # Domain is one of the following: restaurant (2014), laptop (2014), book (2019), hotel (2015), Apex (2004),
 # Camera (2004), Creative (2004), Nokia (2004).

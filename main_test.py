@@ -1,3 +1,7 @@
+# Main method for running all tests.
+#
+# https://github.com/stefanvanberkum/CD-ABSC
+
 import time
 
 import nltk

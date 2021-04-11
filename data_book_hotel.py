@@ -1,3 +1,15 @@
+# Data reader for book and hotel data.
+#
+# https://github.com/stefanvanberkum/CD-ABSC
+#
+# Adapted from Trusca, Wassenberg, Frasincar and Dekker (2020).
+# https://github.com/mtrusca/HAABSA_PLUS_PLUS
+#
+# Truşcǎ M.M., Wassenberg D., Frasincar F., Dekker R. (2020) A Hybrid Approach for Aspect-Based Sentiment Analysis Using
+# Deep Contextual Word Embeddings and Hierarchical Attention. In: Bielikova M., Mikkonen T., Pautasso C. (eds) Web
+# Engineering. ICWE 2020. Lecture Notes in Computer Science, vol 12128. Springer, Cham.
+# https://doi.org/10.1007/978-3-030-50578-3_25
+
 import os
 import re
 import xml.etree.ElementTree as ET

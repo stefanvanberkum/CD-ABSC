@@ -1,3 +1,7 @@
+# Data reader for electronics data (directly to raw data).
+#
+# https://github.com/stefanvanberkum/CD-ABSC
+
 import nltk
 
 nltk.download('punkt')
