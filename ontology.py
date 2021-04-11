@@ -27,8 +27,8 @@ nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 
 # Path to the java runtime environment.
-nltk.internals.config_java('C:/Program Files/Java/jdk-14.0.2/bin/java.exe')
 java_path = 'C:/Program Files/Java/jdk-14.0.2/bin/java.exe'
+nltk.internals.config_java(java_path)
 os.environ['JAVAHOME'] = java_path
 owlready2.JAVA_EXE = java_path
 

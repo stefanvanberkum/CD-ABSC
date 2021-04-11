@@ -28,11 +28,11 @@ def main(_):
     lapt_lapt = False  # Run LCR-Rot-hop++ laptop model.
     book_book = False  # Run LCR-Rot-hop++ book model.
     small_small = False  # Run LCR-Rot-hop++ for hotel and electronics models.
-    rest_lapt_lapt = True  # Run fine-tuning on restaurant model for laptop domain.
+    rest_lapt_lapt = False  # Run fine-tuning on restaurant model for laptop domain.
     rest_book_book = False  # Run fine-tuning on restaurant model for book domain.
     rest_small_small = False  # Run fine-tuning on restaurant model for hotel and electronics domains.
-    write_result = False  # Write results to text file.
-    n_iter = 1
+    write_result = True  # Write results to text file.
+    n_iter = 200
 
     FLAGS.n_iter = n_iter
 
