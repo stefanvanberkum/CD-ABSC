@@ -37,6 +37,7 @@ Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop
 
 ## How to use?
 
+- Make sure the Python interpreter is set to your Python 3.5 virtual environment (we used PyCharm IDE).
 - Get raw data for your required domains:
     - Run raw_data.py for restaurant, laptop, book and hotel domains.
     - Run data_electronics.py for electronics domains.
