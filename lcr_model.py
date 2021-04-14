@@ -59,28 +59,28 @@ def lcr_rot(input_fw, input_bw, sen_len_fw, sen_len_bw, target, sen_len_tr, keep
     pool_t = reduce_mean_with_len(hiddens_t, sen_len_tr)
 
     # Left context attention layer.
-    att_l = bilinear_attention_layer(hiddens_l, pool_t, sen_len_fw, 2 * FLAGS.n_hidden, l2, FLAGS.random_base, 'tl')
-    outputs_t_l_init = tf.matmul(att_l, hiddens_l)
-    outputs_t_l = tf.squeeze(outputs_t_l_init)
+    att_l = bilinear_attention_layer(hiddens_l, pool_t, sen_len_fw, 2 * FLAGS.n_hidden, l2, FLAGS.random_base, 'l')
+    outputs_l_init = tf.matmul(att_l, hiddens_l)
+    outputs_l = tf.squeeze(outputs_l_init)
 
     # Right context attention layer.
-    att_r = bilinear_attention_layer(hiddens_r, pool_t, sen_len_bw, 2 * FLAGS.n_hidden, l2, FLAGS.random_base, 'tr')
-    outputs_t_r_init = tf.matmul(att_r, hiddens_r)
-    outputs_t_r = tf.squeeze(outputs_t_r_init)
+    att_r = bilinear_attention_layer(hiddens_r, pool_t, sen_len_bw, 2 * FLAGS.n_hidden, l2, FLAGS.random_base, 'r')
+    outputs_r_init = tf.matmul(att_r, hiddens_r)
+    outputs_r = tf.squeeze(outputs_r_init)
 
     # Left-aware target attention layer.
-    att_t_l = bilinear_attention_layer(hiddens_t, outputs_t_l, sen_len_tr, 2 * FLAGS.n_hidden, l2, FLAGS.random_base,
-                                       'l')
-    outputs_l_init = tf.matmul(att_t_l, hiddens_t)
+    att_t_l = bilinear_attention_layer(hiddens_t, outputs_l, sen_len_tr, 2 * FLAGS.n_hidden, l2, FLAGS.random_base,
+                                       'tl')
+    outputs_t_l_init = tf.matmul(att_t_l, hiddens_t)
 
     # Right-aware target attention layer.
-    att_t_r = bilinear_attention_layer(hiddens_t, outputs_t_r, sen_len_tr, 2 * FLAGS.n_hidden, l2, FLAGS.random_base,
-                                       'r')
-    outputs_r_init = tf.matmul(att_t_r, hiddens_t)
+    att_t_r = bilinear_attention_layer(hiddens_t, outputs_r, sen_len_tr, 2 * FLAGS.n_hidden, l2, FLAGS.random_base,
+                                       'tr')
+    outputs_t_r_init = tf.matmul(att_t_r, hiddens_t)
 
     # Context and target hierarchical attention layers.
-    outputs_init_context = tf.concat([outputs_t_l_init, outputs_t_r_init], 1)
-    outputs_init_target = tf.concat([outputs_l_init, outputs_r_init], 1)
+    outputs_init_context = tf.concat([outputs_l_init, outputs_r_init], 1)
+    outputs_init_target = tf.concat([outputs_t_l_init, outputs_t_r_init], 1)
     att_outputs_context = dot_produce_attention_layer(outputs_init_context, None, 2 * FLAGS.n_hidden, l2,
                                                       FLAGS.random_base, 'fin1')
     att_outputs_target = dot_produce_attention_layer(outputs_init_target, None, 2 * FLAGS.n_hidden, l2,
@@ -92,31 +92,31 @@ def lcr_rot(input_fw, input_bw, sen_len_fw, sen_len_bw, target, sen_len_tr, keep
 
     # Add two more hops.
     for i in range(2):
-        # Left-aware target attention layer.
-        att_l = bilinear_attention_layer(hiddens_l, outputs_l, sen_len_fw, 2 * FLAGS.n_hidden, l2, FLAGS.random_base,
-                                         'tl' + str(i))
-        outputs_t_l_init = tf.matmul(att_l, hiddens_l)
-        outputs_t_l = tf.squeeze(outputs_t_l_init)
-
-        # Right-aware target attention layer.
-        att_r = bilinear_attention_layer(hiddens_r, outputs_r, sen_len_bw, 2 * FLAGS.n_hidden, l2, FLAGS.random_base,
-                                         'tr' + str(i))
-        outputs_t_r_init = tf.matmul(att_r, hiddens_r)
-        outputs_t_r = tf.squeeze(outputs_t_r_init)
-
         # Left context attention layer.
-        att_t_l = bilinear_attention_layer(hiddens_t, outputs_t_l, sen_len_tr, 2 * FLAGS.n_hidden, l2,
-                                           FLAGS.random_base, 'l' + str(i))
-        outputs_l_init = tf.matmul(att_t_l, hiddens_t)
+        att_l = bilinear_attention_layer(hiddens_l, outputs_t_l, sen_len_fw, 2 * FLAGS.n_hidden, l2, FLAGS.random_base,
+                                         'l' + str(i))
+        outputs_l_init = tf.matmul(att_l, hiddens_l)
+        outputs_l = tf.squeeze(outputs_l_init)
 
         # Right context attention layer.
-        att_t_r = bilinear_attention_layer(hiddens_t, outputs_t_r, sen_len_tr, 2 * FLAGS.n_hidden, l2,
-                                           FLAGS.random_base, 'r' + str(i))
-        outputs_r_init = tf.matmul(att_t_r, hiddens_t)
+        att_r = bilinear_attention_layer(hiddens_r, outputs_t_r, sen_len_bw, 2 * FLAGS.n_hidden, l2, FLAGS.random_base,
+                                         'r' + str(i))
+        outputs_r_init = tf.matmul(att_r, hiddens_r)
+        outputs_r = tf.squeeze(outputs_r_init)
+
+        # Left-aware target attention layer.
+        att_t_l = bilinear_attention_layer(hiddens_t, outputs_l, sen_len_tr, 2 * FLAGS.n_hidden, l2,
+                                           FLAGS.random_base, 'tl' + str(i))
+        outputs_t_l_init = tf.matmul(att_t_l, hiddens_t)
+
+        # Right-aware target attention layer.
+        att_t_r = bilinear_attention_layer(hiddens_t, outputs_r, sen_len_tr, 2 * FLAGS.n_hidden, l2,
+                                           FLAGS.random_base, 'tr' + str(i))
+        outputs_t_r_init = tf.matmul(att_t_r, hiddens_t)
 
         # Context and target hierarchical attention layers.
-        outputs_init_context = tf.concat([outputs_t_l_init, outputs_t_r_init], 1)
-        outputs_init_target = tf.concat([outputs_l_init, outputs_r_init], 1)
+        outputs_init_context = tf.concat([outputs_l_init, outputs_r_init], 1)
+        outputs_init_target = tf.concat([outputs_t_l_init, outputs_t_r_init], 1)
         att_outputs_context = dot_produce_attention_layer(outputs_init_context, None, 2 * FLAGS.n_hidden, l2,
                                                           FLAGS.random_base, 'fin1' + str(i))
         att_outputs_target = dot_produce_attention_layer(outputs_init_target, None, 2 * FLAGS.n_hidden, l2,
