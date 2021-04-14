@@ -14,8 +14,8 @@ def main():
     """
     # Domain is one of the following: restaurant (2014), laptop (2014), book (2019), hotel (2015).
 
-    domain = "hotel"
-    year = 2015
+    domain = "restaurant"
+    year = 2014
 
     if domain == "restaurant" or domain == "laptop":
         train_file = "data/externalData/" + domain + "_train_" + str(year) + ".xml"

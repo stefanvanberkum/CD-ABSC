@@ -108,6 +108,7 @@ def read_book_hotel(in_file, source_count, source_word2idx, target_count, target
     source_words, target_words, max_sent_len, max_target_len = [], [], 0, 0
     target_phrases = []
 
+    count_implicit = 0
     count_confl = 0
     for sentence in root.iter('sentence'):
         sent = sentence.find('text').text
@@ -131,6 +132,8 @@ def read_book_hotel(in_file, source_count, source_word2idx, target_count, target
                     target_phrases.append(' '.join(sp for sp in t_sptoks).lower())
                     if len(t_sptoks) > max_target_len:
                         max_target_len = len(t_sptoks)
+                else:
+                    count_implicit += 1
     if len(source_count) == 0:
         source_count.append(['<pad>', 0])
     source_count.extend(Counter(source_words + target_words).most_common())
@@ -181,5 +184,6 @@ def read_book_hotel(in_file, source_count, source_word2idx, target_count, target
 
     out_f.close()
     print("Read %s aspects from %s" % (len(source_data), in_file))
+    print("Implicit: " + str(count_implicit))
     print("Conflicts: " + str(count_confl))
     return source_data, source_loc_data, target_data, target_label, max_sent_len, source_loc_data, max_target_len
