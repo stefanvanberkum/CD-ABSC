@@ -50,7 +50,7 @@ def main():
         # Calculate and save trendline summary.
         with open(save_path + domain[0] + "_trend.txt", 'w') as trend:
             trend.write("Target: \n")
-            target_data = result.loc[result['Task'] == 'Target']
+            target_data = result.loc[result['Task'] == 'target-target']
             target_fit = sm.ols('Accuracy ~ Aspects', target_data).fit()
             target_coef = target_fit.params
             target_intercept = target_coef['Intercept']
@@ -59,7 +59,7 @@ def main():
             target_start = target_intercept + target_coef * domain[3]
             target_end = target_intercept + target_coef * domain[2] * domain[3]
             trend.write("Start: " + str(target_start) + ", End: " + str(target_end) + "\n\nFine-tuning: \n")
-            ft_data = result.loc[result['Task'] == 'Fine-tuning']
+            ft_data = result.loc[result['Task'] == 'fine-tuning']
             ft_fit = sm.ols('Accuracy ~ Aspects', ft_data).fit()
             ft_coef = ft_fit.params
             ft_intercept = ft_coef['Intercept']
@@ -94,7 +94,7 @@ def get_results(domain, year, splits, split_size):
         for i in range(1, splits + 1):
             aspects.append(i * split_size)
             accuracy.append(float(acc))
-            task.append('Restaurant')
+            task.append('restaurant-target')
 
     # Extract target results.
     with open(target_path + str(embedding_dim) + "results_" + domain + "_" + domain + "_" + str(year) + ".txt",
@@ -104,7 +104,7 @@ def get_results(domain, year, splits, split_size):
             acc_line = lines[i].split(" ")
             acc = acc_line[6][:len(acc_line[3]) - 1]  # Remove trailing comma too.
             accuracy.append(float(acc))
-            task.append('Target')
+            task.append('target-target')
         for i in range(1, splits + 1):
             aspects.append(i * split_size)
 
@@ -116,7 +116,7 @@ def get_results(domain, year, splits, split_size):
             acc_line = lines[i].split(" ")
             acc = acc_line[6][:len(acc_line[3]) - 1]  # Remove trailing comma too.
             accuracy.append(float(acc))
-            task.append('Fine-tuning')
+            task.append('fine-tuning')
         for i in range(1, splits + 1):
             aspects.append(i * split_size)
 
