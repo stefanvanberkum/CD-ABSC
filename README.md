@@ -53,7 +53,7 @@ Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop
   write_result in previous step).
 
 NOTE. Avoid residual batches of size one in the training set, the code cannot handle such cases and will raise an error.
-Can be solved by manually changing the size of the train set such that train_size % batch size != 1.
+Can be solved by manually changing the size of the train set such that train_size % batch_size != 1.
 
 ## References.
 
