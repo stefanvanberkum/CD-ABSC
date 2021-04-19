@@ -5,7 +5,7 @@
 import numpy as np
 import pandas as pd
 import statsmodels.formula.api as sm
-from plotnine import aes, geom_point, ggplot, stat_smooth
+from plotnine import aes, element_text, geom_point, ggplot, stat_smooth, theme
 
 global embedding_dim, rest_path, target_path, ft_path, save_path
 
@@ -44,7 +44,7 @@ def main():
     for domain in domains:
         result = get_results(domain=domain[0], year=domain[1], splits=domain[2], split_size=domain[3])
         plot = ggplot(result) + aes(x='Aspects', y='Accuracy', color='Task', shape='Task') + geom_point() + stat_smooth(
-            method='lm')
+            method='lm') + theme(legend_text=element_text(size=10))
         plot.save(save_path + domain[0] + "_results", dpi=600)
 
         # Calculate and save trendline summary.
