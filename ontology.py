@@ -381,11 +381,11 @@ class OntReasoner:
                 elif lines[i + 2].strip().split()[0] == '1':
                     self.polarity_vector.append([1, 0, 0])
 
-                # load target and sentence
+                # Load target and sentence.
                 words_tar = lines[i + 1].lower()
                 words = lines[i].lower()
                 words = words.replace('$t$', words_tar)
-                # Remove punctuation
+                # Remove punctuation.
                 for _ in punctuation_and_numbers:
                     words_tar = words_tar.replace(_, '')
                 for _ in punctuation_and_numbers:
@@ -401,6 +401,7 @@ class OntReasoner:
         self.posinfo = np.array(self.posinfo)
 
         for x in range(len(self.sentence_vector)):  # For each sentence
+            print("Sentence " + str(x + 1) + " out of " + str(len(self.sentence_vector)))
             self.predict_sentiment(self.sentence_vector[x], self.target_vector[x], self.onto, use_backup, use_svm,
                                    self.posinfo[x], types1, types2, types3)
 
@@ -416,7 +417,7 @@ class OntReasoner:
         time_end = time.time()
 
         print("Accuracy: ", ont_accuracy)
-        print('RunTime: ', (time_end - self.timeStart))
+        print('Runtime: ', (time_end - self.timeStart))
         print('Majority: ', len(self.majority_count))
 
         # Convert to numpy array to save the output.

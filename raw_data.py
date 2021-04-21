@@ -2,8 +2,8 @@
 #
 # https://github.com/stefanvanberkum/CD-ABSC
 
-from HAABSA.data_book_hotel import read_book_hotel
-from HAABSA.data_rest_lapt import read_rest_lapt
+from data_book_hotel import read_book_hotel
+from data_rest_lapt import read_rest_lapt
 
 
 def main():

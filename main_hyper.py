@@ -18,7 +18,8 @@ from functools import partial
 from bson import json_util
 from hyperopt import hp, tpe, fmin, Trials, STATUS_OK
 
-from HAABSA import lcr_model, lcr_fine_tune
+import lcr_fine_tune
+import lcr_model
 from config import *
 from load_data import *
 

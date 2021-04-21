@@ -6,9 +6,12 @@ import time
 
 import nltk
 
-from HAABSA import lcr_model, lcr_fine_tune, lcr_test
+import lcr_fine_tune
+import lcr_model
+import lcr_test
 from config import *
 from load_data import *
+from ontology import OntReasoner
 
 nltk.download('punkt')
 
@@ -31,6 +34,7 @@ def main(_):
     rest_lapt_lapt = False  # Run fine-tuning on restaurant model for laptop domain.
     rest_book_book = False  # Run fine-tuning on restaurant model for book domain.
     rest_small_small = False  # Run fine-tuning on restaurant model for hotel and electronics domains.
+    run_ontology = False  # Run ontology reasoner.
     write_result = True  # Write results to text file.
     n_iter = 200
 
@@ -39,7 +43,7 @@ def main(_):
     if rest_rest:
         # Run and save restaurant-restaurant.
         run_regular(domain="restaurant", year=2014, learning_rate=0.001, keep_prob=0.7, momentum=0.85, l2_reg=0.00001,
-                    write_result=write_result, savable=True)
+                    run_ontology=run_ontology, write_result=write_result, savable=True)
 
     if rest_test:
         laptop_domain = ["laptop", 2014]
@@ -54,17 +58,17 @@ def main(_):
         for domain in domains:
             # Run target data through restaurant model.
             run_test(source_domain="restaurant", source_year=2014, target_domain=domain[0], target_year=domain[1],
-                     write_result=write_result)
+                     run_ontology=run_ontology, write_result=write_result)
 
     if lapt_lapt:
         # Run laptop-laptop for all splits.
         run_split(domain="laptop", year=2014, splits=9, split_size=250, learning_rate=0.07, keep_prob=0.7,
-                  momentum=0.85, l2_reg=0.0001, write_result=write_result)
+                  momentum=0.85, l2_reg=0.0001, run_ontology=run_ontology, write_result=write_result)
 
     if book_book:
         # Run book-book for all splits.
         run_split(domain="book", year=2019, splits=9, split_size=300, learning_rate=0.005, keep_prob=0.7, momentum=0.95,
-                  l2_reg=0.01, write_result=write_result)
+                  l2_reg=0.01, run_ontology=run_ontology, write_result=write_result)
 
     if small_small:
         # Hyper parameters (learning_rate, keep_prob, momentum, l2_reg).
@@ -85,17 +89,20 @@ def main(_):
         # Run all single run models.
         for domain in domains:
             run_split(domain=domain[0], year=domain[1], splits=10, split_size=domain[2], learning_rate=domain[3][0],
-                      keep_prob=domain[3][1], momentum=domain[3][2], l2_reg=domain[3][3], write_result=write_result)
+                      keep_prob=domain[3][1], momentum=domain[3][2], l2_reg=domain[3][3], run_ontology=run_ontology,
+                      write_result=write_result)
 
     if rest_lapt_lapt:
         # Run laptop-laptop fine-tuning on restaurant model.
         run_fine_tune(original_domain="restaurant", target_domain="laptop", year=2014, splits=9, split_size=250,
-                      learning_rate=0.02, keep_prob=0.6, momentum=0.85, l2_reg=0.00001, write_result=write_result)
+                      learning_rate=0.02, keep_prob=0.6, momentum=0.85, l2_reg=0.00001, run_ontology=run_ontology,
+                      write_result=write_result)
 
     if rest_book_book:
         # Run book-book fine-tuning on restaurant model.
         run_fine_tune(original_domain="restaurant", target_domain="book", year=2019, splits=9, split_size=300,
-                      learning_rate=0.01, keep_prob=0.6, momentum=0.85, l2_reg=0.001, write_result=write_result)
+                      learning_rate=0.01, keep_prob=0.6, momentum=0.85, l2_reg=0.001, run_ontology=run_ontology,
+                      write_result=write_result)
 
     if rest_small_small:
         # Hyper parameters (learning_rate, keep_prob, momentum, l2_reg).
@@ -117,12 +124,13 @@ def main(_):
         for domain in domains:
             run_fine_tune(original_domain="restaurant", target_domain=domain[0], year=domain[1], splits=10,
                           split_size=domain[2], learning_rate=domain[3][0], keep_prob=domain[3][1],
-                          momentum=domain[3][2], l2_reg=domain[3][3], write_result=write_result)
+                          momentum=domain[3][2], l2_reg=domain[3][3], run_ontology=run_ontology,
+                          write_result=write_result)
 
     print('Finished program successfully.')
 
 
-def run_regular(domain, year, learning_rate, keep_prob, momentum, l2_reg, write_result, savable):
+def run_regular(domain, year, learning_rate, keep_prob, momentum, l2_reg, run_ontology, write_result, savable):
     """
     Run regular LCR-Rot-hop++ model which can be saved for fine-tuning.
 
@@ -132,6 +140,7 @@ def run_regular(domain, year, learning_rate, keep_prob, momentum, l2_reg, write_
     :param keep_prob: keep probability hyperparameter
     :param momentum: momentum hyperparameter
     :param l2_reg: l2 regularization hyperparameter
+    :param run_ontology: True is ontology reasoner should be run before neural network
     :param write_result: True if results are to be saved to a text file
     :param savable: True if the model weights and biases are to be saved
     :return:
@@ -146,13 +155,24 @@ def run_regular(domain, year, learning_rate, keep_prob, momentum, l2_reg, write_
 
     start_time = time.time()
 
+    train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
+    accuracy_ont = 1.0
+
+    # Run ontology reasoner.
+    if run_ontology:
+        accuracy_ont, remaining_size = run_ont()
+        classified = test_size - remaining_size
+        test_size = remaining_size
+        if FLAGS.writable == 1:
+            with open(FLAGS.results_file, "a") as results:
+                results.write("Ontology. Aspects classified: " + str(classified) + ", Accuracy: " + str(
+                    accuracy_ont) + "\n---\n")
+
     # Run LCR-Rot-hop++.
     if savable:
         FLAGS.savable = 1
-    train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
-    _, pred2, fw2, bw2, tl2, tr2 = lcr_model.main(FLAGS.train_path, FLAGS.test_path, 1.0, test_size,
-                                                  test_size, FLAGS.learning_rate, FLAGS.keep_prob1,
-                                                  FLAGS.momentum, FLAGS.l2_reg)
+    _, pred2, fw2, bw2, tl2, tr2 = lcr_model.main(FLAGS.train_path, FLAGS.test_path, accuracy_ont, test_size, test_size,
+                                                  FLAGS.learning_rate, FLAGS.keep_prob1, FLAGS.momentum, FLAGS.l2_reg)
     tf.reset_default_graph()
     FLAGS.savable = 0
 
@@ -163,7 +183,7 @@ def run_regular(domain, year, learning_rate, keep_prob, momentum, l2_reg, write_
             results.write("Runtime: " + str(run_time) + " seconds.\n\n")
 
 
-def run_test(source_domain, source_year, target_domain, target_year, write_result):
+def run_test(source_domain, source_year, target_domain, target_year, run_ontology, write_result):
     """
     Run the test data through the pre-trained model from the original domain.
 
@@ -171,6 +191,7 @@ def run_test(source_domain, source_year, target_domain, target_year, write_resul
     :param source_year: the year of the pre-trained model domain dataset
     :param target_domain: the target domain
     :param target_year: the year of the target domain dataset
+    :param run_ontology: True is ontology reasoner should be run before neural network
     :param write_result: True if results are to be saved to a text file
     :return:
     """
@@ -187,9 +208,21 @@ def run_test(source_domain, source_year, target_domain, target_year, write_resul
 
     start_time = time.time()
 
-    # Run test method.
     train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
-    _, pred2, fw2, bw2, tl2, tr2 = lcr_test.main(FLAGS.test_path, 1.0, test_size, test_size)
+    accuracy_ont = 1.0
+
+    # Run ontology reasoner.
+    if run_ontology:
+        accuracy_ont, remaining_size = run_ont()
+        classified = test_size - remaining_size
+        test_size = remaining_size
+        if FLAGS.writable == 1:
+            with open(FLAGS.results_file, "a") as results:
+                results.write("Ontology. Aspects classified: " + str(classified) + ", Accuracy: " + str(
+                    accuracy_ont) + "\n---\n")
+
+    # Run test method.
+    _, pred2, fw2, bw2, tl2, tr2 = lcr_test.main(FLAGS.test_path, accuracy_ont, test_size, test_size)
     tf.reset_default_graph()
 
     end_time = time.time()
@@ -199,8 +232,7 @@ def run_test(source_domain, source_year, target_domain, target_year, write_resul
             results.write("Runtime: " + str(run_time) + " seconds.\n\n")
 
 
-def run_split(domain, year, splits, split_size, learning_rate, keep_prob, momentum, l2_reg,
-              write_result):
+def run_split(domain, year, splits, split_size, learning_rate, keep_prob, momentum, l2_reg, run_ontology, write_result):
     """
     Runs regular LCR-Rot-hop++ for multiple cumulative training splits.
 
@@ -212,6 +244,7 @@ def run_split(domain, year, splits, split_size, learning_rate, keep_prob, moment
     :param keep_prob: keep probability hyperparameter
     :param momentum: momentum hyperparameter
     :param l2_reg: l2 regularization hyperparameter
+    :param run_ontology: True is ontology reasoner should be run before neural network
     :param write_result: True if results are to be saved to a text file
     :return:
     """
@@ -240,11 +273,23 @@ def run_split(domain, year, splits, split_size, learning_rate, keep_prob, moment
             FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(FLAGS.year) + "_BERT_" + str(
             split_size * i) + ".txt"
 
-        # Run LCR-Rot-hop++.
         train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
-        _, pred2, fw2, bw2, tl2, tr2 = lcr_model.main(FLAGS.train_path, FLAGS.test_path, 1.0,
-                                                      test_size, test_size, FLAGS.learning_rate,
-                                                      FLAGS.keep_prob1, FLAGS.momentum, FLAGS.l2_reg)
+        accuracy_ont = 1.0
+
+        # Run ontology reasoner.
+        if run_ontology:
+            accuracy_ont, remaining_size = run_ont()
+            classified = test_size - remaining_size
+            test_size = remaining_size
+            if FLAGS.writable == 1:
+                with open(FLAGS.results_file, "a") as results:
+                    results.write("Ontology. Aspects classified: " + str(classified) + ", Accuracy: " + str(
+                        accuracy_ont) + "\n---\n")
+
+        # Run LCR-Rot-hop++.
+        _, pred2, fw2, bw2, tl2, tr2 = lcr_model.main(FLAGS.train_path, FLAGS.test_path, accuracy_ont, test_size,
+                                                      test_size, FLAGS.learning_rate, FLAGS.keep_prob1, FLAGS.momentum,
+                                                      FLAGS.l2_reg)
         tf.reset_default_graph()
 
         end_time = time.time()
@@ -255,8 +300,8 @@ def run_split(domain, year, splits, split_size, learning_rate, keep_prob, moment
 
 
 # Fine-tune method must be slightly adapted to work on original domains other than restaurant.
-def run_fine_tune(original_domain, target_domain, year, splits, split_size, learning_rate, keep_prob,
-                  momentum, l2_reg, write_result, split=True):
+def run_fine_tune(original_domain, target_domain, year, splits, split_size, learning_rate, keep_prob, momentum, l2_reg,
+                  run_ontology, write_result, split=True):
     """
     Runs fine-tuning on a model originally trained on another domain to adapt for cross-domain use.
 
@@ -269,6 +314,7 @@ def run_fine_tune(original_domain, target_domain, year, splits, split_size, lear
     :param keep_prob: keep probability hyperparameter
     :param momentum: momentum hyperparameter
     :param l2_reg: l2 regularization hyperparameter
+    :param run_ontology: True is ontology reasoner should be run before neural network
     :param write_result: True if results are to be saved to a text file
     :param split: True if the dataset is split in multiple cumulative training splits
     :return:
@@ -301,13 +347,23 @@ def run_fine_tune(original_domain, target_domain, year, splits, split_size, lear
                 FLAGS.embedding_dim) + "_" + FLAGS.source_domain + "_train_" + str(FLAGS.year) + "_BERT_" + str(
                 split_size * i) + ".txt"
 
-            # Run fine-tuning method.
             train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
-            _, pred2, fw2, bw2, tl2, tr2 = lcr_fine_tune.main(FLAGS.train_path, FLAGS.test_path, 1.0,
-                                                              test_size, test_size,
-                                                              FLAGS.learning_rate,
-                                                              FLAGS.keep_prob1, FLAGS.momentum,
-                                                              FLAGS.l2_reg)
+            accuracy_ont = 1.0
+
+            # Run ontology reasoner.
+            if run_ontology:
+                accuracy_ont, remaining_size = run_ont()
+                classified = test_size - remaining_size
+                test_size = remaining_size
+                if FLAGS.writable == 1:
+                    with open(FLAGS.results_file, "a") as results:
+                        results.write("Ontology. Aspects classified: " + str(classified) + ", Accuracy: " + str(
+                            accuracy_ont) + "\n---\n")
+
+            # Run fine-tuning method.
+            _, pred2, fw2, bw2, tl2, tr2 = lcr_fine_tune.main(FLAGS.train_path, FLAGS.test_path, accuracy_ont,
+                                                              test_size, test_size, FLAGS.learning_rate,
+                                                              FLAGS.keep_prob1, FLAGS.momentum, FLAGS.l2_reg)
             tf.reset_default_graph()
 
             end_time = time.time()
@@ -327,12 +383,23 @@ def run_fine_tune(original_domain, target_domain, year, splits, split_size, lear
                 results.write(
                     original_domain + " to " + FLAGS.target_domain + " with " + FLAGS.source_domain + " fine-tuning\n---\n")
 
-        # Run fine-tuning method.
         train_size, test_size, train_polarity_vector, test_polarity_vector = load_data_and_embeddings(FLAGS, False)
-        _, pred2, fw2, bw2, tl2, tr2 = lcr_fine_tune.main(FLAGS.train_path, FLAGS.test_path, 1.0,
-                                                          test_size, test_size, FLAGS.learning_rate,
-                                                          FLAGS.keep_prob1, FLAGS.momentum,
-                                                          FLAGS.l2_reg)
+        accuracy_ont = 1.0
+
+        # Run ontology reasoner.
+        if run_ontology:
+            accuracy_ont, remaining_size = run_ont()
+            classified = test_size - remaining_size
+            test_size = remaining_size
+            if FLAGS.writable == 1:
+                with open(FLAGS.results_file, "a") as results:
+                    results.write("Ontology. Aspects classified: " + str(classified) + ", Accuracy: " + str(
+                        accuracy_ont) + "\n---\n")
+
+        # Run fine-tuning method.
+        _, pred2, fw2, bw2, tl2, tr2 = lcr_fine_tune.main(FLAGS.train_path, FLAGS.test_path, accuracy_ont, test_size,
+                                                          test_size, FLAGS.learning_rate, FLAGS.keep_prob1,
+                                                          FLAGS.momentum, FLAGS.l2_reg)
         tf.reset_default_graph()
 
         end_time = time.time()
@@ -380,6 +447,21 @@ def set_other_flags(source_domain, source_year, target_domain, target_year):
         source_year) + "_" + str(FLAGS.embedding_dim) + ".txt"
     FLAGS.test_embedding = "data/programGeneratedData/" + FLAGS.embedding_type + "_" + FLAGS.target_domain + "_" + str(
         FLAGS.year) + "_" + str(FLAGS.embedding_dim) + ".txt"
+    FLAGS.test_path_ont = "data/programGeneratedData/BERT/" + FLAGS.target_domain + "/raw_data_" + FLAGS.target_domain + "_" + str(
+        FLAGS.year) + ".txt"
+
+
+def run_ont():
+    """
+    Runs an ontology reasoner.
+    NOTE. Not used and therefore thoroughly tested in our research.
+    :return:
+    """
+    print('Starting ontology reasoner...')
+    ont = OntReasoner()
+    accuracy_ont, remaining_size = ont.run(use_backup=True, path=FLAGS.test_path_ont, use_svm=False)
+    FLAGS.test_path = FLAGS.remaining_test_path
+    return accuracy_ont, remaining_size
 
 
 if __name__ == '__main__':

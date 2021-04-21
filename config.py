@@ -56,9 +56,12 @@ tf.app.flags.DEFINE_string("test_path", "data/programGeneratedData/" + str(
 tf.app.flags.DEFINE_string("embedding_path",
                            "data/programGeneratedData/" + str(FLAGS.embedding_dim) + "embedding" + str(
                                FLAGS.year) + ".txt", "pre-trained embedding vectors file path")
+tf.app.flags.DEFINE_string("test_path_ont",
+                           "data/programGeneratedData/BERT/" + FLAGS.target_domain + "/raw_data_" + FLAGS.target_domain + "_" + str(
+                               FLAGS.year) + ".txt", "test data path for ontology")
 tf.app.flags.DEFINE_string("remaining_test_path",
                            "data/programGeneratedData/" + str(FLAGS.embedding_dim) + 'remainingtestdata' + str(
-                               FLAGS.year) + ".txt", "formatted remaining test data path after ontology")
+                               FLAGS.year) + ".txt", "remaining test data path after ontology")
 
 # Cross-domain source and target embedding
 tf.app.flags.DEFINE_string("train_embedding",
