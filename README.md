@@ -17,6 +17,8 @@ Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop
     - Install English spacy language pack by running the following command: ```python -m spacy download en```
 
 - Set-up ontology (optional):
+
+  *NOTE. Ontology reasoning is not used and therefore not thoroughly tested in our own work.*
     - Make sure you have a recent release of Java JDK installed (we used JDK 14.0.2), if not download from:
       https://www.oracle.com/nl/java/technologies/javase-downloads.html
     - Change the path of ```java_path``` in ontology.py to your java installation.
@@ -32,8 +34,7 @@ Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop
           ontology: https://github.com/KSchouten/Heracles/blob/master/src/main/resources/externalData/ontology.owl
         - Laptop
           ontology: https://github.com/lisazhuang/SOBA/blob/master/src/main/resources/externalData/LaptopManualOntology.owl
-    - Include ontology code in main method definitions (before LCR-Rot-hop++) as in:
-      https://github.com/mtrusca/HAABSA_PLUS_PLUS/blob/master/main.py
+    - Set run_ontology to true in main_test.py.
 
 ## How to use?
 
