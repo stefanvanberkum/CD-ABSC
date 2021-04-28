@@ -367,9 +367,8 @@ class OntReasoner:
         """
         types1, types2, types3 = self.create_types()
 
-        punctuation_and_numbers = ['– ', '(', ')', '?', ':', ';', ',', '.', '!', '/', '"', '\'', '’', '*', '$', '0',
-                                   '1', '2', '3',
-                                   '4', '5', '6', '7', '8', '9']
+        punctuation_and_numbers = ['– ', '_', '(', ')', '?', ':', ';', ',', '.', '!', '/', '"', '\'', '’', '*', '$',
+                                   '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
         with open(path, "r") as fd:
             lines = fd.read().splitlines()
             for i in range(0, len(lines), 3):
@@ -445,7 +444,7 @@ class OntReasoner:
             if use_backup:
                 out_f = open(
                     "data/programGeneratedData/crossValidation" + str(FLAGS.year) + '/cross_val_remainder_' + str(
-                        j) + '.txt', "w")
+                        j + 1) + '.txt', "w")
                 with open(FLAGS.test_path, "r") as fd:
                     for i, line in enumerate(fd):
                         if i in self.remaining_pos_vector:

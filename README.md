@@ -34,7 +34,19 @@ Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop
           ontology: https://github.com/KSchouten/Heracles/blob/master/src/main/resources/externalData/ontology.owl
         - Laptop
           ontology: https://github.com/lisazhuang/SOBA/blob/master/src/main/resources/externalData/LaptopManualOntology.owl
-    - Set run_ontology to true in main_test.py.
+    - Set ```run_ontology=True``` in main_test.py.
+
+- Set-up k-fold cross-validation (optional):
+
+  *NOTE. K-fold is not used and therefore not thoroughly tested in our own work.*
+    - An example of a possible k-fold cross-validation adaptation for restaurant data is given in main_test.py.
+    - This particular adaptation uses k-fold cross-validation for the restaurant domain training set,
+      when ```rest_rest_cross=True```.
+    - To use it on other domains, add it to main_test.py, in the same way as ```rest_rest_cross```.
+    - To use more data, include it in the training set and it will be considered in the k-fold cross-validation.
+    - This adaptation is only for single-domain usage, as opposed to cross-domain, as there is no obvious adaptation of
+      cross-domain k-fold cross-validation.
+    - Other adaptations can be considered by adapting the methods in main_test.py and load_data.py.
 
 ## How to use?
 

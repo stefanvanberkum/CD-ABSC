@@ -125,19 +125,18 @@ def load_hyper_data(config, load_data, percentage=0.8):
     return train_size, test_size, train_polarity_vector, test_polarity_vector
 
 
-def load_cross_validation(config, split_size, load=True):
+def load_cross_validation(config, n_folds, load=True):
     """
     Method adapted from Trusca et al. (2020), no original docstring provided.
     NOTE. Not used in current adaptation.
 
     :param config: configuration
-    :param split_size: size of each cross-validation set
+    :param n_folds: number of cross-validation sets (at least 2)
     :param load: True if data needs to be split into cross-validation sets (defaults to True)
     :return:
     """
     flags = config
     if load:
-        # words, sent = [], []
         words, sent = [], []
 
         with open(flags.train_path, encoding='cp1252') as f:
@@ -149,15 +148,15 @@ def load_cross_validation(config, split_size, load=True):
 
             sent = np.asarray(sent)
 
-            i = 0
-            kf = StratifiedKFold(n_splits=split_size, shuffle=True, random_state=12345)
+            i = 1
+            kf = StratifiedKFold(n_splits=n_folds, shuffle=True, random_state=12345)
             for train_idx, val_idx in kf.split(words, sent):
                 words_1 = words[train_idx]
                 words_2 = words[val_idx]
-                with open("data/programGeneratedData/crossValidation" + str(flags.year) + '/cross_train_' + str(
+                with open("data/programGeneratedData/crossValidation/cross_train_" + str(
                         i) + '.txt', 'w') as train, \
-                        open("data/programGeneratedData/crossValidation" + str(flags.year) + '/cross_val_' + str(
-                            i) + '.txt', 'w') as val:  # , \
+                        open("data/programGeneratedData/crossValidation/cross_val_" + str(
+                            i) + '.txt', 'w') as val:
                     for row in words_1:
                         train.write(row[0])
                         train.write(row[1])
@@ -167,13 +166,13 @@ def load_cross_validation(config, split_size, load=True):
                         val.write(row[1])
                         val.write(row[2])
                 i += 1
-        # Get statistic properties from txt file.
+    # Get statistic properties from txt file.
     train_size, train_polarity_vector = get_stats_from_file(
-        "data/programGeneratedData/crossValidation" + str(flags.year) + '/cross_train_0.txt')
+        "data/programGeneratedData/crossValidation/cross_train_1.txt")
     test_size, test_polarity_vector = [], []
-    for i in range(split_size):
+    for i in range(1, n_folds + 1):
         test_size_i, test_polarity_vector_i = get_stats_from_file(
-            "data/programGeneratedData/crossValidation" + str(flags.year) + '/cross_val_' + str(i) + '.txt')
+            "data/programGeneratedData/crossValidation/cross_val_" + str(i) + '.txt')
         test_size.append(test_size_i)
         test_polarity_vector.append(test_polarity_vector_i)
 
