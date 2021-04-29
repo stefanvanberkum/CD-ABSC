@@ -34,8 +34,8 @@ def main(_):
     rest_lapt_lapt = False  # Run fine-tuning on restaurant model for laptop domain.
     rest_book_book = False  # Run fine-tuning on restaurant model for book domain.
     rest_small_small = False  # Run fine-tuning on restaurant model for hotel and electronics domains.
-    rest_rest_cross = True  # Run cross-validation for restaurant domain.
-    run_ontology = True  # Run ontology reasoner.
+    rest_rest_cross = False  # Run cross-validation for restaurant domain.
+    run_ontology = False  # Run ontology reasoner.
     write_result = True  # Write results to text file.
     n_iter = 200
 
