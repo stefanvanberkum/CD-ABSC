@@ -15,6 +15,7 @@ Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop
     - Install the requirements by running the following command:
       ```pip install -r requirements.txt```
     - Install English spacy language pack by running the following command: ```python -m spacy download en```
+    - You can open and edit the code in any editor, we used the PyCharm IDE: https://www.jetbrains.com/pycharm/
 
 - Set-up ontology (optional):
 
