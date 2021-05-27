@@ -45,7 +45,7 @@ def main():
         result = get_results(domain=domain[0], year=domain[1], splits=domain[2], split_size=domain[3])
         plot = ggplot(result) + aes(x='Aspects', y='Accuracy', color='Task', shape='Task') + geom_point() + stat_smooth(
             method='lm') + theme(legend_text=element_text(size=10))
-        plot.save(save_path + domain[0] + "_results.eps", dpi=600)
+        plot.save(save_path + domain[0] + "_results", dpi=600)
 
         # Calculate and save trendline summary.
         with open(save_path + domain[0] + "_trend.txt", 'w') as trend:
