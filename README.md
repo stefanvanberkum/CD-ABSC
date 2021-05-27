@@ -56,7 +56,7 @@ Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop
     - Run raw_data.py for restaurant, laptop, book and hotel domains.
     - Run data_electronics.py for electronics domains.
 - Get BERT embeddings:
-    - Run files in getBERT *using Google Colab* for your required domains to obtain BERT embeddings (see files for
+    - Run files in getBERT for your required domains *using Google Colab* to obtain BERT embeddings (see files for
       further instructions on how to run).
 - Prepare BERT train and test file and BERT embedding:
     - Run prepare_bert.py for your required domains.
