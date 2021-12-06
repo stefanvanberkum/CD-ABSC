@@ -5,11 +5,7 @@ Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop
 ## Set-up instructions.
 
 - Set-up a virtual environment:
-    - Make sure you have a recent release of Python installed (we used Python 3.9), if not download
-      from: https://www.python.org/downloads/
-    - Download Anaconda: https://www.anaconda.com/products/individual
-    - Set-up a virtual environment in Anaconda using Python 3.5 (newer versions might also be compatible).
-    - Copy all software from this repository into a file in the virtual environment.
+    - Set-up a virtual environment in Anaconda using Python 3.5.
     - Open your new environment in the command window ('Open Terminal' in Anaconda)
     - Navigate to the file containing all repository code (file_path) by running: ```cd file_path```
     - Install the requirements by running the following command:
