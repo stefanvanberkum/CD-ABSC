@@ -1,6 +1,6 @@
 # CD-ABSC
 
-Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop++ with upper layer fine-tuning.
+Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop++ with upper layer fine-tuning. Official implementation of the methods described in Van Berkum, Van Megen, Savelkoul, Weterman, and Frasincar ([2021](https://doi.org/10.1145/3486622.3494003)).
 
 ## Set-up instructions.
 
@@ -65,7 +65,24 @@ Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop
 NOTE. Avoid residual batches of size one in the training set, the code cannot handle such cases and will raise an error.
 Can be solved by manually changing the size of the train set such that train_size % batch_size != 1.
 
-## References.
+## How to cite?
+BibTeX:
+```
+@inproceedings{VanBerkum2021,
+author = {{Van Berkum}, Stefan and {Van Megen}, Sophia and Savelkoul, Max and Weterman, Pim and Frasincar, Flavius},
+booktitle = {IEEE/WIC/ACM International Conference on Web Intelligence (WI-IAT 2021)},
+doi = {10.1145/3486622.3494003},
+pages = {524--531},
+publisher = {ACM},
+title = {{Fine-tuning for cross-domain aspect-based sentiment classification}},
+year = {2021}}
+```
+
+APA:
+
+Van Berkum, S., Van Megen, S., Savelkoul, M., Weterman, P., & Frasincar, F. (2021). _Fine-tuning for cross-domain aspect-based sentiment classification_. IEEE/WIC/ACM International Conference on Web Intelligence (WI-IAT 2021), 524–531. https://doi.org/10.1145/3486622.3494003
+
+## References
 
 This code is adapted from Trusca, Wassenberg, Frasincar and Dekker (2020).
 
