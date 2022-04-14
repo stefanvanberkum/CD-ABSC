@@ -2,7 +2,7 @@
 
 Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop++ with upper layer fine-tuning. Official implementation of the methods described in Van Berkum, Van Megen, Savelkoul, Weterman, and Frasincar ([2021](https://doi.org/10.1145/3486622.3494003)).
 
-## Set-up instructions.
+## Set-up instructions
 
 - Set-up a virtual environment:
     - Set-up a virtual environment in Anaconda using Python 3.5.
