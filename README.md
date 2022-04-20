@@ -7,28 +7,28 @@ Cross-domain (CD) aspect-based sentiment classification (ABSC) using LCR-Rot-hop
 - Set up a virtual environment:
     - Set up a virtual environment using Python 3.5.
     - Install the requirements by running the following command in your virtual environment:
-      ```pip install -r requirements.txt```
-    - Install English spacy language pack by running the following command: ```python -m spacy download en```
-    - You can open and edit the code in any editor, we used the PyCharm IDE: https://www.jetbrains.com/pycharm/
+      ```pip install -r requirements.txt```.
+    - Install English spacy language pack by running the following command: ```python -m spacy download en```.
+    - You can open and edit the code in any editor, we used the PyCharm IDE: https://www.jetbrains.com/pycharm/.
 
 - Set-up ontology (optional):
 
   *NOTE. Ontology reasoning is not used and therefore not thoroughly tested in our own work.*
     - Make sure you have a recent release of Java JDK installed (we used JDK 14.0.2), if not download from:
-      https://www.oracle.com/nl/java/technologies/javase-downloads.html
+      https://www.oracle.com/nl/java/technologies/javase-downloads.html.
     - Change the path of ```java_path``` in ontology.py to your java installation.
     - Download required files:
-        - Stanford CoreNLP parser: https://nlp.stanford.edu/software/stanford-parser-full-2018-02-27.zip
+        - Stanford CoreNLP parser: https://nlp.stanford.edu/software/stanford-parser-full-2018-02-27.zip.
         - Stanford CoreNLP Language
-          models: https://nlp.stanford.edu/software/stanford-english-corenlp-2018-02-27-models.jar
+          models: https://nlp.stanford.edu/software/stanford-english-corenlp-2018-02-27-models.jar.
     - Change the paths of ```path_to_jar``` and ```path_to_models_jar``` in ontology.py to your parser and models
       installation, respectively.
     - Change the paths of ```onto_path.append()``` and ```self.onto = get_ontology()``` in ontology.py to your ontology
       file.
         - Restaurant
-          ontology: https://github.com/KSchouten/Heracles/blob/master/src/main/resources/externalData/ontology.owl
+          ontology: https://github.com/KSchouten/Heracles/blob/master/src/main/resources/externalData/ontology.owl.
         - Laptop
-          ontology: https://github.com/lisazhuang/SOBA/blob/master/src/main/resources/externalData/LaptopManualOntology.owl
+          ontology: https://github.com/lisazhuang/SOBA/blob/master/src/main/resources/externalData/LaptopManualOntology.owl.
     - Set ```run_ontology=True``` in main_test.py.
 
 - Set-up k-fold cross-validation (optional):
