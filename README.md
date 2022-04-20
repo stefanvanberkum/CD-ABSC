@@ -1,6 +1,6 @@
 # CD-ABSC
 
-Cross-Domain (CD) Aspect Based Sentiment Classification (ABSC) using LCR-Rot-hop++ with upper layer fine-tuning. Official implementation of the methods described in Van Berkum, Van Megen, Savelkoul, Weterman, and Frasincar ([2021](https://doi.org/10.1145/3486622.3494003)).
+Cross-domain (CD) aspect-based sentiment classification (ABSC) using LCR-Rot-hop++ with upper layer fine-tuning. Official implementation of the methods described in Van Berkum, Van Megen, Savelkoul, Weterman, and Frasincar ([2021](https://doi.org/10.1145/3486622.3494003)).
 
 ## Set-up instructions
 
@@ -84,11 +84,9 @@ Van Berkum, S., Van Megen, S., Savelkoul, M., Weterman, P., & Frasincar, F. (202
 
 ## References
 
-This code is adapted from Trusca, Wassenberg, Frasincar and Dekker (2020).
+This code is adapted from Trusca, Wassenberg, Frasincar, and Dekker (2020).
 
 https://github.com/mtrusca/HAABSA_PLUS_PLUS
 
-Truşcǎ M.M., Wassenberg D., Frasincar F., Dekker R. (2020) A Hybrid Approach for Aspect-Based Sentiment Analysis Using
-Deep Contextual Word Embeddings and Hierarchical Attention. In: Bielikova M., Mikkonen T., Pautasso C. (eds) Web
-Engineering. ICWE 2020. Lecture Notes in Computer Science, vol 12128, pp. 365-380. Springer, Cham.
-https://doi.org/10.1007/978-3-030-50578-3_25
+Truşcǎ M.M., Wassenberg D., Frasincar F., & Dekker R. (2020). A hybrid approach for aspect-based sentiment analysis using
+deep contextual word embeddings and hierarchical attention. International Conference on Web Engineering (ICWE 2020), 365-380. https://doi.org/10.1007/978-3-030-50578-3_25
