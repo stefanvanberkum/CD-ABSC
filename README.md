@@ -2,13 +2,11 @@
 
 Cross-domain (CD) aspect-based sentiment classification (ABSC) using LCR-Rot-hop++ with upper layer fine-tuning. Official implementation of the methods described in Van Berkum, Van Megen, Savelkoul, Weterman, and Frasincar ([2021](https://doi.org/10.1145/3486622.3494003)).
 
-## Set-up instructions
+## Installation
 
-- Set-up a virtual environment:
-    - Set-up a virtual environment in Anaconda using Python 3.5.
-    - Open your new environment in the command window.
-    - Navigate to the file containing all repository code (file_path) by running: ```cd file_path```
-    - Install the requirements by running the following command:
+- Set up a virtual environment:
+    - Set up a virtual environment using Python 3.5.
+    - Install the requirements by running the following command in your virtual environment:
       ```pip install -r requirements.txt```
     - Install English spacy language pack by running the following command: ```python -m spacy download en```
     - You can open and edit the code in any editor, we used the PyCharm IDE: https://www.jetbrains.com/pycharm/
