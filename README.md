@@ -5,7 +5,7 @@ Cross-domain (CD) aspect-based sentiment classification (ABSC) using LCR-Rot-hop
 ## Installation
 
 - Set up a virtual environment:
-    - Set up a virtual environment using Python 3.5.
+    - Create a virtual environment using Python 3.5.
     - Install the requirements by running the following command in your virtual environment:
       ```pip install -r requirements.txt```.
     - Install English spacy language pack by running the following command: ```python -m spacy download en```.
